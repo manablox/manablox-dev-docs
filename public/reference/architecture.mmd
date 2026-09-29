@@ -1,0 +1,43 @@
+graph TD
+  core["@manablox/core<br/>registry, hooks, config, errors"]
+  fields["@manablox/fields<br/>built-in field types"]
+  db["@manablox/db<br/>table definitions, repositories, query builder"]
+  services["@manablox/services<br/>content, content types, spaces, loaders"]
+  auth["@manablox/auth"]
+  media["@manablox/media"]
+  storage["@manablox/storage"]
+  cache["@manablox/cache"]
+  jobs["@manablox/jobs"]
+  plugins["@manablox/plugin-*<br/>website, ai, workflows, webhooks"]
+  rpc["@manablox/api-rpc<br/>management procedures"]
+  gql["@manablox/api-graphql<br/>delivery schema"]
+  rest["@manablox/api-public<br/>delivery REST"]
+  api["@manablox/server<br/>composition root"]
+  admin["@manablox/admin"]
+  sdk["@manablox/public-sdk"]
+
+  fields --> core
+  db --> core
+  services --> db
+  auth --> db
+  media --> storage
+  media --> db
+  cache --> core
+  jobs --> db
+  rpc --> services
+  rpc --> auth
+  rpc --> media
+  gql --> services
+  gql --> media
+  rest --> services
+  rest --> media
+  api --> rpc
+  api --> gql
+  api --> rest
+  api --> jobs
+  api --> cache
+  plugins --> api
+  plugins --> rpc
+  plugins --> services
+  admin -. types only .-> rpc
+  sdk -. HTTP .-> api

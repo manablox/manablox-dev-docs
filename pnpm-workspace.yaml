@@ -1,0 +1,28 @@
+# One package, the site at the root; the workspace file carries the install settings.
+#
+# Build scripts are opt-in: each dependency that wants to run one on install must be
+# named in `allowBuilds`. Anything not listed is blocked, so a transitive package cannot
+# execute arbitrary code during `pnpm install`.
+# Dependencies are installed inside the dev container, which records its own store path
+# in `node_modules`. Without this a host `pnpm <script>` sees a mismatch and tries to
+# purge and reinstall.
+verifyDepsBeforeRun: false
+
+allowBuilds:
+  '@biomejs/biome': true
+  esbuild: true
+  msgpackr-extract: true
+catalog:
+  '@biomejs/biome': ^2.5.12
+  knip: ^6.37.0
+  astro: ^7.3.1
+  '@astrojs/starlight': ^0.42.0
+  '@astrojs/check': ^0.9.10
+catalogs:
+  # `astro check` drives TypeScript's programmatic API, which the native 7.x compiler
+  # does not expose yet. See https://github.com/withastro/roadmap/discussions/1321.
+  astro:
+    typescript: ^6.0.3
+minimumReleaseAgeExclude:
+  # Installed from the CMS stack's local registry in development, minutes after publishing.
+  - '@manablox/*'

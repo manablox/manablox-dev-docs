@@ -1,0 +1,19 @@
+{
+  "theme": "base",
+  "fontFamily": "ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif",
+  "themeVariables": {
+    "fontFamily": "ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif",
+    "fontSize": "15px",
+    "primaryColor": "#f4ecff",
+    "primaryBorderColor": "#a23ffb",
+    "primaryTextColor": "#1f1a2b",
+    "lineColor": "#8a8497",
+    "edgeLabelBackground": "#f4ecff",
+    "tertiaryColor": "#f4ecff"
+  },
+  "flowchart": {
+    "htmlLabels": false,
+    "curve": "basis"
+  },
+  "themeCSS": ".edgeLabel rect { opacity: 1; }"
+}

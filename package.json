@@ -1,0 +1,58 @@
+{
+  "name": "manablox-dev-docs",
+  "version": "0.50.0",
+  "private": true,
+  "license": "MIT",
+  "description": "The Manablox developer documentation, dev.manablox.io.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manablox/manablox-dev-docs.git"
+  },
+  "type": "module",
+  "packageManager": "pnpm@11.25.0",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "astro dev --port 3004",
+    "build": "astro build",
+    "preview": "astro preview --port 3004",
+    "typecheck": "astro check && tsc --noEmit",
+    "lint": "biome check .",
+    "format": "biome check --write .",
+    "knip": "knip --no-progress",
+    "check": "pnpm lint && pnpm knip && pnpm docs:words && pnpm typecheck && pnpm docs:check && pnpm build && pnpm links",
+    "docs:words": "node scripts/check-docs-words.mjs",
+    "docs:generate": "node scripts/generate-reference.mjs",
+    "docs:check": "node scripts/generate-reference.mjs --check",
+    "links": "node scripts/check-links.mjs dist",
+    "links:cross": "node scripts/check-external-docs-links.mjs dist",
+    "diagrams": "node scripts/render-diagrams.mjs",
+    "dev:up": "./scripts/dev.sh up",
+    "dev:down": "./scripts/dev.sh down",
+    "dev:logs": "./scripts/dev.sh logs",
+    "dev:reset": "./scripts/dev.sh reset",
+    "docker:build": "./scripts/docker-build.sh",
+    "lock:refresh": "./scripts/lock-refresh.sh"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "catalog:",
+    "@manablox/docs-theme": "^0.50.0",
+    "astro": "catalog:"
+  },
+  "devDependencies": {
+    "@astrojs/check": "catalog:",
+    "@biomejs/biome": "catalog:",
+    "@manablox/cli": "^0.50.0",
+    "@manablox/config-typescript": "^0.50.0",
+    "@manablox/core": "^0.50.0",
+    "@manablox/fields": "^0.50.0",
+    "@manablox/plugin-ai": "^0.50.0",
+    "@manablox/plugin-license": "^0.50.0",
+    "@manablox/plugin-webhooks": "^0.50.0",
+    "@manablox/plugin-website": "^0.50.0",
+    "@manablox/plugin-workflows": "^0.50.0",
+    "knip": "catalog:",
+    "typescript": "catalog:astro"
+  }
+}

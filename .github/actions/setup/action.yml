@@ -1,0 +1,20 @@
+name: Set up the workspace
+description: >-
+  pnpm, Node 24 with the pnpm store cache, and the frozen install. A local action is read
+  from the checkout, so the calling job runs actions/checkout first.
+
+runs:
+  using: composite
+  steps:
+    # No `version` input: pnpm is pinned by `packageManager` in package.json, and
+    # specifying it in both places makes the action fail.
+    - uses: pnpm/action-setup@v6
+
+    - uses: actions/setup-node@v5
+      with:
+        node-version: 24
+        cache: pnpm
+
+    # `@manablox/*` from npmjs: CI has no local registry.
+    - shell: bash
+      run: pnpm install --frozen-lockfile --prefer-offline

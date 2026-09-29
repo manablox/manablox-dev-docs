@@ -1,0 +1,28 @@
+# syntax=docker/dockerfile:1.7
+
+# The development image. It carries no source: the repository is bind-mounted at /app and
+# the container runs as the host's own user (see `user:` in compose.dev.yml), so the one
+# `pnpm install` it produces is the same install the host's editor reads. That only holds
+# because host and container are both linux/glibc on the same architecture.
+FROM node:24-bookworm-slim
+
+ENV PNPM_HOME=/pnpm PATH=/pnpm:$PATH
+# Corepack caches the pnpm release it downloads under COREPACK_HOME. Left at its default
+# it lands in the container's home, which a non-root user cannot write.
+ENV COREPACK_HOME=/pnpm/corepack
+# `packageManager` in package.json pins the version, so that one file is the whole
+# toolchain input; the working copy is bind-mounted over /app at run time.
+COPY package.json /tmp/toolchain/package.json
+RUN corepack enable \
+  && cd /tmp/toolchain && corepack prepare --activate \
+  && rm -rf /tmp/toolchain \
+  && chmod -R a+rX /pnpm
+# Keeps pnpm non-interactive: an install that wants to replace a `node_modules`
+# directory otherwise aborts rather than prompting.
+ENV npm_config_confirm_modules_purge=false
+# The store has to sit under /app: pnpm hardlinks from it into `node_modules`, and falls
+# back to `<workspace>/.pnpm-store` whenever the configured store is on a different
+# filesystem than the project. Both paths are gitignored.
+ENV npm_config_store_dir=/app/.pnpm-store
+
+WORKDIR /app

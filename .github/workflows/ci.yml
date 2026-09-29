@@ -1,0 +1,95 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # Everything that reads the source without building the site.
+  static:
+    name: lint - wording - typecheck - generated pages
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: ./.github/actions/setup
+
+      # Biome for the scripts and configs; the pages are markdown.
+      - name: Lint
+        run: pnpm lint
+
+      # Unused files, exports and dependencies; config in knip.jsonc.
+      - name: Dead code
+        run: pnpm knip
+
+      # The pages describe what is; removed names and paths stay out.
+      - name: Docs wording
+        run: pnpm docs:words
+
+      - name: Typecheck
+        run: pnpm typecheck
+
+      # The error keys, HTTP API and hooks pages match the installed @manablox/* packages:
+      # `manablox docs generate` into a temporary folder, compared with docs/.
+      - name: Generated reference pages are current
+        run: pnpm docs:check
+
+  build:
+    name: build - links
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: ./.github/actions/setup
+
+      - name: Build
+        run: pnpm build
+
+      # Every internal link of the built site resolves to a page or a file.
+      - name: Links
+        run: pnpm links
+
+  # `pnpm audit` reads the lockfile and asks the registry; it needs no install.
+  security:
+    name: audit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: pnpm/action-setup@v6
+      - run: pnpm audit --audit-level high
+
+  # The image is built on every change, so a broken Dockerfile fails before the merge.
+  # Pushing it is release.yml's job.
+  image:
+    name: image - dev-docs
+    needs: [static, build]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: docker/setup-buildx-action@v4
+      - uses: docker/build-push-action@v7
+        with:
+          context: .
+          file: docker/Dockerfile
+          push: false
+          load: true
+          tags: ghcr.io/${{ github.repository_owner }}/dev-docs:ci
+          cache-from: type=gha,scope=dev-docs
+          cache-to: type=gha,mode=max,scope=dev-docs
+
+      # nginx answers the home page and a nested page, and 404s an unknown one.
+      - name: Smoke test
+        run: |
+          set -euo pipefail
+          docker run -d --name dev-docs -p 8080:80 ghcr.io/${{ github.repository_owner }}/dev-docs:ci
+          for _ in $(seq 1 20); do curl -fs http://localhost:8080/ >/dev/null && break; sleep 1; done
+          curl -fs http://localhost:8080/ | grep -q '<title>'
+          curl -fs http://localhost:8080/getting-started/ >/dev/null
+          test "$(curl -s -o /dev/null -w '%{http_code}' http://localhost:8080/no-such-page/)" = 404

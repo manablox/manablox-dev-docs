@@ -1,0 +1,19 @@
+node_modules/
+.pnpm-store/
+dist/
+.astro/
+coverage/
+*.log
+.env
+.env.*
+!.env.example
+# The local registry of the CMS development stack; see README.md, "Development".
+.npmrc
+.remember
+# Agent worktrees
+.claude/worktrees/
+
+# Local and generated files, ignored in every Manablox repository
+docker/data/
+test-results/
+.turbo/

@@ -1,0 +1,6 @@
+{
+  "$schema": "https://unpkg.com/knip@6/schema-jsonc.json",
+  "entry": ["scripts/*.mjs", "manablox.config.ts"],
+  // Run by scripts/generate-reference.mjs from node_modules/.bin.
+  "ignoreDependencies": ["@manablox/cli"]
+}

@@ -1,0 +1,74 @@
+name: manablox-dev-docs-dev
+
+# The development environment: `pnpm dev:up` installs the dependencies and runs Astro's dev
+# server at http://localhost:3004, the port this repository keeps so every Manablox
+# repository's stack runs side by side.
+#
+# `@manablox/*` (the theme, the CLI and the packages the reference pages document) comes
+# from the Verdaccio of the CMS repository's development stack, on the docker network
+# `manablox-registry` as `verdaccio:4873`; bring that stack up first (`pnpm dev:services`
+# there is enough).
+#
+# The repository is bind-mounted and nothing is masked over it: `pnpm install` runs in the
+# container, writes into the working copy, and the host reads the same `node_modules`,
+# which works because host and container are both linux/glibc on the same architecture.
+
+x-workspace: &workspace
+  build:
+    context: ..
+    dockerfile: docker/Dockerfile.dev
+  image: manablox-dev-docs-dev
+  init: true
+  # Everything the container installs lands in the bind-mounted working copy, so it runs
+  # as the host's user; `scripts/dev.sh` exports these.
+  user: ${DEV_UID:-1000}:${DEV_GID:-1000}
+  working_dir: /app
+  volumes:
+    - ..:/app
+  env_file: [../.env]
+  environment: &env
+    # The image's home belongs to root, which this user cannot write.
+    HOME: /tmp
+    # Filesystems that do not deliver inotify events over a bind mount need polling.
+    CHOKIDAR_USEPOLLING: ${DEV_POLL:-false}
+
+services:
+  install:
+    <<: *workspace
+    # CI=true lets pnpm replace a node_modules folder a host install left behind.
+    environment:
+      <<: *env
+      CI: 'true'
+    # The command line wins over the host's `.npmrc`, which names `localhost:4873`: inside
+    # this container that is the container itself.
+    command:
+      - pnpm
+      - install
+      - --frozen-lockfile
+      - --config.@manablox:registry=http://verdaccio:4873/
+    networks: [default, manablox-registry]
+
+  # Reads `docs/` from the bind mount, so saving a page on the host reloads it.
+  docs:
+    <<: *workspace
+    restart: unless-stopped
+    command: ['pnpm', 'dev', '--host', '0.0.0.0']
+    ports: ['3004:3004']
+    depends_on:
+      install:
+        condition: service_completed_successfully
+    healthcheck:
+      test:
+        - CMD
+        - node
+        - -e
+        - "fetch('http://127.0.0.1:3004/').then((r) => process.exit(r.ok ? 0 : 1)).catch(() => process.exit(1))"
+      interval: 3s
+      timeout: 3s
+      retries: 40
+      start_period: 5s
+
+networks:
+  # Created by the CMS repository's development stack.
+  manablox-registry:
+    external: true

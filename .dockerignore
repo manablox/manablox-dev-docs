@@ -1,0 +1,15 @@
+# The image copies what the build needs by name; this keeps the context small and the
+# host's registry settings and secrets out of it.
+node_modules
+.pnpm-store
+dist
+.astro
+coverage
+.git
+.github
+.remember
+**/*.log
+.npmrc
+.env
+.env.*
+!.env.example

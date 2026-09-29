@@ -1,0 +1,10 @@
+{
+  "extends": ["@manablox/config-typescript/base.json", "astro/tsconfigs/strict"],
+  "compilerOptions": {
+    "declaration": false,
+    "declarationMap": false,
+    "sourceMap": false
+  },
+  "include": [".astro/types.d.ts", "**/*"],
+  "exclude": ["dist", "tmp"]
+}
