@@ -1050,27 +1050,27 @@ packages:
     os: [win32]
 
   '@manablox/api-graphql@0.50.0':
-    resolution: {integrity: sha512-umADgxKZGy3b4lMVmESjqPZhpv1nZb+zPJzJ7tTOjMMrFal8nDg0XGba9HRsMHu+7sAyehfV4TrOdHH6rvDgkA==}
+    resolution: {integrity: sha512-imMOpTn2B3ahVhec2SMBgFXXwXvxacIHwVf2FqFjn/1nsv+/90qYZpA789tD7O+2vk1ktg6yLE0gn4xig2XU+g==}
     engines: {node: '>=24'}
 
   '@manablox/api-public@0.50.0':
-    resolution: {integrity: sha512-a2UX3DcydMtEy7BDdRLhzDjmfumcrAIFBuQ5c3ZASywHFUYUQ1hyi9zEbAllSg/kvk02QKhGFR0Q6/XCjhblKQ==}
+    resolution: {integrity: sha512-xAWvl8fdq0sW14uoh7pZY54ythMfd8JcXX7vRk/ILlTtsK0VXjVDWYtluwFNPrgoi4Q9puYIcrYcaXItBGnEGg==}
     engines: {node: '>=24'}
 
   '@manablox/api-rpc@0.50.0':
-    resolution: {integrity: sha512-Gcw9Qo26Ubeob87q3IRzB9MpELb0Uv3RvV70inhqHcx3eKhRmRqdTKFHDSTOckf22k/z1A1smxH/8tNiirmwEQ==}
+    resolution: {integrity: sha512-L9xjJL3ZJMuEQUWvOjswrqIB74qmZFSzR4ACQLwI+ZoI4nTITVww1w7VIJMRlN1/h1rIEnplr1hAmakhTdQo5w==}
     engines: {node: '>=24'}
 
   '@manablox/auth@0.50.0':
-    resolution: {integrity: sha512-ZF0qmFXX+oyBQ8KHbKxA8/BwEGSVXOYWspWQJku1SaPvhZJDwNn1UaLM/pI1EQAuTU55ZxvpIVDqsycAgaTydA==}
+    resolution: {integrity: sha512-glx66VYw3RS7bPcPCJq0w9IEJxgueD4X+3si2yK/jPjzRc5BWAo45SLt4B5cd0qXylzNwbOnUWfTNZxb/mOa9w==}
     engines: {node: '>=24'}
 
   '@manablox/cache@0.50.0':
-    resolution: {integrity: sha512-Gulhwec/WglLHrWgf/7czx3xm/cyOQ6u+PEWM6C9oMF37Y/7Pifyr8x3pG6JI+mx+d07lqNlx8eKkEvaKf0u2w==}
+    resolution: {integrity: sha512-RWMyKHko+IZJRV8BvWuYXaVZloijenXI4D9Rdjbl8wswwnss3cguzb8kL7lquaK1LGP2CLcSIr/qyms89Eslzw==}
     engines: {node: '>=24'}
 
   '@manablox/cli@0.50.0':
-    resolution: {integrity: sha512-FteZgXd11+bqLi1o2XPC+FAZoGwLnbjM7c7QeQjmCW4jHWhy/JVcMPztSVxoS1wsmvxf1Ay3IZw9YGWgnRLgMA==}
+    resolution: {integrity: sha512-CwKZ0+vrxSb9nxJbIq7cibZIY6n8WJuIKi4h/yLw+CcSfgnlJyeZEtcM7ecKcHZFNFofhshH5sXEH8s7lEs8gQ==}
     engines: {node: '>=24'}
     hasBin: true
     peerDependencies:
@@ -1086,7 +1086,7 @@ packages:
         optional: true
 
   '@manablox/config-typescript@0.50.0':
-    resolution: {integrity: sha512-LKTfo51GWtsGSxYkeN9m5+H85qpva59PjpihZ+rMOdx+Qwgz0Mqexl0v6PJcwpSps2CIggtIh3AHNCkYgCZ5gw==}
+    resolution: {integrity: sha512-2I7EuHKsI7Lfj6EjfexX9E3mkonmIo+r5tA3zfxgz2kjVk7n78DxeqlWWThZRWE6YnOc5arkZOCwti2HwG5eag==}
     peerDependencies:
       drizzle-kit: ^0.31.10
       tsdown: ^0.23.0
@@ -1097,40 +1097,40 @@ packages:
         optional: true
 
   '@manablox/core@0.50.0':
-    resolution: {integrity: sha512-l32fytdXcxzlZE/qx2jWY2GBmo6g5x4WTCZxeGlhNuh9UdN3Ix4hjCxVXM1xygTbO9AU0023J6g/l4qWtxHjVw==}
+    resolution: {integrity: sha512-3RndTfjm7tVS+QCLWtKdkwrtgmb/Dlkq2f6T+dTKcTB5WsOJpFOUPCmT8zW/GeJq1S2eJekkqWYquuRdY26HuA==}
     engines: {node: '>=24'}
 
   '@manablox/db@0.50.0':
-    resolution: {integrity: sha512-kJ6NxucXdugJXPjfyTHMf+2D9UCMCVIUBPUYpHFTWaOqklP2rySDh0vmL+gmDwnNhlNIvKJ+1K0QulBWe3X7pg==}
+    resolution: {integrity: sha512-czQs3c2BRH/xsTV2Nu5fqOzdOVhpRXo5EWT1wsa5V725MpKSyu1u3KHvbtxXj32OoGqj0040yB25dgtj1UMWOA==}
     engines: {node: '>=24'}
 
   '@manablox/docs-theme@0.50.0':
-    resolution: {integrity: sha512-kvtDDUtJq7yOyG2OV+EaV089PvGVB9VUQiGwcZeqdSDR0tTaPeIy0lSVSOaano72Be7KT0rMuIT2zWY25ltXtA==}
+    resolution: {integrity: sha512-Bu/JKweXQn26itcElkpweKFwmnelNDc/i9V25hJT0GeVXSs5BgKaoykJ9iJZl5xf2Mr5rp2PC32weiCjsTvmhA==}
     peerDependencies:
       astro: ^7.3.1
 
   '@manablox/fields@0.50.0':
-    resolution: {integrity: sha512-Jye2D4BzmfGI4F6ZTLsAAdaHaXRzLy53WqNZ3C6HSL9iDQlpQ8hGeyYVU0ojkAe/Pjj6Vzha77DWCAuPKSRdwQ==}
+    resolution: {integrity: sha512-NWxeGc5aVUh6L9xsLWx7M+inUvkYR4lXaddMqt9fnaydNF+JyiCto9HMQEISVlG6i/QegTzC4MRm+AXPWgVlWg==}
     engines: {node: '>=24'}
 
   '@manablox/jobs@0.50.0':
-    resolution: {integrity: sha512-B1k2FGH7Gki3kfK/WrbnesbNuLVIqp/FsCmmol3jv9eAkifr9azsL2gVIddC7z0yzs5nXaL+TUJlcYQPueNACA==}
+    resolution: {integrity: sha512-UAl3vtfxZbAPyBhQ/5/7D2+C4/nhnUyn4In5G3xURSFRgKNwUXXFbdAFmNvekythJgengF7MnI7jnEfap5jGHA==}
     engines: {node: '>=24'}
 
   '@manablox/license@0.50.0':
-    resolution: {integrity: sha512-aG9e5ZJvidzxY8V4ruKxIPdZ9nDDMpW8fFt7qmZfqYd8NUgX78dkTA/yfBqmSSHiOw5kqmt73QLr6iLv1cpqhg==}
+    resolution: {integrity: sha512-AooGnYtbNpKTaHC6ajtiiNOs/DeKnGH739ytCcZMz4KVI3Odrvj7a9BVOIHtOU32KRVfFqmCWmfxdHPVqyMbBA==}
     engines: {node: '>=24'}
 
   '@manablox/live-preview@0.50.0':
-    resolution: {integrity: sha512-Si3g/cJRIyYBn8LEuTWqJNaqdXEoQiObBLkKOz4C34RcB29gQg6c28jXjKT2MUV768Kp1sKSgFcpIGxCUCeXOw==}
+    resolution: {integrity: sha512-/+IMmPqd5XDfBXEv9UPz3CcFdTrKXYv/J1jMsyu3IR29Smr0atwI23HXA/vfcKbUSVRNdFm3tKa9ptReW01sJw==}
     engines: {node: '>=24'}
 
   '@manablox/media@0.50.0':
-    resolution: {integrity: sha512-cLP6JDGvmbvYtdE3xiChqOKt8twSX8KNMtL85tkN4tpCXK2VeRIzE3Y1HRBquRYBP4xaZYIH5g4J6q1bfHohdw==}
+    resolution: {integrity: sha512-MEc8DS7HJDZKoco0Dsr616E5No9HesJ1D0wGosQIpeuS0LoehuV5rR3WcnTDal1HnVb1gpNsLqOD/YKRDAv6xg==}
     engines: {node: '>=24'}
 
   '@manablox/plugin-ai@0.50.0':
-    resolution: {integrity: sha512-qHOGU83YKsqdwWyN43wKn5QViEPJig3AUmRpiiTP8S+qn/KcipYEPLfUK6pY9w6NLUKd628/Mx98fQbJF7qUAw==}
+    resolution: {integrity: sha512-5ix/N+hu0krCjAik0disEUsOLXfqHy9ZR0g9ta2iq6Z9uKUzI/T44NsFLZsRLnPAnR18BrP7dmXUj0JdtuN6Kw==}
     engines: {node: '>=24'}
     peerDependencies:
       '@manablox/plugin-workflows': ^0.50.0
@@ -1139,11 +1139,11 @@ packages:
         optional: true
 
   '@manablox/plugin-license@0.50.0':
-    resolution: {integrity: sha512-uMOHGzUrXkFRIbCulTu/bbgNRJxJZ43+enKDh3eagY0y0X06jCyaPPA9dYi2bNqsH50y8lK6idZVlvXJCAE7NQ==}
+    resolution: {integrity: sha512-mKOSDLUdTB4/8gvwUHwhatLJnr07blKGpotvZmmSoH1hl2jjuks2cJcvV7EEuXFMPetsiOEtWJnYjJtZEo29lQ==}
     engines: {node: '>=24'}
 
   '@manablox/plugin-webhooks@0.50.0':
-    resolution: {integrity: sha512-vTNdXcjrH6mIKVZ7vSCq65Y/LCbwU6ape/HZwje2PRZl+msrl0iOXI1gsyqT3T0i48jWJedu6xbHzo6QjsdreQ==}
+    resolution: {integrity: sha512-1x0btdxJVw8c2AatkTd1HaxN+bF5KicNKy1HoG+pAOyCSxvaOeDxCHQXEVfRPZ1BO64Te0eN719ek6MgUxnk0Q==}
     engines: {node: '>=24'}
     peerDependencies:
       '@manablox/plugin-workflows': 0.50.0
@@ -1152,36 +1152,36 @@ packages:
         optional: true
 
   '@manablox/plugin-website@0.50.0':
-    resolution: {integrity: sha512-2tnXGtn8XyRYqk+8rL9G+AMm6m3L8b+mJG7mhyCtzmKn4CoefvvZWPBGvWkUfwB2FnrYM3fBPuJhKvo5uUVpTg==}
+    resolution: {integrity: sha512-kaOBQ6A/BCgmdju6JY/x3wMKF7Dglr9ddmsyytsDWKfsCuXy5dld21IYUzAafwD7bgFRx/gH/I9Fo0OM4nD+DQ==}
     engines: {node: '>=24'}
 
   '@manablox/plugin-workflows@0.50.0':
-    resolution: {integrity: sha512-uiA7Is1kKcuKz97tIQ+m2J9LKzzX4H43qmcN+QcLFAncFK/KWbmI2khV6wx3/2ojgEyTZGFXKw2CYtpGgdoZCA==}
+    resolution: {integrity: sha512-20a/H0pxkSlMVciGKBVUGT3wuMpqQeTpK6h6vJ2x3Ma68t6ri813vCRGAYvHjkfEafVpf81Nn/kLmxk+SIt51A==}
     engines: {node: '>=24'}
 
   '@manablox/public-sdk@0.50.0':
-    resolution: {integrity: sha512-71C87eT3i18m88UI49gVe46r1KgLW6R5rEaPo+2rWvuCh9fj5GCXMNVrnZvn2UqOvCEFvmHiIwL723tLQLJCBQ==}
+    resolution: {integrity: sha512-nLjmbw/z1sYclo16qnXOka8Q3Du+9BAJRzpm1JPi/rPOyKybJMEjyAdC7kvfSpfKLQQgviDZH7oP9C9aodK7mA==}
     engines: {node: '>=24'}
     hasBin: true
 
   '@manablox/server@0.50.0':
-    resolution: {integrity: sha512-8lqPZpGfQW0f+/RM8w1a4oEoT53Y2Ra3JoiJmEUvyAgzdox3ZuOnA5tWJ0uEjKq8Z0FH6lvqjOPkcn+XvPkAtQ==}
+    resolution: {integrity: sha512-/DWmyO5/9wUOMNfNkH58wfbENm+TJkf5M78vd2mRySVp5K7yK580YyTICQCEIUsGgzTShUkzFl6YmGobFmAwaw==}
     engines: {node: '>=24'}
 
   '@manablox/services@0.50.0':
-    resolution: {integrity: sha512-ra+E/cpTvl3oLoCGRMnEGgzbBiBmC0eRBOVCor3qwdXdkDt7LkuhRRXNFSZY1f6b4Do9DOLq/SumX7xVSN2vPQ==}
+    resolution: {integrity: sha512-CsLVx6doEh43ft/28uE6BhtyBU3PwcBlSvTI/+ICOwIRIKKerWVvbaMOCi2dByaxFolIlQba2vDU5MHNvHF8zA==}
     engines: {node: '>=24'}
 
   '@manablox/site-renderer@0.50.0':
-    resolution: {integrity: sha512-tRIe+0dpE428oMoRm0bcuKzTU1rrxFWp09rSYJpqcRhn4bIHIrcmxwcYsQ/FFOwRpdImt+e9vWs6ndiG++JxVw==}
+    resolution: {integrity: sha512-moSISbXcOGRHjYc3ngb3dBKSJU1Gm9ces49U1u3LgA8kLa0E8YDK5egy4SBRrYgYP7NrxiFuobQyiFjm2pzsTw==}
     engines: {node: '>=24'}
 
   '@manablox/site@0.50.0':
-    resolution: {integrity: sha512-VRd63SkaHkGVTZkp4mfGiDG3bifg2I95hEfUmB6yfVn5S+JuERpCOa1J/LphQ8ePYmyGRru4SdHGHZt3fPNMog==}
+    resolution: {integrity: sha512-JGZxwR8I72kNMeLhySy5Pepwnoi84mWZP1CTNwnmebp9LKL899QfxetAmNbWH5InOTuukp5gTgJ9FgW3EzvIIQ==}
     engines: {node: '>=24'}
 
   '@manablox/storage@0.50.0':
-    resolution: {integrity: sha512-uA0ISlqO1XspZkxtPjeRphFGoKpsrWeeJaPJV2I4vXGazscZZtkNCaGeka4nJAUmDM2NDpZOWfaVczOILJbOWw==}
+    resolution: {integrity: sha512-scoFW1ZymLN0VQikQtDfe6a1CmGx5HedSNFr8aAn2EZNZIQc34DRU02cq4cy6pi7YcKFobGL0slnM1KSy2lMGw==}
     engines: {node: '>=24'}
 
   '@mdx-js/mdx@3.1.1':
