@@ -66,8 +66,8 @@ The Manablox Commercial Plugin License, source-available, because they are paid 
 the AI plugin `@manablox/plugin-ai`, and the website plugin `@manablox/plugin-website` with
 its libraries `@manablox/site` and `@manablox/site-renderer` and the site process. You may
 read and change their code for your own instances and use them in development without
-limit, each instance with a license key; production use needs a subscription for that
-instance. You may not redistribute changed copies, resell them, or remove or get around the
+limit and without a license key; production use needs a subscription, one seat per
+production instance. You may not redistribute changed copies, resell them, or remove or get around the
 license check. See [Premium plugin licenses](../deployment/licenses.md).
 
 Every package carries its own `LICENSE` file and `license` field; the premium ones also

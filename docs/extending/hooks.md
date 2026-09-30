@@ -97,10 +97,15 @@ as `<id>:<event>`: the workflows plugin's are in [Workflows](../admin/workflows.
 webhooks plugin's in [Webhooks](../admin/webhooks.md#hooks), the website plugin's in
 [Forms and links](../site/forms-links.md).
 
-`asset:afterDelete`, `mail:afterSend` and `request:served` only observe: a handler that
-throws is logged and the operation goes on. `asset:afterDelete` runs once an asset and its
-files are gone; `size` includes the variants, except for assets removed with their last
-space, where it is the original only. `mail:afterSend` runs per sent mail, for notifications
+`asset:afterDelete`, `mail:afterSend`, `request:served`, the `space:after*` and the
+`apiHost:after*` hooks only observe: a handler that throws is logged and the operation goes
+on. `space:afterCreate` (a created or imported space), `space:afterUpdate` (with
+`previousUrl`) and `space:afterDelete` run once the write committed, with the space's
+`url`; `apiHost:afterCreate` and `apiHost:afterDelete` likewise, per API host added to
+or removed from a space, with its `hostname`.
+`asset:afterDelete` runs once an asset and its files are gone; `size` includes the
+variants, except for assets removed with their last space, where it is the original only.
+`mail:afterSend` runs per sent mail, for notifications
 and the mail actions of workflows; `kind` names the sender (`notification`, or what a
 plugin that sends mail passes, e.g. `workflows`) and `transport` is `account` for mail sent
 through an editor's own account. `request:served` (`RequestServed`: `surface`, `spaceId`, `status`,
@@ -187,6 +192,16 @@ handler registered nothing is measured.
 | --- | --- | --- | --- |
 | `space:beforeCreate` | `SpaceCreateInput` | `HookContextBase` | no |
 | `space:beforeLocalesChange` | `{ spaceId: string; locales: string[]; previous: string[] }` | `HookContextBase` | no |
+| `space:afterCreate` | `{ spaceId: string; url: string }` | `HookContextBase` | no |
+| `space:afterUpdate` | `{ spaceId: string; url: string; previousUrl: string }` | `HookContextBase` | no |
+| `space:afterDelete` | `{ spaceId: string; url: string }` | `HookContextBase` | no |
+
+### API hosts
+
+| Hook | Payload | Context | Transforms |
+| --- | --- | --- | --- |
+| `apiHost:afterCreate` | `{ id: string; spaceId: string; hostname: string }` | `HookContextBase` | no |
+| `apiHost:afterDelete` | `{ id: string; spaceId: string; hostname: string }` | `HookContextBase` | no |
 
 ### Menus
 

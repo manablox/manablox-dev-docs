@@ -1070,7 +1070,7 @@ packages:
     engines: {node: '>=24'}
 
   '@manablox/cli@0.50.0':
-    resolution: {integrity: sha512-kxiwPy9aGhhq7wnQeDipdCfbMht8DI1OEwO8oMrJsEB/PsZxBrPXW/ee5ORgj2tzPYiQiycRLOy3xDHJUKB6Uw==}
+    resolution: {integrity: sha512-FteZgXd11+bqLi1o2XPC+FAZoGwLnbjM7c7QeQjmCW4jHWhy/JVcMPztSVxoS1wsmvxf1Ay3IZw9YGWgnRLgMA==}
     engines: {node: '>=24'}
     hasBin: true
     peerDependencies:
@@ -1097,7 +1097,7 @@ packages:
         optional: true
 
   '@manablox/core@0.50.0':
-    resolution: {integrity: sha512-So5FbL+3d26NmSLCPkc56NNuNhX5Gf+NjJipE03LQ9NPnke5h+/kmGdvKn3/3oYKIUahfclmWqcpIJu58xqF/w==}
+    resolution: {integrity: sha512-l32fytdXcxzlZE/qx2jWY2GBmo6g5x4WTCZxeGlhNuh9UdN3Ix4hjCxVXM1xygTbO9AU0023J6g/l4qWtxHjVw==}
     engines: {node: '>=24'}
 
   '@manablox/db@0.50.0':
@@ -1118,7 +1118,7 @@ packages:
     engines: {node: '>=24'}
 
   '@manablox/license@0.50.0':
-    resolution: {integrity: sha512-W34pTIn23DwVRW+cQMNPYqwFR6QqCTyJPYNpxBdxqX+dtT3z/ynreoysBhcV1TheIUaG0BgMhWSgVtwNGPo9rQ==}
+    resolution: {integrity: sha512-aG9e5ZJvidzxY8V4ruKxIPdZ9nDDMpW8fFt7qmZfqYd8NUgX78dkTA/yfBqmSSHiOw5kqmt73QLr6iLv1cpqhg==}
     engines: {node: '>=24'}
 
   '@manablox/live-preview@0.50.0':
@@ -1130,7 +1130,7 @@ packages:
     engines: {node: '>=24'}
 
   '@manablox/plugin-ai@0.50.0':
-    resolution: {integrity: sha512-fLURqgb0EYH8n6q9UO8Tr7mOkISKoGj+dDR2uvlFKkdZC7ES81OfuYoNjJOQtTkH3lDYZ9KiX4yx4Vj4JQJRAg==}
+    resolution: {integrity: sha512-qHOGU83YKsqdwWyN43wKn5QViEPJig3AUmRpiiTP8S+qn/KcipYEPLfUK6pY9w6NLUKd628/Mx98fQbJF7qUAw==}
     engines: {node: '>=24'}
     peerDependencies:
       '@manablox/plugin-workflows': ^0.50.0
@@ -1139,7 +1139,7 @@ packages:
         optional: true
 
   '@manablox/plugin-license@0.50.0':
-    resolution: {integrity: sha512-QgaHleDDjuV+26RJg6mWEGzDl4eMcXznoqsvagAEmyfZh5G5AOxlKIwYmNMdTi6Hz/tT0CfATklSdm5IU0Ex6w==}
+    resolution: {integrity: sha512-uMOHGzUrXkFRIbCulTu/bbgNRJxJZ43+enKDh3eagY0y0X06jCyaPPA9dYi2bNqsH50y8lK6idZVlvXJCAE7NQ==}
     engines: {node: '>=24'}
 
   '@manablox/plugin-webhooks@0.50.0':
@@ -1152,11 +1152,11 @@ packages:
         optional: true
 
   '@manablox/plugin-website@0.50.0':
-    resolution: {integrity: sha512-kZFP0kBcy7DMSDXW44j1nvg1HBOlrO9dq/wU5Yo8chUotLeKtzM1YUIVzvLF+tEFtowqqYn8eYr2TmlCXzfjUA==}
+    resolution: {integrity: sha512-2tnXGtn8XyRYqk+8rL9G+AMm6m3L8b+mJG7mhyCtzmKn4CoefvvZWPBGvWkUfwB2FnrYM3fBPuJhKvo5uUVpTg==}
     engines: {node: '>=24'}
 
   '@manablox/plugin-workflows@0.50.0':
-    resolution: {integrity: sha512-lLF00witQ+9ren37hbDYAwQ4D1SpgQ5BO9JHxuwWrNcYTsWzAyHOiKYR7AcODSdL0Ve12UMuyG2lobV6uHFZ3g==}
+    resolution: {integrity: sha512-uiA7Is1kKcuKz97tIQ+m2J9LKzzX4H43qmcN+QcLFAncFK/KWbmI2khV6wx3/2ojgEyTZGFXKw2CYtpGgdoZCA==}
     engines: {node: '>=24'}
 
   '@manablox/public-sdk@0.50.0':
@@ -1169,15 +1169,15 @@ packages:
     engines: {node: '>=24'}
 
   '@manablox/services@0.50.0':
-    resolution: {integrity: sha512-JNFA+TO9aSexFhGMiqpCC30o9iJrzsyk1ifFfCmqTG0mrZneKMmQ5jv97xc3+4elr8jSusCm7L1BF7xb7rtfSA==}
+    resolution: {integrity: sha512-ra+E/cpTvl3oLoCGRMnEGgzbBiBmC0eRBOVCor3qwdXdkDt7LkuhRRXNFSZY1f6b4Do9DOLq/SumX7xVSN2vPQ==}
     engines: {node: '>=24'}
 
   '@manablox/site-renderer@0.50.0':
-    resolution: {integrity: sha512-gN2/VKLfNtBKYDTGM6UoLH9SC6nOSgFLm3kZ+yaEETFZ7+v8UIhmOX9DIL/k98aNvFDW7L+GIfZ8sL9nDLROPQ==}
+    resolution: {integrity: sha512-tRIe+0dpE428oMoRm0bcuKzTU1rrxFWp09rSYJpqcRhn4bIHIrcmxwcYsQ/FFOwRpdImt+e9vWs6ndiG++JxVw==}
     engines: {node: '>=24'}
 
   '@manablox/site@0.50.0':
-    resolution: {integrity: sha512-rr4exh/RKypp539EsL1QNDrwqWMSS2yYIhyIUKIqLx4vJp/IWUVp9JwWp2hb20Yd7K+hFlP0Co6CKJp3iakY+g==}
+    resolution: {integrity: sha512-VRd63SkaHkGVTZkp4mfGiDG3bifg2I95hEfUmB6yfVn5S+JuERpCOa1J/LphQ8ePYmyGRru4SdHGHZt3fPNMog==}
     engines: {node: '>=24'}
 
   '@manablox/storage@0.50.0':
@@ -5452,6 +5452,7 @@ snapshots:
       '@manablox/auth': 0.50.0(@libsql/client@0.18.0)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(zod@4.6.5)
       '@manablox/core': 0.50.0
       '@manablox/db': 0.50.0(kysely@0.29.6)
+      '@manablox/license': 0.50.0
       '@manablox/public-sdk': 0.50.0
       '@manablox/server': 0.50.0(@libsql/client@0.18.0)(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)
       '@manablox/services': 0.50.0(kysely@0.29.6)

@@ -183,7 +183,7 @@ tests itself against the published packages. The CMS publishes the helpers it us
 | `@manablox/core/testing` | `fixedId(n)` and `ids`, stable UUIDs for fixtures |
 | `@manablox/db/testing` | `createTestDatabase(prefix, { plugins })`: a migrated database per suite, cloned from a template of the core and your plugins' migrations, on Postgres or, with `TEST_DATABASE_DIALECT=sqlite`, a SQLite file |
 | `@manablox/services/testing` | `createServiceContext(name, options)`: the whole service layer over such a database, with one space, the hooks wired as in the host and a `queryCount()` |
-| `@manablox/plugin-license/testing` | `generateTestSigningKeys(kid?)`, `testLicensePlugin({ signing, grant?, ... })`, `signingToEnv(keys)` and `signingFromEnv(env)`, for a premium plugin's tests |
+| `@manablox/plugin-license/testing` | `generateTestSigningKeys(kid?)`, `testLicensePlugin({ signing, grant?, kind?, ... })` (`kind` defaults to `production`), `signingToEnv(keys)` and `signingFromEnv(env)`, for a premium plugin's tests |
 | `@manablox/admin-sdk/testing` | `setupAdminTest({ api?, me?, space? })`, `mockAdminApi(procedures?)`, `resetAdminApi()`, `createTestSession(...)`, `testMe(...)`, `useTestSpace(space?, { contentTypes?, fieldTypes? })`, `exposePluginApi`, `resetPluginSlots` and the types `Me`, `Space`, `ContentTypeSummary`, `FieldTypeMeta`, `MockProcedures` |
 
 The two vitest configs of a plugin repository:
@@ -231,7 +231,13 @@ const signing = generateTestSigningKeys();
 const plugins = [testLicensePlugin({ signing }), myPremiumPlugin()];
 // grant: false boots with no lease, so the premium features lock;
 // grant: { products: ['ai'], kind: 'development', days: 1 } a narrower one.
+// grant: false, kind: 'auto' tests a development instance: unlocked without a key.
 ```
+
+The instance's own `kind` is `production` by default, so a test that boots on `localhost`
+still locks without a grant: the grant alone decides. Pass `kind: 'auto'` (or
+`'development'`) to classify the instance by its hostnames as a real one does, and test the
+`development` state.
 
 When several processes must trust the same pair (an API and a site process started by an
 end-to-end run), put it in the environment with `signingToEnv(keys)`: it sets

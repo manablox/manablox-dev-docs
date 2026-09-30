@@ -218,7 +218,8 @@ See [The public API](../delivery/public-api.md) and [REST](../delivery/rest.md).
 A plugin's router answers under `plugins.<id>` of the management API, with the same
 authentication, environments and error body. While the plugin is off for the instance or the
 space it answers 404 `route.notFound` when hidden and 403 `control.feature` when locked (a
-premium plugin without a license, say). The plugins of the default instance:
+premium plugin on a production instance without an active subscription, say; a development
+instance runs them without a key). The plugins of the default instance:
 
 ### `license`
 

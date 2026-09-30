@@ -727,7 +727,7 @@ plugins of the default instance:
 - `plugins.ai.workflow.pictureTimeout`: The picture was not ready after {seconds} seconds.
 - `plugins.ai.workflow.typeGone`: The type of document to write no longer exists.
 - `plugins.ai.workflow.notJson`: The model did not answer with JSON: {excerpt}
-- `plugins.ai.license.host`: AI runs on a development license here, which serves only local and private hosts. A public host needs a production license.
+- `plugins.ai.license.host`: AI runs on a development instance or license here, which serves only local and private hosts. A public host needs a production license.
 
 ### `plugins.website`
 

@@ -54,7 +54,8 @@ await runWebsite(websiteProcessConfig({ plugins: [manabloxFields(), licensePlugi
 ```
 
 `licensePlugin()` belongs in every process that loads the website plugin, a premium plugin:
-without a license designing locks, while the sites keep rendering.
+on a production instance without a license designing locks, while the sites keep rendering.
+A development instance needs no key, but its site process refuses public hosts.
 
 | Option | Meaning |
 | --- | --- |

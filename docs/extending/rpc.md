@@ -48,7 +48,7 @@ definePlugin({ name: 'notes', services: notesServices, rpc: notesRpc });
 while the plugin is off for the instance, or for the space the input names, every procedure
 answers `NOT_FOUND` (`route.notFound`) as if it did not exist when the flag is hidden, and
 `FORBIDDEN` (`control.feature`, with the lock's message and link) when it is locked, such as a
-premium plugin without a license.
+premium plugin without a license on a production instance.
 
 `scoped(permission, { locked: true })` also answers while the plugin is locked (switched off
 but shown with a lock) for the instance or the space; hidden still answers `NOT_FOUND`. Use it
@@ -60,7 +60,7 @@ before the handler runs, for a procedure that needs two.
 
 `pluginGuard(check)` turns a check of the context into a step of the chain, after the kit's
 own: `scoped('notes:write').use(pluginGuard(checkQuota))`. `check` throws to refuse the call;
-the AI plugin refuses a host its development license does not serve this way.
+the AI plugin refuses a public host this way while only development unlocks it.
 
 Every procedure has to come from the kit. The server refuses to start
 (`plugin.rpc.unguarded`) when a router holds a procedure built another way, since it would
