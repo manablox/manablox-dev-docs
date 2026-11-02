@@ -4,10 +4,10 @@ description: 'Move an instance to a newer Manablox release: back up, update the 
 ---
 
 Every published `@manablox/*` package shares one version and is released together: the
-CMS packages from the CMS repository and the premium plugins from theirs, at the same
+CMS packages from the CMS repository and the website and AI plugins from theirs, at the same
 version. What changed in each release is in the
 [CHANGELOG](https://github.com/manablox/manablox-cms/blob/main/CHANGELOG.md) of the CMS
-repository, and the premium plugins' in their own; read it before an update, since a `0.x` release may ask
+repository, and those plugins' in their own; read it before an update, since a `0.x` release may ask
 for a step of its own.
 
 ## Steps

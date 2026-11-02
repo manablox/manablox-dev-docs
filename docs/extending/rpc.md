@@ -47,8 +47,7 @@ definePlugin({ name: 'notes', services: notesServices, rpc: notesRpc });
 `scoped` accepts core and [plugin permissions](./permissions.md). The flag check comes first:
 while the plugin is off for the instance, or for the space the input names, every procedure
 answers `NOT_FOUND` (`route.notFound`) as if it did not exist when the flag is hidden, and
-`FORBIDDEN` (`control.feature`, with the lock's message and link) when it is locked, such as a
-premium plugin without a license on a production instance.
+`FORBIDDEN` (`control.feature`, with the lock's message and link) when it is locked.
 
 `scoped(permission, { locked: true })` also answers while the plugin is locked (switched off
 but shown with a lock) for the instance or the space; hidden still answers `NOT_FOUND`. Use it

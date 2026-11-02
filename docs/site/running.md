@@ -47,15 +47,10 @@ image runs:
 
 ```ts
 import { manabloxFields } from '@manablox/fields';
-import { licensePlugin } from '@manablox/plugin-license';
 import { runWebsite, websiteProcessConfig } from '@manablox/plugin-website/site';
 
-await runWebsite(websiteProcessConfig({ plugins: [manabloxFields(), licensePlugin()] }));
+await runWebsite(websiteProcessConfig({ plugins: [manabloxFields()] }));
 ```
-
-`licensePlugin()` belongs in every process that loads the website plugin, a premium plugin:
-on a production instance without a license designing locks, while the sites keep rendering.
-A development instance needs no key, but its site process refuses public hosts.
 
 | Option | Meaning |
 | --- | --- |
@@ -135,8 +130,8 @@ media cache volume, and Valkey for the cache. On Postgres it connects as the rea
 The service sets `SITE_EDITOR_ORIGIN` to the admin's `PUBLIC_URL` and `SITE_FORMS_API_URL` to
 `http://api:3000`, the internal network.
 
-The website plugin's repository publishes a ready image, `ghcr.io/manablox/site`, that runs
-`websiteProcessConfig()` with the fields and license plugins, configured by the variables
+The CMS repository publishes a ready image, `ghcr.io/manablox/site`, that runs
+`websiteProcessConfig()` with the fields plugin, configured by the variables
 above. A project with plugins or content types of its own builds its image from the project
 instead, so the site process loads the same config as the management instance.
 

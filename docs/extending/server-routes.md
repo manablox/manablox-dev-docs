@@ -134,8 +134,7 @@ control API can turn off for the instance, a group of spaces or one space. See
 [the control API](../reference/control-api.md).
 
 An off switch is either hidden or shown with a lock (`presentation: 'locked'`, the default
-for off, and what a premium plugin without a license gets on a production instance). Routes answer the way the
-plugin's [procedures](./rpc.md) do:
+for off). Routes answer the way the plugin's [procedures](./rpc.md) do:
 
 - Off for the instance: every route answers 404 `route.notFound` as if it did not exist while hidden, and 403 `control.feature` with the lock's message and link while locked. The plugin's middleware is skipped either way.
 - Off in a space: a request that names that space (header or query on management, always on public and plugin modes) answers the same 404 or 403. A route that reads the space from a path param learns it through `requireSpace`, which answers the same.

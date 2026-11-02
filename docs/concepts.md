@@ -22,8 +22,9 @@ A **space** is one site or channel: a website, an app, a newsletter. It has its 
 content tree, its own locales, its own assets, its own menus and its own members. Most
 things in the admin are "in a space".
 
-A space has a **technical name** (`machineName`), fixed at creation, and a **frontend
-URL**: where the website that renders it lives, used by the visual editor.
+A space has a **technical name** (`machineName`), fixed at creation, and optionally a
+**frontend URL**: where the website that renders it lives, used by the visual editor. A space
+that only holds data, for workflows and webhooks say, [goes without one](./admin/spaces.md#spaces-without-a-frontend).
 
 ## Content type
 

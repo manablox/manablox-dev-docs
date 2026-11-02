@@ -34,7 +34,7 @@ New to Manablox? Read these in order:
 | Add a field type or a plugin | [Extending](./extending/custom-field-types.md) |
 | Put it in production | [Deployment](./deployment/index.md), [Operations](./deployment/operations.md) |
 | Understand the internals | [Architecture](./reference/architecture.md), [Data model](./reference/data-model.md) |
-| Know what you may do with it | [Licensing](./reference/licensing.md) |
+| Know what you may do with it | The [MIT license](https://github.com/manablox/manablox-cms/blob/main/LICENSE) |
 
 ## For contributors
 
@@ -42,7 +42,7 @@ New to Manablox? Read these in order:
 work on them. Then [Architecture](./reference/architecture.md),
 [Data model](./reference/data-model.md), [Testing](./reference/testing.md), the generated
 references ([hooks](./extending/hooks.md), [error keys](./reference/errors.md),
-[HTTP API](./reference/http-api.md)) and [Licensing](./reference/licensing.md). The CMS
+[HTTP API](./reference/http-api.md)). The CMS
 takes contributions under its
 [`CONTRIBUTING.md`](https://github.com/manablox/manablox-cms/blob/main/CONTRIBUTING.md) and
 [`CLA.md`](https://github.com/manablox/manablox-cms/blob/main/CLA.md).

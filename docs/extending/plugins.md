@@ -469,19 +469,18 @@ tables and migrations, permissions, controls, audit and error keys, hooks of its
 services, a router, data providers with a host source and nominations, a resource kind,
 block extensions, a server mode, form routes, an `llms` section, a space create step, plugin
 settings, a runtime admin bundle with a live preview channel, and a CLI contribution. It is
-a premium plugin, published under a commercial license from a repository of its own; see
-[Designed sites](../site/index.md) for what it does. Core packages never import it or its
+published from a repository of its own; see [Designed sites](../site/index.md) for what it does. Core packages never import it or its
 libraries (`@manablox/site`, `@manablox/site-renderer`).
 
 ## The AI plugin
 
-`@manablox/plugin-ai` (id `ai`) is the second premium plugin: tables and a baseline
-migration, permissions, controls, audit and error keys, services other plugins use
+`@manablox/plugin-ai` (id `ai`) is the second plugin with a repository of its own: tables and
+a baseline migration, permissions, controls, audit and error keys, services other plugins use
 (`plugins.get('ai')`, which the website plugin's AI theme and block design call), a router,
 a queued job, a data provider for transfers, snapshots, retention and environment copies,
 a workflow action, a space create step, an `llms` section, a runtime admin bundle with
 slot entries and an exposed api, and a CLI contribution. See [AI](../admin/ai.md) for what
-it does. Like the website plugin it is a premium plugin with a repository of its own.
+it does.
 
 ## The workflows and webhooks plugins
 

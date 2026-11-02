@@ -148,20 +148,6 @@ Provider keys are not environment variables: they are set per space under Settin
 How often a rejected design is sent back to the model is the plugin's `designRetries`
 option, 2 by default.
 
-## Premium plugin licenses
-
-Read by `licensePlugin()` (`@manablox/plugin-license`), which the website and AI plugins
-require. The management API reads all four; the public API and the site process only
-`MANABLOX_LICENSE_DEV_HOSTS`. Without the plugin they do nothing. See
-[Premium plugin licenses](../deployment/licenses.md).
-
-| Variable | Default | Purpose |
-| --- | --- | --- |
-| `MANABLOX_LICENSE_KEYS` | | License keys, comma separated. Secrets: keep them here, never in the config file. Optional on a development instance, where the premium plugins run without a key |
-| `MANABLOX_LICENSE_SERVER` | `https://licenses.manablox.io/api` | The license server's API. The management worker needs outbound HTTPS to it |
-| `MANABLOX_LICENSE_KIND` | `auto` | `auto`, `production` or `development`: how keys activate. `development` also makes the instance a development one whatever `NODE_ENV` says (its hostnames must still be private); `production` never counts as development |
-| `MANABLOX_LICENSE_DEV_HOSTS` | | Preview hosts that count as private for a development instance, comma separated, `host` or `*.suffix` |
-
 ## The admin
 
 The admin needs no variables of its own: the management process serves the prebuilt

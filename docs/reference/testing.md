@@ -71,16 +71,17 @@ principal or never read another space.
 repositories and the real `SpaceService`, so the rules (last owner, locale invariant,
 permission per procedure) are exercised without a database.
 
-**The end-to-end tests** are five Playwright projects in `apps/admin/e2e`. `setup` runs the
-install wizard once; `chromium` (the smoke test) and `controls` depend on it. `plugins` and
+**The end-to-end tests** are six Playwright projects in `apps/admin/e2e`. `setup` runs the
+install wizard once; `chromium` (the smoke test), `controls` and `site` depend on it. `plugins` and
 `core-only` run against instances of their own, each with the prebuilt admin: `plugins` with
 the two fixture plugins of `e2e/fixtures/runtime-plugins`, loaded at runtime
 (`E2E_PLUGINS_URL`, port 3504), `core-only` without any feature plugin (`@manablox/api`'s
 `serve:core-only`, `E2E_CORE_URL`, port 3505), where it checks that no workflow or webhook
 UI shows, no plugin bundle loads and the main pages and every settings tab log no error.
 The smoke test creates a space, a content type and a document, publishes it and reads it
-back from the delivery schema. The designed-site tests live with the website plugin, in its
-own repository.
+back from the delivery schema. The `site` project (`e2e/designed-site.spec.ts`) designs a site
+on the canvas of the site process (`E2E_SITE_URL`, port 3506), publishes it and reads it there
+on the space's domain, with its form, per-block styles, share links and in-place text edits.
 
 The `controls` project (`e2e/controls.spec.ts`) checks what the admin shows for values the
 [control API](./control-api.md) sets. It makes its own space through the control API and
@@ -103,8 +104,7 @@ a fixed default; the tests read it from the config's metadata and call `/control
 `control()` from `e2e/support.ts`. Servers you start yourself for `E2E_EXTERNAL=1` need the
 same two variables. Only the controls project needs them.
 
-Playwright boots the API (migrated with its plugins by `@manablox/api migrate`, started with
-a test license by `start:licensed`) and the admin on the host against a throwaway
+Playwright boots the API (migrated with its plugins by `@manablox/api migrate`) and the admin on the host against a throwaway
 `manablox_e2e` database (`E2E_DATABASE` names another); the plugins and core only instances
 (ports 3504 and 3505, `E2E_PLUGINS_URL` and `E2E_CORE_URL`) use the same name with `_plugins`
 and `_core` appended, `manablox_e2e_plugins` and `manablox_e2e_core` by default. `E2E_API_URL` and `E2E_ADMIN_URL` pick
@@ -174,8 +174,7 @@ A comment that explains a fixed bug becomes a test name, and the comment goes.
 
 ## Testing a plugin in its own repository
 
-A plugin that lives outside the CMS repository, the premium plugins or one of your own,
-tests itself against the published packages. The CMS publishes the helpers it uses itself:
+A plugin that lives outside the CMS repository tests itself against the published packages. The CMS publishes the helpers it uses itself:
 
 | Package | What it gives a test |
 | --- | --- |
@@ -183,7 +182,6 @@ tests itself against the published packages. The CMS publishes the helpers it us
 | `@manablox/core/testing` | `fixedId(n)` and `ids`, stable UUIDs for fixtures |
 | `@manablox/db/testing` | `createTestDatabase(prefix, { plugins })`: a migrated database per suite, cloned from a template of the core and your plugins' migrations, on Postgres or, with `TEST_DATABASE_DIALECT=sqlite`, a SQLite file |
 | `@manablox/services/testing` | `createServiceContext(name, options)`: the whole service layer over such a database, with one space, the hooks wired as in the host and a `queryCount()` |
-| `@manablox/plugin-license/testing` | `generateTestSigningKeys(kid?)`, `testLicensePlugin({ signing, grant?, kind?, ... })` (`kind` defaults to `production`), `signingToEnv(keys)` and `signingFromEnv(env)`, for a premium plugin's tests |
 | `@manablox/admin-sdk/testing` | `setupAdminTest({ api?, me?, space? })`, `mockAdminApi(procedures?)`, `resetAdminApi()`, `createTestSession(...)`, `testMe(...)`, `useTestSpace(space?, { contentTypes?, fieldTypes? })`, `exposePluginApi`, `resetPluginSlots` and the types `Me`, `Space`, `ContentTypeSummary`, `FieldTypeMeta`, `MockProcedures` |
 
 The two vitest configs of a plugin repository:
@@ -218,32 +216,6 @@ TypeScript 5.9 of its own:
 ```
 
 See [Type-checking the admin code](../extending/admin-plugins.md#type-checking-the-admin-code).
-
-**A premium plugin under test** needs a lease, and `testLicensePlugin` grants one that it
-signs itself: it trusts only the key pair you pass, calls no license server and stores the
-lease as an activated key of the instance before it reads the leases. No key pair ships
-with the package; each repository generates its own:
-
-```ts
-import { generateTestSigningKeys, testLicensePlugin } from '@manablox/plugin-license/testing';
-
-const signing = generateTestSigningKeys();
-const plugins = [testLicensePlugin({ signing }), myPremiumPlugin()];
-// grant: false boots with no lease, so the premium features lock;
-// grant: { products: ['ai'], kind: 'development', days: 1 } a narrower one.
-// grant: false, kind: 'auto' tests a development instance: unlocked without a key.
-```
-
-The instance's own `kind` is `production` by default, so a test that boots on `localhost`
-still locks without a grant: the grant alone decides. Pass `kind: 'auto'` (or
-`'development'`) to classify the instance by its hostnames as a real one does, and test the
-`development` state.
-
-When several processes must trust the same pair (an API and a site process started by an
-end-to-end run), put it in the environment with `signingToEnv(keys)`: it sets
-`MANABLOX_TEST_LICENSE_SIGNING`, and each process reads it back with
-`signingFromEnv(process.env)`. Generate a pair when the variable is unset, so a process
-started on its own still works.
 
 **An admin screen under test** starts every test with `setupAdminTest()`, which gives a fresh
 Pinia, an empty query cache and reset plugin slots. `mockAdminApi({ plugins: { ai: aiApi } })`

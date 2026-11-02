@@ -5,9 +5,8 @@ description: 'What the CI workflow builds and publishes, and how the npm package
 
 Every Manablox repository has its own `.github/workflows/ci.yml`, and those that publish
 packages or images a manually dispatched `release.yml`. This page describes the CMS
-repository's, which publishes the `@manablox/*` packages and the `cms-api` and `cms-admin`
-images; the premium plugin, license portal, website and documentation repositories follow
-the same pattern for their own packages and images. Their CI installs `@manablox/*` from
+repository's, which publishes the `@manablox/*` packages and the `cms-api`, `cms-admin` and
+`site` images; the website and documentation repositories follow the same pattern for their own images. Their CI installs `@manablox/*` from
 npmjs, so a change they need in a CMS package is released there first.
 
 ## Continuous integration
@@ -39,12 +38,12 @@ lockfile, the workspace files or the workflow rebuilds both, a change under `app
 regardless of the diff.
 
 - Pull requests build the images they touch without pushing them, so a broken Dockerfile fails before the merge.
-- Pushes to `main` push `ghcr.io/manablox/cms-api` and `cms-admin` as `latest`, `main` and `sha-<commit>`.
+- Pushes to `main` push `ghcr.io/manablox/cms-api`, `cms-admin` and `site` as `latest`, `main` and `sha-<commit>`.
 - Tags `v*` push the semver tags as well.
 
 ## Publishing the images
 
-`release.yml` builds `cms-api` and `cms-admin` at the version in `package.json` and pushes
+`release.yml` builds `cms-api`, `cms-admin` and `site` at the version in `package.json` and pushes
 them as `0.50.0`, `0.50` and, when the npm dist-tag is `latest`, `latest`, so a prerelease
 never becomes what `docker pull` gets. Its `images` input (on by default) turns this part
 off; a dry run builds the images and pushes nothing.
@@ -56,8 +55,7 @@ token, npm verifies it against the trusted publisher configured for each package
 credential is stored anywhere. `.github/workflows/release.yml` is that workflow; it is
 `workflow_dispatch` only, because a version number can never be reused and a release
 should be something someone asked for.
-It publishes every package of the CMS repository that is not private,
-`@manablox/license` and `@manablox/plugin-license` among them.
+It publishes every package of the CMS repository that is not private.
 
 Run it from the Actions tab: pick a dist-tag, leave **dry run** ticked to see what would
 go out, untick it to publish.
@@ -140,7 +138,7 @@ registry are skipped, so a re-run after a partial failure picks up where it stop
 Inside the CMS workspace every package exports its TypeScript source, so nothing
 has to be rebuilt between an edit and a test. A tarball is different: `pnpm build` runs
 each package's `tsdown` build (`@manablox/config-typescript/tsdown` holds the shared
-settings, for the plugin repositories too), and `publishConfig` in every `package.json` swaps `exports`, `main` and
+settings, for plugins outside this repository too), and `publishConfig` in every `package.json` swaps `exports`, `main` and
 `types` to `dist/` when pnpm packs. What reaches npm is minified ESM JavaScript (compressed,
 comments removed, local names shortened), readable `.d.ts` declarations and the few files a package needs at runtime (the database migrations, the
 CLI's `bin`, the Nuxt module's runtime directory, which Nuxt compiles itself). No `src/`,

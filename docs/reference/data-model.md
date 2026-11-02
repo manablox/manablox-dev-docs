@@ -21,7 +21,7 @@ A space is a site or channel: its own content tree, locales, assets and members.
 | Column | Why |
 | --- | --- |
 | `machine_name` | Unique. Keys the GraphQL schema and the public instance's pinning, so it never changes after creation. |
-| `url` | The frontend's origin, for the visual editor's iframe. |
+| `url` | The frontend's origin, for the visual editor's iframe. Null for a space without a frontend. |
 | `default_locale`, `locales` | The default must be one of the locales; content falls back to it. |
 | `settings` | Free-form JSONB. `homeContentId` names the document served at `/`; it is cleared when that document is deleted. `environments.<id>` holds a staging environment's own home page. `ai` holds the AI length presets. Plugin settings live in `space_plugin_settings`. |
 

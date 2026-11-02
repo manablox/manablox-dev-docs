@@ -28,13 +28,10 @@ version as the other `@manablox` packages, and load it in the management config'
 ```ts
 import { defineConfig, envList } from '@manablox/core';
 import { aiPlugin } from '@manablox/plugin-ai';
-import { licensePlugin } from '@manablox/plugin-license';
 
 export default defineConfig({
   // ...
   plugins: [
-    // AI is a premium plugin: it needs the license plugin, and in production a key (MANABLOX_LICENSE_KEYS).
-    licensePlugin(),
     // Private-network hosts a self-hosted AI provider may reach, as `host` or `host:port`.
     aiPlugin({ allowedHosts: envList('AI_ALLOWED_HOSTS', []) }),
   ],
@@ -44,13 +41,6 @@ export default defineConfig({
 The public delivery instance needs nothing. Then run `manablox migrate`: the plugin's
 baseline migration creates its tables, `ai_providers` and `ai_generations`, where they are
 missing. Removing the plugin leaves both tables in place.
-
-On a development instance the plugin runs without a key. On a production instance without a
-valid license lease its flag `features.plugins.ai` locks, with a buy link: its procedures
-answer 403 `control.feature`, the `ai.generate` step is refused and the AI buttons show the
-lock. Providers, keys and generations stay. While only development unlocks it (no key, or a
-development lease), its procedures refuse a public `Host` with 403 `plugins.ai.license.host`.
-See [Premium plugin licenses](../deployment/licenses.md#development-instances).
 
 | Option | Meaning |
 | --- | --- |

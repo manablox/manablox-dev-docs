@@ -131,8 +131,8 @@ message naming both. Prefix your options with the plugin id or a word of its dom
 | --- | --- |
 | `options` | The options |
 | `check(values)` | Optional, may be async. Throws a message naming the option when a value is bad; runs before anything is opened |
-| `apply(space, values)` | Returns (or resolves to) the plugin's data for the new space, sent to `spaces.create` as `plugins.<id>`, or `undefined` for none. `space` has `name`, `machineName`, `url` and `locales` |
-| `report(data, space)` | Optional. Lines for the summary once the space exists; `space` has `url` and `warnings` |
+| `apply(space, values)` | Returns (or resolves to) the plugin's data for the new space, sent to `spaces.create` as `plugins.<id>`, or `undefined` for none. `space` has `name`, `machineName`, `url` (`null` without a frontend) and `locales` |
+| `report(data, space)` | Optional. Lines for the summary once the space exists; `space` has `url` (`null` without a frontend) and `warnings` |
 
 The data goes through the plugin's own `spaceCreate` step on the server, in the same request,
 exactly as `--plugin-data <id>=<json>` would send it (see

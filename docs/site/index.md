@@ -10,9 +10,8 @@ the published designs and the published content as HTML. The choice is per space
 website settings (`mode`: `external` by default, or `designed`). Spaces that keep a code
 frontend are not touched by any of this.
 
-All of it is the website plugin, `@manablox/plugin-website`, a premium plugin under a
-commercial license (see [Licensing](../reference/licensing.md)). The management, public and
-site configs of an instance load it, and `manablox create`
+All of it is the website plugin, `@manablox/plugin-website`, MIT licensed like the rest of
+Manablox. The management, public and site configs of an instance load it, and `manablox create`
 adds it to a new project when the website is picked (`--website`, or `website` in
 `--features`); `manablox plugin install website` adds it later. Without it an instance has no
 designer and no site process. It owns the designer tables (`website_designs`,

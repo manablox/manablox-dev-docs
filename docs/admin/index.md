@@ -33,7 +33,7 @@ admin-only; these pages describe where each thing lives and the rules it enforce
 - **The keyboard button** in the top bar, left of the bell, lists what the keyboard does on the page you are looking at. `?` opens the same dialog; see [Keyboard shortcuts](./keyboard.md).
 - **The help menu** (`?`) in the top bar, when the instance is set up with them, links to documentation, support, billing (superadmins only) and upgrade pages.
 - **The bell** in the top bar carries your unread notifications; see [Notifications and approvals](./notifications.md).
-- **The site link** in the top bar opens the space's frontend URL in a new tab.
+- **The site link** in the top bar opens the space's frontend URL in a new tab; a [space without one](./spaces.md#spaces-without-a-frontend) has no link.
 - **Your name** at the bottom of the sidebar opens your profile: name, password, notification preferences.
 
 | Section | What it holds | Page |

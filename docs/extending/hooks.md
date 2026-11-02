@@ -192,9 +192,9 @@ handler registered nothing is measured.
 | --- | --- | --- | --- |
 | `space:beforeCreate` | `SpaceCreateInput` | `HookContextBase` | no |
 | `space:beforeLocalesChange` | `{ spaceId: string; locales: string[]; previous: string[] }` | `HookContextBase` | no |
-| `space:afterCreate` | `{ spaceId: string; url: string }` | `HookContextBase` | no |
-| `space:afterUpdate` | `{ spaceId: string; url: string; previousUrl: string }` | `HookContextBase` | no |
-| `space:afterDelete` | `{ spaceId: string; url: string }` | `HookContextBase` | no |
+| `space:afterCreate` | `{ spaceId: string; url: string \| null }` | `HookContextBase` | no |
+| `space:afterUpdate` | `{ spaceId: string; url: string \| null; previousUrl: string \| null }` | `HookContextBase` | no |
+| `space:afterDelete` | `{ spaceId: string; url: string \| null }` | `HookContextBase` | no |
 
 ### API hosts
 

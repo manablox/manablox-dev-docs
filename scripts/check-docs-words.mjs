@@ -3,7 +3,7 @@
 // describe what is, not what changed. Names a refactor removed from the packages stay out,
 // and so do paths that exist in no Manablox repository.
 import { execFileSync } from 'node:child_process';
-import { readFileSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { lineOf, report } from './lib/scan.mjs';
 
 /** Wording that describes a change rather than the current state, in docs and READMEs. */
@@ -59,15 +59,11 @@ const PATHS = [
   'manablox-content',
   'github.com/daspete',
   'AGPL',
-  'apps/site',
   'apps/docs',
   'apps/user-docs',
   'apps/license-server',
   'apps/license-portal',
   'apps/website',
-  'packages/plugin-ai',
-  'packages/plugin-website',
-  'packages/site',
   'Dockerfile.static',
   'compose.license.yml',
 ];
@@ -81,7 +77,8 @@ const files = execFileSync(
   { encoding: 'utf8' },
 )
   .split('\0')
-  .filter((path) => path && path !== SELF && TEXT.test(path));
+  // A deleted file stays listed until the deletion is committed.
+  .filter((path) => path && path !== SELF && TEXT.test(path) && existsSync(path));
 
 const findings = [];
 for (const path of files) {

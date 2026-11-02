@@ -37,9 +37,8 @@ without booting an instance. `pnpm docs:check` generates them into a temporary f
 fails when a page in `docs/` differs; CI runs it, so the pages follow each `@manablox/*`
 release this repository updates to.
 
-`manablox.config.ts` lists the CMS plugins (fields, license, workflows, webhooks) and the
-premium plugins (`@manablox/plugin-ai`, `@manablox/plugin-website`), all of them dev
-dependencies of this repository, so the pages cover every plugin Manablox ships.
+`manablox.config.ts` lists the CMS plugins (fields, workflows, webhooks, AI, website), all of
+them dev dependencies of this repository, so the pages cover every plugin Manablox ships.
 
 ### Diagrams
 

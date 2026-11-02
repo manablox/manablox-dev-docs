@@ -52,12 +52,6 @@ keys:
 | `features.plugins.website.badge` | Off | Shows the "Made with Manablox" badge; the most specific scope that sets it wins (`resolution: 'mostSpecific'`) |
 | `features.plugins.website.password` | On | Setting, changing or removing a site password; a password that is set keeps protecting the site |
 | `features.plugins.website.headCode` | On | Changing a site's head and body-end code; code already set keeps rendering |
-
-The website is a premium plugin (`@manablox/plugin-license`). On a development instance it
-runs without a key. On a production instance without a license its `design`, `domains` and
-`forms.config` features lock with a buy link, and nothing else. While only development
-unlocks it (no key, or a development lease), the site process answers a public host with a
-plain 403, "This site runs on a development license".
 | `usage.plugins.website.formSubmissions` | No limit | Stored form submissions per period; used up, forms answer "This form is unavailable right now. Please try again later." (503) |
 | `rateLimits.plugins.website.ip` | 1200 per 60 s | Site requests per IP (instance and space) |
 | `rateLimits.plugins.website.renders` | None | Site renders (cache misses) per space |

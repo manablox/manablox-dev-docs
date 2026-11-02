@@ -61,7 +61,7 @@ permalink, and retitling a page must not silently move it.
 | Publish | The document has never been published, or has been changed since it was |
 | Unpublish | The document is published |
 | Undo / Redo | There is something to undo or redo in this editing session |
-| Visual | The space has a frontend URL. See below |
+| Visual | The space has a frontend URL, or a plugin frames a page of its own, as the website plugin does for a designed site's canvas. See below |
 
 Leaving the page with unsaved changes asks first. A save that the server refuses because
 someone else saved in between (`content.version.conflict`) shows both version numbers;

@@ -107,10 +107,7 @@ These pages are one of several repositories. They share one set of conventions:
 
   | Repository | Ports |
   | --- | --- |
-  | manablox-cms | api 3000, public api 3001, admin 3002, postgres 5432, valkey 6379, minio 9000/9001, mailpit 1025/8025, verdaccio 4873 |
-  | manablox-plugin-website | site 3003, instance api 3100, admin 3102, postgres 5442 |
-  | manablox-plugin-ai | instance api 3200, admin 3202, postgres 5452 |
-  | manablox-license-portal | license server 3110, portal 5174, postgres 5462, mailpit 8026 |
+  | manablox-cms | api 3000, public api 3001, admin 3002, site 3003, postgres 5432, valkey 6379, mailpit 1025/8025, verdaccio 4873 |
   | manablox-website | 3005 |
   | manablox-dev-docs | 3004 |
   | manablox-user-docs | 3008 |

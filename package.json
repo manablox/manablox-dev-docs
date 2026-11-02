@@ -48,7 +48,6 @@
     "@manablox/core": "^0.50.0",
     "@manablox/fields": "^0.50.0",
     "@manablox/plugin-ai": "^0.50.0",
-    "@manablox/plugin-license": "^0.50.0",
     "@manablox/plugin-webhooks": "^0.50.0",
     "@manablox/plugin-website": "^0.50.0",
     "@manablox/plugin-workflows": "^0.50.0",

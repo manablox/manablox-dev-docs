@@ -29,7 +29,7 @@ instance instead; see [Moving a space](../admin/transfer.md).
 | --- | --- |
 | Name | `Website` |
 | Technical name | fills itself in as `website`. Fixed once saved. |
-| Frontend URL | `http://localhost:3006`: where the site you build in the guide will run. It only matters for the visual editor and can be changed later. |
+| Frontend URL | `http://localhost:3006`: where the site you build in the guide will run. It only matters for the visual editor and can be changed later; a space that only holds data leaves it empty. |
 | Locales | leave `en`, or add more |
 
 Under **Start with**, leave *Empty space*: the rest of this page builds the model by

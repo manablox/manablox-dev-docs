@@ -261,7 +261,7 @@ turns them back on and no write reaches them, so they tell why a feature is off 
 the settings have it on:
 
 ```json
-{ "scopes": {}, "ceilings": { "features.plugins.notes": { "enabled": false, "message": "Notes need a license" } } }
+{ "scopes": {}, "ceilings": { "features.plugins.notes": { "enabled": false, "message": "Notes are not part of this plan" } } }
 ```
 
 `DELETE /settings/features.sso?scope=instance` answers
@@ -337,7 +337,7 @@ unverified, `null` once it is; see
 | `name` | required | Display name |
 | `machineName` | required | Lower case, letter first, then letters, digits, `_` and `-` |
 | `description` | | Free text |
-| `url` | the public URL | The frontend origin, used by the visual editor |
+| `url` | none | The frontend origin, used by the visual editor. Left out or `null`, the space has [no frontend](../admin/spaces.md#spaces-without-a-frontend) and answers `"url": null` |
 | `defaultLocale` | `en` | Must be one of `locales` |
 | `locales` | `[defaultLocale]` | The space's locales |
 | `starter` | `false` | A website starter: `true` (the basic one) or a template id such as `blog` |

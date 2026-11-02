@@ -32,13 +32,13 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: 'catalog:'
-        version: 0.42.4(@astrojs/markdown-remark@7.3.1)(astro@7.3.5(@astrojs/markdown-remark@7.3.1)(@types/node@26.6.3)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1))(typescript@6.0.3)
+        version: 0.42.4(@astrojs/markdown-remark@7.3.5)(astro@7.3.5(@astrojs/markdown-remark@7.3.5)(@types/node@26.6.3)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1))(typescript@6.0.3)
       '@manablox/docs-theme':
         specifier: ^0.50.0
-        version: 0.50.0(astro@7.3.5(@astrojs/markdown-remark@7.3.1)(@types/node@26.6.3)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1))(typescript@6.0.3)
+        version: 0.50.1(astro@7.3.5(@astrojs/markdown-remark@7.3.5)(@types/node@26.6.3)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1))(typescript@6.0.3)
       astro:
         specifier: 'catalog:'
-        version: 7.3.5(@astrojs/markdown-remark@7.3.1)(@types/node@26.6.3)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1)
+        version: 7.3.5(@astrojs/markdown-remark@7.3.5)(@types/node@26.6.3)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1)
     devDependencies:
       '@astrojs/check':
         specifier: 'catalog:'
@@ -48,31 +48,28 @@ importers:
         version: 2.5.14
       '@manablox/cli':
         specifier: ^0.50.0
-        version: 0.50.0(@libsql/client@0.18.0)(@manablox/plugin-license@0.50.0(@libsql/client@0.18.0)(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0))(@manablox/plugin-webhooks@0.50.0(@libsql/client@0.18.0)(@manablox/plugin-workflows@0.50.0(@libsql/client@0.18.0)(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0))(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0))(@manablox/plugin-workflows@0.50.0(@libsql/client@0.18.0)(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0))(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)(zod@4.6.5)
+        version: 0.50.1(@libsql/client@0.18.0)(@manablox/plugin-webhooks@0.50.1(@libsql/client@0.18.0)(@manablox/plugin-workflows@0.50.1(@libsql/client@0.18.0)(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0))(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0))(@manablox/plugin-workflows@0.50.1(@libsql/client@0.18.0)(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0))(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)(zod@4.6.7)
       '@manablox/config-typescript':
         specifier: ^0.50.0
-        version: 0.50.0
+        version: 0.50.1
       '@manablox/core':
         specifier: ^0.50.0
-        version: 0.50.0
+        version: 0.50.1
       '@manablox/fields':
         specifier: ^0.50.0
-        version: 0.50.0
+        version: 0.50.1
       '@manablox/plugin-ai':
         specifier: ^0.50.0
-        version: 0.50.0(@libsql/client@0.18.0)(@manablox/plugin-workflows@0.50.0(@libsql/client@0.18.0)(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0))(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)
-      '@manablox/plugin-license':
-        specifier: ^0.50.0
-        version: 0.50.0(@libsql/client@0.18.0)(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)
+        version: 0.50.0(@libsql/client@0.18.0)(@manablox/plugin-workflows@0.50.1(@libsql/client@0.18.0)(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0))(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)
       '@manablox/plugin-webhooks':
         specifier: ^0.50.0
-        version: 0.50.0(@libsql/client@0.18.0)(@manablox/plugin-workflows@0.50.0(@libsql/client@0.18.0)(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0))(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)
+        version: 0.50.1(@libsql/client@0.18.0)(@manablox/plugin-workflows@0.50.1(@libsql/client@0.18.0)(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0))(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)
       '@manablox/plugin-website':
         specifier: ^0.50.0
         version: 0.50.0(@libsql/client@0.18.0)(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(typescript@6.0.3)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)
       '@manablox/plugin-workflows':
         specifier: ^0.50.0
-        version: 0.50.0(@libsql/client@0.18.0)(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)
+        version: 0.50.1(@libsql/client@0.18.0)(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)
       knip:
         specifier: 'catalog:'
         version: 6.38.0
@@ -166,6 +163,9 @@ packages:
   '@astrojs/internal-helpers@0.11.0':
     resolution: {integrity: sha512-3rzxJ+xbo0+8YyqOzLziIN32wmsHdCjEVz2sGOpRxJ+Ben/KiLph4ItxBy1abEL+E8fkRzqjg0rfXmaHJGw9JA==}
 
+  '@astrojs/internal-helpers@0.13.0':
+    resolution: {integrity: sha512-20jxQqnSmpskcGyad7N5l6Xf1gz0UCa6lNde44bEBdaXGpncEYfAZJ142r2ZgzBaG4dUyzGmhqZWv1INU2eiHQ==}
+
   '@astrojs/language-server@2.17.1':
     resolution: {integrity: sha512-gG7bvMVNIXgoSe1pM9dI1HsSDLU1EIc/dSAYQ0DuReLyLkOBjsiqvaRYgQltWaldLxh0bNEqjgreLfjd9OnUxQ==}
     hasBin: true
@@ -178,8 +178,8 @@ packages:
       prettier-plugin-astro:
         optional: true
 
-  '@astrojs/markdown-remark@7.3.1':
-    resolution: {integrity: sha512-QCjsjZQl0+Cgb91+T3Ip9hyUe1r5aLm4udi584rML9YO3syupbAYE+jWpAxYg+z4lFLNUugPrylFxZ+8qFTClg==}
+  '@astrojs/markdown-remark@7.3.5':
+    resolution: {integrity: sha512-Xk0gvOMEpBul2zj5jZXS5WH2Gng/6dW7c3WWLXgip+LZGpY64frwTvBChznMtpnNIqVgFXSsu44RYrISojcodQ==}
 
   '@astrojs/markdown-satteri@0.4.2':
     resolution: {integrity: sha512-g4QehXnB/MzxQWnSf17NciFInMqEJy9948p8cc7zGg/r7995m0Ln5PMr3Xlnj24iey1LchaoZ3SzTOa3D4P/3w==}
@@ -199,11 +199,24 @@ packages:
     resolution: {integrity: sha512-KTivpmnz6lDsC6o9H4+DNm2SrE/GHzw8cNAvEJwAvUT+eoaEnn/4NtbDNfRRaxaJHdp15gf+tfHAWiXR4wB3BA==}
     engines: {node: '>=22.12.0'}
 
+  '@astrojs/prism@4.1.2':
+    resolution: {integrity: sha512-jMrUEpFDarDO1KWPvVc9eSa8DSfwBlwEOHwX+8zvZQpiqXRGDxFnOXHsYqV6DP7w+0qIgTr98gS1GdQlm8ypWg==}
+    engines: {node: '>=22.23.4'}
+
   '@astrojs/sitemap@3.7.4':
     resolution: {integrity: sha512-LbKNC24bdUWcQf/pThB6qLlSqHojxGjZDURIzFocY8rlWnAn2t74nnhnK6S5x0NHriHoAduLEpVjRykmeGiVvA==}
 
   '@astrojs/starlight@0.42.4':
     resolution: {integrity: sha512-EsQsqGJ1uTBQcIMojvLqqg4Ku9idwi6PSNuppIOoYmvVP18xjoUkijMdKoDkhmmwKdhbB4ctLhGjPRJzxaq+Jw==}
+    peerDependencies:
+      '@astrojs/markdown-remark': ^7.3.0
+      astro: ^7.2.10
+    peerDependenciesMeta:
+      '@astrojs/markdown-remark':
+        optional: true
+
+  '@astrojs/starlight@0.42.8':
+    resolution: {integrity: sha512-BGP8bmTbdky4OFCV9BNWZedLuzONyUtz754q+hie+li/2TQ5XJ6nvfO8fhRhIMcCpUEsA5Ynf4qTTFf/ft/3Pg==}
     peerDependencies:
       '@astrojs/markdown-remark': ^7.3.0
       astro: ^7.2.10
@@ -321,64 +334,61 @@ packages:
     resolution: {integrity: sha512-Vj1jF3cPfxg7OAfoI7QnVKLoILlm2JF9pnVHrX8qx7AHMiYWT+NDAA7jChlNgRS4WTLc/fD1lXLmPixluj+3Gg==}
     engines: {node: '>=6.9.0'}
 
-  '@better-auth/core@1.7.2':
-    resolution: {integrity: sha512-j0nM4ygsWbF/fcYRoKtDn8gn8uLXkmC+075HqSqsJEAV828cJR9bvYBCUQ1zmxNyRBk6Iz/qXsA0Zm2oksiOTg==}
+  '@better-auth/core@1.7.15':
+    resolution: {integrity: sha512-BetlCGMINY5GiQocDF9X2wD+9yWrSrAecQbcZUCDqXd2pAolPr15ZrFqYyjEXX6YKUdPPWotUmo8naE4NSyEVQ==}
     peerDependencies:
-      '@better-auth/utils': 0.4.2
-      '@better-fetch/fetch': 1.3.1
-      '@cloudflare/workers-types': '>=4'
+      '@better-auth/utils': ^0.4.2 || ^0.5.0
+      '@better-fetch/fetch': 1.3.3
       '@opentelemetry/api': ^1.9.0
-      better-call: 1.4.0
+      better-call: 1.4.4
       jose: ^6.1.0
       kysely: ^0.28.5 || ^0.29.0
       nanostores: ^1.0.1
     peerDependenciesMeta:
-      '@cloudflare/workers-types':
-        optional: true
       '@opentelemetry/api':
         optional: true
 
-  '@better-auth/drizzle-adapter@1.7.2':
-    resolution: {integrity: sha512-A5wE10PIv3aS5LGePecEHntQylKy6OOF17B4dqlE0DwJeqU/IOBSd7/LZhMop9cNJ3WFjKMpazVSf91yYM/NFg==}
+  '@better-auth/drizzle-adapter@1.7.15':
+    resolution: {integrity: sha512-HtFz2WovzJGfmIobhqaHNdTUA5EuXtCp8YdyMxS8at70usce/LMlh4CVc9hPAXl49XuJaDi8vp5Z9Cgk9dQCUA==}
     peerDependencies:
-      '@better-auth/core': ^1.7.2
-      '@better-auth/utils': 0.4.2
+      '@better-auth/core': ^1.7.15
+      '@better-auth/utils': ^0.4.2 || ^0.5.0
       drizzle-orm: ^0.45.2 || >=1.0.0-rc.1 <2.0.0
     peerDependenciesMeta:
       drizzle-orm:
         optional: true
 
-  '@better-auth/kysely-adapter@1.7.2':
-    resolution: {integrity: sha512-LYdSRLOvZiF+6S0UThu+wE/Qxsq9P2jQs7ZKkY6BIBJqUjYyxVDmi8HFcantBvWWW1/BeQCSsD7YVDG4gICMIQ==}
+  '@better-auth/kysely-adapter@1.7.15':
+    resolution: {integrity: sha512-1anYpzH3A0i6W2J9EvqMAlCCVQ3NfLUKZGquJ4LfZzS8rC7iHSntpagqEvZeerZrAydtke2rMl91SSiNtKyVcQ==}
     peerDependencies:
-      '@better-auth/core': ^1.7.2
-      '@better-auth/utils': 0.4.2
+      '@better-auth/core': ^1.7.15
+      '@better-auth/utils': ^0.4.2 || ^0.5.0
       kysely: ^0.28.17 || ^0.29.0
     peerDependenciesMeta:
       kysely:
         optional: true
 
-  '@better-auth/memory-adapter@1.7.2':
-    resolution: {integrity: sha512-0q1SXMzm5esH9L0xVuM6IxCk59E4G+3HySX4My9gvEwqtmUobykn+iuc/si3Y4xwUO7JODqQ5o+/pPcLDDMIrA==}
+  '@better-auth/memory-adapter@1.7.15':
+    resolution: {integrity: sha512-lsSgxCCn94QanigQrhdXOcQ2thb3ix8zOBQZySet6Tp1dK3pb+GmQ1ZQtamYgj5itvq99fEmLr4Em24XE2BTcA==}
     peerDependencies:
-      '@better-auth/core': ^1.7.2
-      '@better-auth/utils': 0.4.2
+      '@better-auth/core': ^1.7.15
+      '@better-auth/utils': ^0.4.2 || ^0.5.0
 
-  '@better-auth/mongo-adapter@1.7.2':
-    resolution: {integrity: sha512-4879SmUWHUs0OYlvHoCFbycZ7i1bqytkcgAUdt9RLQMvZ5H3LRMTgax2YVlGZEXgwNjY/X7xAoXOecWLhlQWeA==}
+  '@better-auth/mongo-adapter@1.7.15':
+    resolution: {integrity: sha512-Pku7yZcIuvGqsGy2cLws+7en8dLPyGmP9v0BHHtxEqtsFyc+DtLvv1AzHzNKQz5v52KlbUQ5Uflx5+Le0A1ALA==}
     peerDependencies:
-      '@better-auth/core': ^1.7.2
-      '@better-auth/utils': 0.4.2
+      '@better-auth/core': ^1.7.15
+      '@better-auth/utils': ^0.4.2 || ^0.5.0
       mongodb: ^6.0.0 || ^7.0.0
     peerDependenciesMeta:
       mongodb:
         optional: true
 
-  '@better-auth/prisma-adapter@1.7.2':
-    resolution: {integrity: sha512-mXTr/83WrNWLrvzIjtgDgdu9iXhOcSG1+qBQOAKlbGSFiOB+z4IMRneQ2wmMOiB8mKY9qGkClVUjKRFXqtHnFQ==}
+  '@better-auth/prisma-adapter@1.7.15':
+    resolution: {integrity: sha512-YMMA2HnEPFcUNw/mJWxBxoAdRV2B1ZQ8rRsBJwwTQsC6sfZVYr9f/5zslizf6J7eRpOpgqpiwumSRhdeLf1EOg==}
     peerDependencies:
-      '@better-auth/core': ^1.7.2
-      '@better-auth/utils': 0.4.2
+      '@better-auth/core': ^1.7.15
+      '@better-auth/utils': ^0.4.2 || ^0.5.0
       '@prisma/client': ^5.0.0 || ^6.0.0 || ^7.0.0
       prisma: ^5.0.0 || ^6.0.0 || ^7.0.0
     peerDependenciesMeta:
@@ -387,33 +397,33 @@ packages:
       prisma:
         optional: true
 
-  '@better-auth/sso@1.7.2':
-    resolution: {integrity: sha512-8tmkAGdcVu8Tr/+LPfSRgs/5a8YE1uU8OeaN5mAzsSdMWR4iwZdwQlJJmU8f9qZyIpNL/B6mIfDc5vaVUy1ECQ==}
+  '@better-auth/sso@1.7.15':
+    resolution: {integrity: sha512-0QwtxFDI76ML97pEpQHcB6FvbI3ytPZ76EQITMz6lSIviRStgEFfg4EcC0o9QfQGdoJHj/lSMcP+9bHaaFiXNw==}
     peerDependencies:
-      '@better-auth/core': ^1.7.2
-      '@better-auth/utils': 0.4.2
-      '@better-fetch/fetch': 1.3.1
-      better-auth: ^1.7.2
-      better-call: 1.4.0
+      '@better-auth/core': ^1.7.15
+      '@better-auth/utils': ^0.4.2 || ^0.5.0
+      '@better-fetch/fetch': 1.3.3
+      better-auth: ^1.7.15
+      better-call: 1.4.4
 
-  '@better-auth/telemetry@1.7.2':
-    resolution: {integrity: sha512-LcWu+O0zrxYDQj8E36vfkJwGPW4k9ZDA/rCo0zST6ihzL+juR7pBowoZIM9E6tK0Vit52mf6412bGT4XM4eTjQ==}
+  '@better-auth/telemetry@1.7.15':
+    resolution: {integrity: sha512-qZq491FZNLRCFmBo97DK+wOKfKPcSMeP87BoqH1nWZc0FZi2fbS4vqmwgn9OdQU7LRjHs/757o64iao1vrvkKA==}
     peerDependencies:
-      '@better-auth/core': ^1.7.2
-      '@better-auth/utils': 0.4.2
-      '@better-fetch/fetch': 1.3.1
-
-  '@better-auth/utils@0.4.2':
-    resolution: {integrity: sha512-AUxrvu+HaaODsUyzDxFgwd/8RZ1yZaYo42LXKSrU2oGgR38pS1ij8nqQKNgtTWoYGpNevNXtCfgTy6loHveW9A==}
+      '@better-auth/core': ^1.7.15
+      '@better-auth/utils': ^0.4.2 || ^0.5.0
+      '@better-fetch/fetch': 1.3.3
 
   '@better-auth/utils@0.5.0':
     resolution: {integrity: sha512-BL8W4EfIZFwlu0r54m3v1ztjDhu6dDe/amLTm0xybmbZaNgYUqhD3SjpAsnq0q8YD6/ki4iwIgxJNLP/N3TxiA==}
 
-  '@better-fetch/fetch@1.3.1':
-    resolution: {integrity: sha512-ABkD1WhyfPZprKRQI3bhATjeiFuNWC9PXhfGWqL+sg/gKrM977oFrYkdb4msM3hgUGonr7KlOsOFT5TU2rht9g==}
+  '@better-auth/utils@0.5.1':
+    resolution: {integrity: sha512-WETqw5vQ52uQ/xwWR4E8rTgT6fDEr/wnS+otDNkBCa/69281FCF32OKDdQUcahMCnjsvqXBNiEvAQHFB0EVRRg==}
 
   '@better-fetch/fetch@1.3.2':
     resolution: {integrity: sha512-Gs7n99b5tqUC6cQAPbV0uED3IraHB6xQbHLQ/C3l7ZFafHScOx9pQ+DYmP5blbLFShVWLqxNUlI9wi4xU/X+ow==}
+
+  '@better-fetch/fetch@1.3.3':
+    resolution: {integrity: sha512-U6SlDt/GUWtK2JAxS/NhdoYTEim+EL1G5byz2TUj83KjLZBUpYzb5SmX0aXaCnbGkAjFKnV/o/0+cyXMbEcqqg==}
 
   '@biomejs/biome@2.5.14':
     resolution: {integrity: sha512-0FabLIjd4M/dm8VFI86RMaLLdgepzbdfiAL2R8cr7V81OYYrP1w7Z73KfAwPK5h9SrEBXTzNG2y+mBwPo9xRnw==}
@@ -771,32 +781,26 @@ packages:
   '@fontsource-variable/manrope@5.3.0':
     resolution: {integrity: sha512-6D5dgokHsWDDMtmXHznKa0hK229NN+1a4BLPmUCLqcO1Pw5EEhWY5RFt0AcXnVRAljFFPfRtLkJePQj6LSsV6g==}
 
-  '@graphql-tools/executor@2.0.1':
-    resolution: {integrity: sha512-rvlOaoTUXUUHlu7090e94566SeBnU9PV6xMztIt2s8StXy5HbP0p+tYSfg3N/gCdEzJ78ZQLjXJz4UFgWGZ/7A==}
+  '@graphql-tools/executor@2.1.0':
+    resolution: {integrity: sha512-RR41E8r1FKrHhZS5YhdcUg04GZ5VP6VGaO2MQKkmEEazXx6qY4kuzZYLs4kq+DBzPdNmsRdVsf7K/uTfi5fhAA==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
 
-  '@graphql-tools/merge@9.2.4':
-    resolution: {integrity: sha512-vV+8uWNWn0+OsqT0r22lZuoT0cTe6fBqBtpLHre2rriLjI/ZTrsOHmabLPTUOyzgFnRrS2PzFSYGL3zKL1Wj4Q==}
+  '@graphql-tools/merge@9.2.8':
+    resolution: {integrity: sha512-OsCEmJ9RIMT4LB/1jBbyKHe7pMIlfGhLAQ0FVNaZqteydDUC+rTI9wZ+yaKqxQpPOFFycD+UtMhovg19lPq92Q==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
 
-  '@graphql-tools/schema@10.1.1':
-    resolution: {integrity: sha512-24jJghRxEW+SG1lbJ45Zg9HEZ8ZKS923ihbFjOicspFLpryxJkWp6gZJ7D8tCVaSAhli4x1+1wDPAfhT8mLqxg==}
+  '@graphql-tools/schema@10.1.5':
+    resolution: {integrity: sha512-F0Onw0ZBREakKGqcgsKhdSCjOXgmntzQWL0QA+/WrwKmnJ7nJRyGKUJavwuVZL2TrXblaIUvQxm4t1h3FuA3cA==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
 
-  '@graphql-tools/utils@11.2.2':
-    resolution: {integrity: sha512-Do2A/t6ayqOma8m7PvpYMsCBswL+NB35BQSng4GWSBqafL2/BnfAZy/NSENPwV721Rm2fG0BHETFC0+FJJZmLw==}
-    engines: {node: '>=16.0.0'}
-    peerDependencies:
-      graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
-
-  '@graphql-tools/utils@12.0.1':
-    resolution: {integrity: sha512-8YC6jn4xYDS6YTY6xDAgQAs/nGgvzRaIGHS8GeSfVItQzNK7Ms24CQtE3EJY+amvR+tBnhRSX0N83aGj+V/RIg==}
+  '@graphql-tools/utils@12.1.0':
+    resolution: {integrity: sha512-+mOuIX7u83/BHG0L9JviMzKid1j35cxOWhLoox47TXHAJ6Tnn30RgrmEQPmk1FhmaQbhJEcwYBDVyieUvZopJw==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
@@ -818,11 +822,11 @@ packages:
     resolution: {integrity: sha512-j/EgVfZSzKA2lVeiZ0un8E2eVIqWa9Woyqta4A40ht1M93ui9CDVHU6pmphoQTpFa92BNbMVexXdOtMQk8LCjA==}
     engines: {node: '>=18.0.0'}
 
-  '@hono/node-server@2.1.1':
-    resolution: {integrity: sha512-ELuehkj5VCBdgEw9zs+ivkKwyzzUCSQuE96YmiPvn1ECBoZCczbFXJLeEGMTYjphP6gydh4pHMqEYPVMYUVgQg==}
+  '@hono/node-server@2.1.5':
+    resolution: {integrity: sha512-MgP/I06GdvsilDspMk/qmRzpk8LOUStP6jFAbSRi40W09DhoyUn+Mj7eyKICPqeYKybOjVFLVIAQzvu1bfIa7Q==}
     engines: {node: '>=20'}
     peerDependencies:
-      hono: ^4
+      hono: ^4 || ^5.0.0-0
 
   '@img/colour@1.1.0':
     resolution: {integrity: sha512-Td76q7j57o/tLVdgS746cYARfSyxk8iEfRxewL9h4OMzYhbW4TAcppl0mT4eyqXddh6L/jwoM75mo7ixa/pCeQ==}
@@ -1049,44 +1053,41 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@manablox/api-graphql@0.50.0':
-    resolution: {integrity: sha512-imMOpTn2B3ahVhec2SMBgFXXwXvxacIHwVf2FqFjn/1nsv+/90qYZpA789tD7O+2vk1ktg6yLE0gn4xig2XU+g==}
+  '@manablox/api-graphql@0.50.1':
+    resolution: {integrity: sha512-PUQfaCsxVggk94Cl0drMzE25TfSKSHjT7+Mw4dpNI6yVMQYRqAAzR3Frt7dmJT7iB0TGnIFx7pL77jl2o5CTAg==}
     engines: {node: '>=24'}
 
-  '@manablox/api-public@0.50.0':
-    resolution: {integrity: sha512-xAWvl8fdq0sW14uoh7pZY54ythMfd8JcXX7vRk/ILlTtsK0VXjVDWYtluwFNPrgoi4Q9puYIcrYcaXItBGnEGg==}
+  '@manablox/api-public@0.50.1':
+    resolution: {integrity: sha512-ES5vcFNAmAwdKS+MJV8mRJTxgHjEJSCI+18+AQLil/Lcu03KsVY/GIgJAoaOijHCvnJ+O+RkjTtXJBrlsvB0NA==}
     engines: {node: '>=24'}
 
-  '@manablox/api-rpc@0.50.0':
-    resolution: {integrity: sha512-L9xjJL3ZJMuEQUWvOjswrqIB74qmZFSzR4ACQLwI+ZoI4nTITVww1w7VIJMRlN1/h1rIEnplr1hAmakhTdQo5w==}
+  '@manablox/api-rpc@0.50.1':
+    resolution: {integrity: sha512-m7bcV4wd43qPeRBQV7YMdP/e70cEGi+1/LwuJHK3RAu3S+VQWA7k5qBCrE5yAHn4oKT2mB6OfZ1jGReU/dNUmQ==}
     engines: {node: '>=24'}
 
-  '@manablox/auth@0.50.0':
-    resolution: {integrity: sha512-glx66VYw3RS7bPcPCJq0w9IEJxgueD4X+3si2yK/jPjzRc5BWAo45SLt4B5cd0qXylzNwbOnUWfTNZxb/mOa9w==}
+  '@manablox/auth@0.50.1':
+    resolution: {integrity: sha512-djIGhE4xypT8dhkEUYuSj/jenNqsipksvWexLPIg0FlU1O0ArxwVb3Mx3iw0FB0FY9bCm+cYVv7JTTSeDMcZZQ==}
     engines: {node: '>=24'}
 
-  '@manablox/cache@0.50.0':
-    resolution: {integrity: sha512-RWMyKHko+IZJRV8BvWuYXaVZloijenXI4D9Rdjbl8wswwnss3cguzb8kL7lquaK1LGP2CLcSIr/qyms89Eslzw==}
+  '@manablox/cache@0.50.1':
+    resolution: {integrity: sha512-bXrQKQYPNWj6FwnlIBR0ZkS9skIP343M9DcTRtPOG2RQRJGK7UA8Qjfvaphyy2iW46p6qS7CZew/wYhP+f5wPA==}
     engines: {node: '>=24'}
 
-  '@manablox/cli@0.50.0':
-    resolution: {integrity: sha512-CwKZ0+vrxSb9nxJbIq7cibZIY6n8WJuIKi4h/yLw+CcSfgnlJyeZEtcM7ecKcHZFNFofhshH5sXEH8s7lEs8gQ==}
+  '@manablox/cli@0.50.1':
+    resolution: {integrity: sha512-n9SswPGzWSaQeshNMU+fvmyX5fyUZdXWvJ7F4vO4Kl/pwfARNHm7Nq7eQpegmPsMfG7uf6h/ztxRE6fcSREEDQ==}
     engines: {node: '>=24'}
     hasBin: true
     peerDependencies:
-      '@manablox/plugin-license': 0.50.0
-      '@manablox/plugin-webhooks': 0.50.0
-      '@manablox/plugin-workflows': 0.50.0
+      '@manablox/plugin-webhooks': 0.50.1
+      '@manablox/plugin-workflows': 0.50.1
     peerDependenciesMeta:
-      '@manablox/plugin-license':
-        optional: true
       '@manablox/plugin-webhooks':
         optional: true
       '@manablox/plugin-workflows':
         optional: true
 
-  '@manablox/config-typescript@0.50.0':
-    resolution: {integrity: sha512-2I7EuHKsI7Lfj6EjfexX9E3mkonmIo+r5tA3zfxgz2kjVk7n78DxeqlWWThZRWE6YnOc5arkZOCwti2HwG5eag==}
+  '@manablox/config-typescript@0.50.1':
+    resolution: {integrity: sha512-IyICaT1fM3sF2hsPJy26JmmwTmUzVnDIjdlqXyJxNq7YAUJZuipZRgv05udQW/7Wt9slfy0Re0mDYL4wZDJtuQ==}
     peerDependencies:
       drizzle-kit: ^0.31.10
       tsdown: ^0.23.0
@@ -1096,41 +1097,37 @@ packages:
       tsdown:
         optional: true
 
-  '@manablox/core@0.50.0':
-    resolution: {integrity: sha512-3RndTfjm7tVS+QCLWtKdkwrtgmb/Dlkq2f6T+dTKcTB5WsOJpFOUPCmT8zW/GeJq1S2eJekkqWYquuRdY26HuA==}
+  '@manablox/core@0.50.1':
+    resolution: {integrity: sha512-9CUm8VmnKiczY+PhunSNewiz3Y2WB3jJ91eW/nLJiEKZb0H3zhbmQMo3M+epJXm53aUqOJVZw14C6jDqECsh+w==}
     engines: {node: '>=24'}
 
-  '@manablox/db@0.50.0':
-    resolution: {integrity: sha512-czQs3c2BRH/xsTV2Nu5fqOzdOVhpRXo5EWT1wsa5V725MpKSyu1u3KHvbtxXj32OoGqj0040yB25dgtj1UMWOA==}
+  '@manablox/db@0.50.1':
+    resolution: {integrity: sha512-kYVmmVi8RIGivGgHQK2IPRvynzP9drXdNTfDyZsF2LNOO+rY/oH7zfzU88w/hMthx223e8lanXkWfG2sTzclCA==}
     engines: {node: '>=24'}
 
-  '@manablox/docs-theme@0.50.0':
-    resolution: {integrity: sha512-Bu/JKweXQn26itcElkpweKFwmnelNDc/i9V25hJT0GeVXSs5BgKaoykJ9iJZl5xf2Mr5rp2PC32weiCjsTvmhA==}
+  '@manablox/docs-theme@0.50.1':
+    resolution: {integrity: sha512-Pfl54R2KfS7y0n5D68yomAwja9T3MvKzY/2LoFlmQqRphjyAbNFHi2Pg1aH7gh8pU78Hr72IBwVKDQ5VDMMDVQ==}
     peerDependencies:
-      astro: ^7.3.1
+      astro: ^7.4.4
 
-  '@manablox/fields@0.50.0':
-    resolution: {integrity: sha512-NWxeGc5aVUh6L9xsLWx7M+inUvkYR4lXaddMqt9fnaydNF+JyiCto9HMQEISVlG6i/QegTzC4MRm+AXPWgVlWg==}
+  '@manablox/fields@0.50.1':
+    resolution: {integrity: sha512-DUTcYOkePmO+HIZemXWS+8HIc2mPzk680C7liSlzNx86vftuVzSrIEgGDXak/x2X82jGqAD2ZVrEL1r6LL6q7Q==}
     engines: {node: '>=24'}
 
-  '@manablox/jobs@0.50.0':
-    resolution: {integrity: sha512-UAl3vtfxZbAPyBhQ/5/7D2+C4/nhnUyn4In5G3xURSFRgKNwUXXFbdAFmNvekythJgengF7MnI7jnEfap5jGHA==}
+  '@manablox/jobs@0.50.1':
+    resolution: {integrity: sha512-tn3H7GQ0rbBDO/CiMbUna5KrFQNoFG9bfbXJdvLHy5hpfkWCyVQr0acpqbic+QTuy19fdR+2Z6OFLhjMD/45kQ==}
     engines: {node: '>=24'}
 
-  '@manablox/license@0.50.0':
-    resolution: {integrity: sha512-AooGnYtbNpKTaHC6ajtiiNOs/DeKnGH739ytCcZMz4KVI3Odrvj7a9BVOIHtOU32KRVfFqmCWmfxdHPVqyMbBA==}
+  '@manablox/live-preview@0.50.1':
+    resolution: {integrity: sha512-c8avCu27o69UsQTd2NWIxfqfpOWlWkhMGs/0PGYFol//R7cbOqUb3S/NjFx9CJh8cooVDYibU7R/KKlvwHt0Hw==}
     engines: {node: '>=24'}
 
-  '@manablox/live-preview@0.50.0':
-    resolution: {integrity: sha512-/+IMmPqd5XDfBXEv9UPz3CcFdTrKXYv/J1jMsyu3IR29Smr0atwI23HXA/vfcKbUSVRNdFm3tKa9ptReW01sJw==}
-    engines: {node: '>=24'}
-
-  '@manablox/media@0.50.0':
-    resolution: {integrity: sha512-MEc8DS7HJDZKoco0Dsr616E5No9HesJ1D0wGosQIpeuS0LoehuV5rR3WcnTDal1HnVb1gpNsLqOD/YKRDAv6xg==}
+  '@manablox/media@0.50.1':
+    resolution: {integrity: sha512-2ivztsfv+kxSDIjvOz4cm2/whvGVXECf4zJUDFsEwkWmzVNDFHzhHivBxMpaOUfrL8gYUsmQ9gIg3z2pzivoPQ==}
     engines: {node: '>=24'}
 
   '@manablox/plugin-ai@0.50.0':
-    resolution: {integrity: sha512-5ix/N+hu0krCjAik0disEUsOLXfqHy9ZR0g9ta2iq6Z9uKUzI/T44NsFLZsRLnPAnR18BrP7dmXUj0JdtuN6Kw==}
+    resolution: {integrity: sha512-9Dy9PrVBS6SjQo9/Y4flFIG832w7VBf2VBwlNiTlIvAjd1eMLiRWVEFweks91x40h9f0FgZXwAU4V72gpdsAEA==}
     engines: {node: '>=24'}
     peerDependencies:
       '@manablox/plugin-workflows': ^0.50.0
@@ -1138,50 +1135,46 @@ packages:
       '@manablox/plugin-workflows':
         optional: true
 
-  '@manablox/plugin-license@0.50.0':
-    resolution: {integrity: sha512-mKOSDLUdTB4/8gvwUHwhatLJnr07blKGpotvZmmSoH1hl2jjuks2cJcvV7EEuXFMPetsiOEtWJnYjJtZEo29lQ==}
-    engines: {node: '>=24'}
-
-  '@manablox/plugin-webhooks@0.50.0':
-    resolution: {integrity: sha512-1x0btdxJVw8c2AatkTd1HaxN+bF5KicNKy1HoG+pAOyCSxvaOeDxCHQXEVfRPZ1BO64Te0eN719ek6MgUxnk0Q==}
+  '@manablox/plugin-webhooks@0.50.1':
+    resolution: {integrity: sha512-EO5RaqJKrMiSLTVtfdq4n5SAothd16MU5CGNlgqxqjHWoFmFa3Y2k9gaDuMaKUTKT+vDaZe33idwMIhxMsxGlw==}
     engines: {node: '>=24'}
     peerDependencies:
-      '@manablox/plugin-workflows': 0.50.0
+      '@manablox/plugin-workflows': 0.50.1
     peerDependenciesMeta:
       '@manablox/plugin-workflows':
         optional: true
 
   '@manablox/plugin-website@0.50.0':
-    resolution: {integrity: sha512-kaOBQ6A/BCgmdju6JY/x3wMKF7Dglr9ddmsyytsDWKfsCuXy5dld21IYUzAafwD7bgFRx/gH/I9Fo0OM4nD+DQ==}
+    resolution: {integrity: sha512-mIaYwSHgzY0QW3+9KQmlJWbacFkdzTqtr2dANKxk5H8qiAVZbL78A+ncgG6bNi/CuBZ9EOrInNIbnmMf6lsFfA==}
     engines: {node: '>=24'}
 
-  '@manablox/plugin-workflows@0.50.0':
-    resolution: {integrity: sha512-20a/H0pxkSlMVciGKBVUGT3wuMpqQeTpK6h6vJ2x3Ma68t6ri813vCRGAYvHjkfEafVpf81Nn/kLmxk+SIt51A==}
+  '@manablox/plugin-workflows@0.50.1':
+    resolution: {integrity: sha512-Wrqe0eBRJi8n9xlIZYh30M+W59P/3EzGiztY036IRf737JisESsATR0RfExRjFGw6e0NylH7BZxzow6uF5MpGQ==}
     engines: {node: '>=24'}
 
-  '@manablox/public-sdk@0.50.0':
-    resolution: {integrity: sha512-nLjmbw/z1sYclo16qnXOka8Q3Du+9BAJRzpm1JPi/rPOyKybJMEjyAdC7kvfSpfKLQQgviDZH7oP9C9aodK7mA==}
+  '@manablox/public-sdk@0.50.1':
+    resolution: {integrity: sha512-XFtj0L+Y3h5IUJsgz4KzH8IF4/3zCId0WojycZtyy9NqPEl3Tx29lJZju5EJ1JfXag39D5d0VHtcpepXDafpPA==}
     engines: {node: '>=24'}
     hasBin: true
 
-  '@manablox/server@0.50.0':
-    resolution: {integrity: sha512-/DWmyO5/9wUOMNfNkH58wfbENm+TJkf5M78vd2mRySVp5K7yK580YyTICQCEIUsGgzTShUkzFl6YmGobFmAwaw==}
+  '@manablox/server@0.50.1':
+    resolution: {integrity: sha512-vRFon5AQdyFTIjPP4zStkRihpPZQlljjnelRzKXPmK1cp7/vP9aNTCkftPekJ1cGThzUeoh7AGpYs1J/nscN+A==}
     engines: {node: '>=24'}
 
-  '@manablox/services@0.50.0':
-    resolution: {integrity: sha512-CsLVx6doEh43ft/28uE6BhtyBU3PwcBlSvTI/+ICOwIRIKKerWVvbaMOCi2dByaxFolIlQba2vDU5MHNvHF8zA==}
+  '@manablox/services@0.50.1':
+    resolution: {integrity: sha512-zwZb2Y4/iHZ28LZY6txrfA8pS6r/7CUS13jfg1K+ZrbXCpJH34npuvildvp5JUVF8BvrP3+8rtVKpqWJyJO1tQ==}
     engines: {node: '>=24'}
 
   '@manablox/site-renderer@0.50.0':
-    resolution: {integrity: sha512-moSISbXcOGRHjYc3ngb3dBKSJU1Gm9ces49U1u3LgA8kLa0E8YDK5egy4SBRrYgYP7NrxiFuobQyiFjm2pzsTw==}
+    resolution: {integrity: sha512-1bRvwYwZL27B34Y4LtuJbWz3F/6RFDnlQe7ycZ4ZkPbExuYD9TYlIgYQpaQmUaQtWJ2Mx623/pGBe//q9CXDFA==}
     engines: {node: '>=24'}
 
   '@manablox/site@0.50.0':
-    resolution: {integrity: sha512-JGZxwR8I72kNMeLhySy5Pepwnoi84mWZP1CTNwnmebp9LKL899QfxetAmNbWH5InOTuukp5gTgJ9FgW3EzvIIQ==}
+    resolution: {integrity: sha512-uTKLNfoppWsk4sIDMwdGll6mR3AGBaWfrV+iqlSAtqwSFGY/MZGjWeAvfrLBM8b0zdFTg1gVeYb3fa7gFWZLdA==}
     engines: {node: '>=24'}
 
-  '@manablox/storage@0.50.0':
-    resolution: {integrity: sha512-scoFW1ZymLN0VQikQtDfe6a1CmGx5HedSNFr8aAn2EZNZIQc34DRU02cq4cy6pi7YcKFobGL0slnM1KSy2lMGw==}
+  '@manablox/storage@0.50.1':
+    resolution: {integrity: sha512-Htrf5NG9lLRb1/alavE1nsfGf6VsruhQVpFuf9S8N0c9gNxJ6N7FoCYfo4wMWo17szj8YZeWU2spDx6GMHLR4w==}
     engines: {node: '>=24'}
 
   '@mdx-js/mdx@3.1.1':
@@ -1323,10 +1316,6 @@ packages:
   '@node-rs/argon2@2.2.1':
     resolution: {integrity: sha512-miqgmDcvOoAxCf0H3iW2nSd09FFO15geUU30yRNEr2XVXYreErwxAOm1rAKHxNDdjcySA+UTDGMXOWtvFJ3hXQ==}
     engines: {node: '>= 10'}
-
-  '@opentelemetry/semantic-conventions@1.43.0':
-    resolution: {integrity: sha512-eSYWTm620tTk45EKSedaUL8MFYI8hW164hIXsgIHyxu3VobUB3fFCu5t0hQby6OoWRPsG1KkKUG2M5UadiLiVg==}
-    engines: {node: '>=14'}
 
   '@orpc/client@1.15.4':
     resolution: {integrity: sha512-8Iv2K8Rj8hf6xHCTxmQ+gxgiY6EATDossQk4gdt3oSbGVV0x2RSeLtRK9Zry+KVsmOqPJfnLahfRp7H2rQ/Vgg==}
@@ -1781,28 +1770,56 @@ packages:
     resolution: {integrity: sha512-QCR4q2ZO/ILJEuwiBMel4wdcTDb1JGwfjKTxPDF6x8ixOaluPrVqIn06C99AcRPhmYlBR56d/Fb+GN58GzExpg==}
     engines: {node: '>=20'}
 
+  '@shikijs/core@4.5.0':
+    resolution: {integrity: sha512-6CIgwq+bt2JZ3OSjb/nBkkwEf/CfpHcbam+Mg5Pllco7HAGRQ2/EFhZrrJtbyNTgKwknfVS+llsXGygiDGwJWw==}
+    engines: {node: '>=20'}
+
   '@shikijs/engine-javascript@4.4.3':
     resolution: {integrity: sha512-FbOjFJp9VLdo1Wevs10BBtVxiTWwNLqZh5Gkhjgda/ioL15YOgeSl9n+6XMa3qRlPQzfhFNe641SrynFHYG0nQ==}
+    engines: {node: '>=20'}
+
+  '@shikijs/engine-javascript@4.5.0':
+    resolution: {integrity: sha512-Ed6UdEj84LyYkwnxM5CvSMWAD+id9ExTYri0/+x41U9zrgNifPSS9lZm0JqBP0VfYI8yr8tY5nbNq9+p9R0kFA==}
     engines: {node: '>=20'}
 
   '@shikijs/engine-oniguruma@4.4.3':
     resolution: {integrity: sha512-EcOQkxdxGQrc1Row/cC2c96/v1dbZqGnEVu1qTuT/MJmp6+cXCvQussowVmCv5Tqr3KuY3c7IbM6HTW3LJ1k9w==}
     engines: {node: '>=20'}
 
+  '@shikijs/engine-oniguruma@4.5.0':
+    resolution: {integrity: sha512-dKVmbJecVdB9recl8a/CU4jdpNXyjJQrIcesIkpS70s5HS02ohpnCSpMUbotPnEUzbAcLQ+S4hwZYbkBBiTcJw==}
+    engines: {node: '>=20'}
+
   '@shikijs/langs@4.4.3':
     resolution: {integrity: sha512-ePic0yfAJGOF83D5wBHK/00EjK65oahBYxFk5epgq33WRv7X9UuxLEV8PtR0szC0z8dl7INIpIodB99JRFlR+A==}
+    engines: {node: '>=20'}
+
+  '@shikijs/langs@4.5.0':
+    resolution: {integrity: sha512-wwBTqwduXSz0X4v9Qa2EWeFaYJEw1clCncWjoRNQRbVDu3SPRTRWucnouYapKj3b8Q+sk/41Vbc4B5c8nuYzLA==}
     engines: {node: '>=20'}
 
   '@shikijs/primitive@4.4.3':
     resolution: {integrity: sha512-m0wBeLDQDeIxRdUmrCPdQqfuUamDwRL5isCfYbguKD6NiaKpVbsv+3J81DyIKgNW5h4WAIIr8T4EkgQrBBxvaQ==}
     engines: {node: '>=20'}
 
+  '@shikijs/primitive@4.5.0':
+    resolution: {integrity: sha512-UM7ShlA8oz0OWxLLO8BmO9Ip6fVqdkt8yF0EH7nOCqHfrx1eEAzF0ZUVK7L+I8NEgeu1PEWSRlxaiPPeCb4iDg==}
+    engines: {node: '>=20'}
+
   '@shikijs/themes@4.4.3':
     resolution: {integrity: sha512-w8UHjeUnIR965KMWJHUPXOc2mNJUnK3vpVLYLvw5IYU2mnTTJ89E24OrJDBNiJDQ0qzb0tc4l7mrIXx5cFeIyw==}
     engines: {node: '>=20'}
 
+  '@shikijs/themes@4.5.0':
+    resolution: {integrity: sha512-zGb87H3UBbpuI4yoh5UguB1XbU+2BDU3kflM7UfZ+Cy2hWo9lBtqjSVK20gmLY6ukYl040hAypGXMgud9vul8Q==}
+    engines: {node: '>=20'}
+
   '@shikijs/types@4.4.3':
     resolution: {integrity: sha512-UEJxmRR++MAGR6hugn0vgVS2W/6lWAts84FFSrnlH9sP0LNol7E5+NQ792pH8liWUhyMyjhTgSUH3k7iD7tc5g==}
+    engines: {node: '>=20'}
+
+  '@shikijs/types@4.5.0':
+    resolution: {integrity: sha512-drtPrtD8N0DENyD2cyt6Ajy+IWsiCLgMxODwLTpvH1UsN6a9jf90tNTPjqwHvA+0Lzu9e0txk8DjfqH1p9UJRw==}
     engines: {node: '>=20'}
 
   '@shikijs/vscode-textmate@10.0.2':
@@ -1811,6 +1828,7 @@ packages:
   '@smithy/core@3.35.0':
     resolution: {integrity: sha512-zRMhfkByhT2snNdr1si24vJitU6Cr9ix2MikUfWmkAgp4jrNP0GcKSP5YvwQ+TlI8AZXER5QOGJn3JsVtSD9/A==}
     engines: {node: '>=18.0.0'}
+    deprecated: Deprecated due to a bug in custom logger data redaction. See https://github.com/aws/aws-sdk-js-v3/issues/8393.
 
   '@smithy/credential-provider-imds@4.5.2':
     resolution: {integrity: sha512-A9uSdn72ozbRUSit0eib0TW7nXuNPlaeM0zcGkJ+nE6tFcSDbnmtwoxbTCFBukVQcszDAyvsd7+rTduPTXpygg==}
@@ -2090,6 +2108,10 @@ packages:
     resolution: {integrity: sha512-LOtTn+JgJvX8WfBVJtF08TGrdjuFzGJc4mkP8EdDI8ADbvO7kiexYep1o8dwnt0okb0jYclCDXF13xU7Ge4zSw==}
     engines: {node: '>=18.0.0'}
 
+  '@whatwg-node/disposablestack@0.1.0':
+    resolution: {integrity: sha512-ok0A9+D+mdeb3w1GNCpVr+2gVVLRWKo9Ywm/whNsoWSNfNg3jNxS0/wUF6NSUYbfOtFGu2wZgJnLjasbaQEfvA==}
+    engines: {node: '>=22.15.0'}
+
   '@whatwg-node/events@0.1.2':
     resolution: {integrity: sha512-ApcWxkrs1WmEMS2CaLLFUEem/49erT3sxIVjpzU5f6zmVcnijtDSrhoK2zVobOIikZJdH63jdAXOrvjf6eOUNQ==}
     engines: {node: '>=18.0.0'}
@@ -2105,6 +2127,10 @@ packages:
   '@whatwg-node/promise-helpers@1.3.2':
     resolution: {integrity: sha512-Nst5JdK47VIl9UcGwtv2Rcgyn5lWtZ0/mhRQ4G8NN2isxpq2TO30iqHzmwoJycjWuyUfg3GFXqP/gFHXeV57IA==}
     engines: {node: '>=16.0.0'}
+
+  '@whatwg-node/promise-helpers@2.0.1':
+    resolution: {integrity: sha512-ziVgm01A9irPLVBaUFei64qp771BrDXldbv5pY6kgFgNtA+7zq8ux6nj/6w8bELGH/+Ttnc76ox04HIjU8nqvg==}
+    engines: {node: '>=22.15.0'}
 
   '@whatwg-node/server@0.11.0':
     resolution: {integrity: sha512-VSdkwnJRr8Yv9UgB2aXB3VUPWwd6Oqnn0hycFwhg9pZgWxJXb7JmhsiXe9tmpMwjHFxli12PGcz9aI63YYloGQ==}
@@ -2129,6 +2155,11 @@ packages:
 
   acorn@8.18.0:
     resolution: {integrity: sha512-lGq+9yr1/GuAWaVYIHRjvvySG5/4VfKIvC8EWxStPdcDh/Ka7FG3twP6v4d5BkravUilhIAsG4Qj83t02LWUPQ==}
+    engines: {node: '>=0.4.0'}
+    hasBin: true
+
+  acorn@8.19.0:
+    resolution: {integrity: sha512-oJlA3XiRm7Cyk6qFD2Jn8ak9B7jSy0qy00ADO3+8dpT0LSjFihQYv4C02LFCSYJV3Q37xYwwRy5m+IpIiUzqWw==}
     engines: {node: '>=0.4.0'}
     hasBin: true
 
@@ -2229,15 +2260,14 @@ packages:
   bcp-47@2.1.1:
     resolution: {integrity: sha512-KLw+H/gd2p4zly1X7Yh/qziuyae5/w/QFnvTng9eZL5fvszL7Whl3MBoWF8yxL7ksUjBfOD+OxkytiqbBpG+Fw==}
 
-  better-auth@1.7.2:
-    resolution: {integrity: sha512-gKapKBEvYIGcMxi74RjQ7EbFLiqyQt58vdoJmL1qAlWSkY1Bc2Vqshl524/3u1NxauiOU03M/Ebh762Brmac9A==}
+  better-auth@1.7.15:
+    resolution: {integrity: sha512-x2HmrQZy9yTG3H9iJ9pvaVGmLbI++ynOcJ3SGqFZnhEDscQSpG+1P9Xv41ceje2vw7dVE5+BbImDGneyhtW2Vg==}
     peerDependencies:
       '@lynx-js/react': '*'
       '@prisma/client': ^5.0.0 || ^6.0.0 || ^7.0.0
-      '@sveltejs/kit': ^2.0.0
+      '@sveltejs/kit': ^2.0.0 || ^3.0.0
       '@tanstack/react-start': ^1.0.0
       '@tanstack/solid-start': ^1.0.0
-      better-sqlite3: ^12.0.0
       drizzle-kit: '>=0.31.4 || >=1.0.0-beta.1'
       drizzle-orm: ^0.45.2 || >=1.0.0-rc.1 <2.0.0
       mongodb: ^6.0.0 || ^7.0.0
@@ -2249,7 +2279,7 @@ packages:
       react-dom: ^18.0.0 || ^19.0.0
       solid-js: ^1.0.0
       svelte: ^4.0.0 || ^5.0.0
-      vitest: ^2.0.0 || ^3.0.0 || ^4.0.0
+      vitest: ^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0
       vue: ^3.0.0
     peerDependenciesMeta:
       '@lynx-js/react':
@@ -2261,8 +2291,6 @@ packages:
       '@tanstack/react-start':
         optional: true
       '@tanstack/solid-start':
-        optional: true
-      better-sqlite3:
         optional: true
       drizzle-kit:
         optional: true
@@ -2291,8 +2319,8 @@ packages:
       vue:
         optional: true
 
-  better-call@1.4.0:
-    resolution: {integrity: sha512-bBKOT4vv1kZLDgxVePdilk/Jwkn+dtRRsmi3DzHcDP+WnswyVl6dR59l2HEeP/0cB+bDoopASAesWDPIdd/zZA==}
+  better-call@1.4.4:
+    resolution: {integrity: sha512-Gq4XdGFy4dmUxFEAX2nj0ycFcFbD9ZWh8YROouZoyXeF1M11TpYbplk0pDByTFF8Wz+MYa6W9052c9m7dD+mfw==}
     peerDependencies:
       zod: ^4.0.0
     peerDependenciesMeta:
@@ -2778,14 +2806,14 @@ packages:
   github-slugger@2.0.0:
     resolution: {integrity: sha512-IaOQ9puYtjrkq7Y0Ygl9KDZnrf/aiUJYUpVf89y8kyaxbRG7Y1SrX/jaumrv81vc61+kiMempujsM3Yw7w5qcw==}
 
-  graphql-scalars@1.26.0:
-    resolution: {integrity: sha512-o7BnU5yxAFUWTMKpC5yshB12DjzzoxLgEBO9OpOAcxodWrL3sPldD/fqVQoIfcqPH8OclyQilLtg3/7ZRqQUVQ==}
+  graphql-scalars@2.0.1:
+    resolution: {integrity: sha512-/BkY0J5/1L9e+mTfCTzmpV78mNh95ZpiJWfAkaIYHE5B7hrvgRpB5//rXVTFD1aaKGcRUCHj/vpNcgtrenwZNA==}
     engines: {node: '>=10'}
     peerDependencies:
-      graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
+      graphql: ^16.0.0 || ^17.0.0
 
-  graphql-yoga@5.24.1:
-    resolution: {integrity: sha512-NA2aQ4sZvR/bniCCLOlMG6OSZf5hPg3mUf3Phm33ObqRMZEq6WtZrj2hTcHfT2ZEFVV5FRCbcMb4NB1w7BIKaA==}
+  graphql-yoga@5.24.6:
+    resolution: {integrity: sha512-IpRSnLfxbv1oiNTghzYjb0QPCn4p1y+8uoXJ0MkC5aNJAko2PSba89ByJXHIxoQAILZ3PKZaVcaEtlDJw4YQxw==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       graphql: ^15.2.0 || ^16.0.0 || ^17.0.0
@@ -2860,8 +2888,8 @@ packages:
   help-me@5.0.0:
     resolution: {integrity: sha512-7xgomUX6ADmcYzFik0HzAxh/73YlKR9bmFzf51CZwR+b6YtzU2m0u49hQCqV6SvlqIqsaxovfwdvbnsw3b/zpg==}
 
-  hono@4.13.10:
-    resolution: {integrity: sha512-dQuLsa5oO+47QVMVMaaD9cIv8ctmVtK1iRvwWngkfloFJMeFeuoUFDswIqZGxmGX3hrRzREgEArjkK9OgsQEhA==}
+  hono@4.13.16:
+    resolution: {integrity: sha512-AOLOEhvrV+iH92xXCnFr/5+3KjPKcI3xP63XJtX5spAnkznPdHijlIsUTpi7/9EhWqrTCekw5c5zh1K+YsVw7A==}
     engines: {node: '>=16.9.0'}
 
   html-escaper@3.0.3:
@@ -3323,8 +3351,8 @@ packages:
   node-rsa@1.1.1:
     resolution: {integrity: sha512-Jd4cvbJMryN21r5HgxQOpMEqv+ooke/korixNNK3mGqfGJmy0M77WDDzo/05969+OkMy3XW1UuZsSmW9KQm7Fw==}
 
-  nodemailer@10.0.12:
-    resolution: {integrity: sha512-PQ46oNbNMuH/Sno7B5IWIU9etytwrO0xdTFvWXpIQFRXhBAXtzD48243AS+BCbQQTPD8y3fqUrgLn0tSo77gvg==}
+  nodemailer@10.3.1:
+    resolution: {integrity: sha512-uF0AFsJC07Y1vdW7p580DKAnh7rAO+4UPSSB3mDCPNDufoiaOebV6JmrzpxB14OjEEEiBsNdYoM2Y+fN8M7BBA==}
     engines: {node: '>=20.0.0'}
 
   normalize-path@3.0.0:
@@ -3688,6 +3716,10 @@ packages:
     resolution: {integrity: sha512-Mb/GvXPHBAXdgGIcnfU5L3ldpn1XcxrGkPHwqgRx17/I2XRfqlFKk2vGkHWINn1kdXvzJZeuO3is6I9KLPFm0g==}
     engines: {node: '>=20'}
 
+  shiki@4.5.0:
+    resolution: {integrity: sha512-OcRW72ngQvc+MSVWBRIovC/BTW589iUE/Vxav7VeM4RcY9MUjqB+IR6ILG1k9nuW6LiG/nct9uma4/MBtnZbmQ==}
+    engines: {node: '>=20'}
+
   sisteransi@1.0.5:
     resolution: {integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==}
 
@@ -3700,6 +3732,10 @@ packages:
     resolution: {integrity: sha512-hpd+HLON7HdZXqYchMM/+LaTTbdK0AU3NngIJ4KVyWbY9bfQqdL9cD+4yf6dUoU2Ap4VsU0JkQi6FxAI1B2mXQ==}
     engines: {node: '>= 18'}
 
+  smol-toml@1.9.1:
+    resolution: {integrity: sha512-j7WyPdf0CJoutMzMoPLF/bVXHtKZIT9Rb4eGeEbWw8X2t5oirjPgpL+OpaENZrILYaXqYwnVH+qgUwVbl+pUJQ==}
+    engines: {node: '>= 18'}
+
   sonic-boom@4.2.1:
     resolution: {integrity: sha512-w6AxtubXa2wTXAUsZMMWERrsIRAdrK0Sc+FUytWvYAhBJLyuI4llrMIC1DtlNSdI99EI86KZum2MMq3EAZlF9Q==}
 
@@ -3709,6 +3745,10 @@ packages:
 
   source-map@0.7.6:
     resolution: {integrity: sha512-i5uvt8C3ikiWeNZSVZNWcfZPItFQOsYTUAOkcUPGd8DqDy1uOUikjt5dG+uRlwyvR108Fb9DOd4GvXfT0N2/uQ==}
+    engines: {node: '>= 12'}
+
+  source-map@0.8.0:
+    resolution: {integrity: sha512-d8EqvL+k/SOXCreS/SUzg2ciyHqBBLcN/yuRjFsbvVhHTE2pgei7oAhmPM7kWFbkX6OSMQfUq4KbkF3au9lhYQ==}
     engines: {node: '>= 12'}
 
   space-separated-tokens@2.0.2:
@@ -4229,6 +4269,9 @@ packages:
   zod@4.6.5:
     resolution: {integrity: sha512-v5l/aFXZQeai4awLbOpSoHecE9UiMrnfx75tEXLjNonXVARxQ5mOeipTjROUchszUNCqnE+hqAMujRsRHsut2Q==}
 
+  zod@4.6.7:
+    resolution: {integrity: sha512-g8W2D2kU6a8untc053fX1uVBKzM7yqAxW/3zwk83+6RyF2+SKOuV+c0wBDhUwzV1PaGapmZH+rmcUzPf+3CGwg==}
+
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
 
@@ -4315,6 +4358,17 @@ snapshots:
       smol-toml: 1.9.0
       unified: 11.0.5
 
+  '@astrojs/internal-helpers@0.13.0':
+    dependencies:
+      '@types/hast': 3.0.5
+      '@types/mdast': 4.0.4
+      picomatch: 4.0.7
+      retext-smartypants: 6.2.0
+      shiki: 4.5.0
+      smol-toml: 1.9.1
+      unified: 11.0.5
+      yaml: 2.9.1
+
   '@astrojs/language-server@2.17.1(@emnapi/runtime@1.11.3)(prettier@3.9.9)(typescript@6.0.3)':
     dependencies:
       '@astrojs/astro2tsx': 0.1.2(@emnapi/runtime@1.11.3)
@@ -4340,12 +4394,12 @@ snapshots:
       - '@emnapi/runtime'
       - typescript
 
-  '@astrojs/markdown-remark@7.3.1':
+  '@astrojs/markdown-remark@7.3.5':
     dependencies:
-      '@astrojs/internal-helpers': 0.11.0
-      '@astrojs/prism': 4.0.2
+      '@astrojs/internal-helpers': 0.13.0
+      '@astrojs/prism': 4.1.2
       '@mdx-js/mdx': 3.1.1
-      acorn: 8.18.0
+      acorn: 8.19.0
       estree-util-visit: 2.0.0
       github-slugger: 2.0.0
       hast-util-from-html: 2.0.3
@@ -4358,7 +4412,7 @@ snapshots:
       remark-parse: 11.0.0
       remark-rehype: 11.1.2
       remark-smartypants: 3.0.3
-      source-map: 0.7.6
+      source-map: 0.8.0
       unified: 11.0.5
       unist-util-remove-position: 5.0.0
       unist-util-visit: 5.1.0
@@ -4374,16 +4428,20 @@ snapshots:
       github-slugger: 2.0.0
       satteri: 0.10.5
 
-  '@astrojs/mdx@8.0.2(@astrojs/markdown-remark@7.3.1)(@astrojs/markdown-satteri@0.4.2)(astro@7.3.5(@astrojs/markdown-remark@7.3.1)(@types/node@26.6.3)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1))':
+  '@astrojs/mdx@8.0.2(@astrojs/markdown-remark@7.3.5)(@astrojs/markdown-satteri@0.4.2)(astro@7.3.5(@astrojs/markdown-remark@7.3.5)(@types/node@26.6.3)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1))':
     dependencies:
       '@astrojs/internal-helpers': 0.11.0
       '@astrojs/markdown-satteri': 0.4.2
-      astro: 7.3.5(@astrojs/markdown-remark@7.3.1)(@types/node@26.6.3)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1)
+      astro: 7.3.5(@astrojs/markdown-remark@7.3.5)(@types/node@26.6.3)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1)
       es-module-lexer: 2.3.2
     optionalDependencies:
-      '@astrojs/markdown-remark': 7.3.1
+      '@astrojs/markdown-remark': 7.3.5
 
   '@astrojs/prism@4.0.2':
+    dependencies:
+      prismjs: 1.30.0
+
+  '@astrojs/prism@4.1.2':
     dependencies:
       prismjs: 1.30.0
 
@@ -4392,17 +4450,17 @@ snapshots:
       sitemap: 9.0.1
       zod: 4.6.5
 
-  '@astrojs/starlight@0.42.4(@astrojs/markdown-remark@7.3.1)(astro@7.3.5(@astrojs/markdown-remark@7.3.1)(@types/node@26.6.3)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1))(typescript@6.0.3)':
+  '@astrojs/starlight@0.42.4(@astrojs/markdown-remark@7.3.5)(astro@7.3.5(@astrojs/markdown-remark@7.3.5)(@types/node@26.6.3)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1))(typescript@6.0.3)':
     dependencies:
       '@astrojs/markdown-satteri': 0.4.2
-      '@astrojs/mdx': 8.0.2(@astrojs/markdown-remark@7.3.1)(@astrojs/markdown-satteri@0.4.2)(astro@7.3.5(@astrojs/markdown-remark@7.3.1)(@types/node@26.6.3)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1))
+      '@astrojs/mdx': 8.0.2(@astrojs/markdown-remark@7.3.5)(@astrojs/markdown-satteri@0.4.2)(astro@7.3.5(@astrojs/markdown-remark@7.3.5)(@types/node@26.6.3)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1))
       '@astrojs/sitemap': 3.7.4
       '@pagefind/default-ui': 1.5.2
       '@types/hast': 3.0.5
       '@types/js-yaml': 4.0.9
       '@types/mdast': 4.0.4
-      astro: 7.3.5(@astrojs/markdown-remark@7.3.1)(@types/node@26.6.3)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1)
-      astro-expressive-code: 0.44.2(astro@7.3.5(@astrojs/markdown-remark@7.3.1)(@types/node@26.6.3)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1))
+      astro: 7.3.5(@astrojs/markdown-remark@7.3.5)(@types/node@26.6.3)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1)
+      astro-expressive-code: 0.44.2(astro@7.3.5(@astrojs/markdown-remark@7.3.5)(@types/node@26.6.3)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1))
       bcp-47: 2.1.1
       hast-util-format: 1.1.0
       hast-util-select: 6.0.4
@@ -4424,7 +4482,44 @@ snapshots:
       unist-util-visit: 5.1.0
       vfile: 6.0.3
     optionalDependencies:
-      '@astrojs/markdown-remark': 7.3.1
+      '@astrojs/markdown-remark': 7.3.5
+    transitivePeerDependencies:
+      - supports-color
+      - typescript
+
+  '@astrojs/starlight@0.42.8(@astrojs/markdown-remark@7.3.5)(astro@7.3.5(@astrojs/markdown-remark@7.3.5)(@types/node@26.6.3)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1))(typescript@6.0.3)':
+    dependencies:
+      '@astrojs/markdown-satteri': 0.4.2
+      '@astrojs/mdx': 8.0.2(@astrojs/markdown-remark@7.3.5)(@astrojs/markdown-satteri@0.4.2)(astro@7.3.5(@astrojs/markdown-remark@7.3.5)(@types/node@26.6.3)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1))
+      '@astrojs/sitemap': 3.7.4
+      '@pagefind/default-ui': 1.5.2
+      '@types/hast': 3.0.5
+      '@types/js-yaml': 4.0.9
+      '@types/mdast': 4.0.4
+      astro: 7.3.5(@astrojs/markdown-remark@7.3.5)(@types/node@26.6.3)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1)
+      astro-expressive-code: 0.44.2(astro@7.3.5(@astrojs/markdown-remark@7.3.5)(@types/node@26.6.3)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1))
+      bcp-47: 2.1.1
+      hast-util-format: 1.1.0
+      hast-util-select: 6.0.4
+      hast-util-to-html: 9.0.5
+      hast-util-to-string: 3.0.1
+      hastscript: 9.0.1
+      i18next: 26.4.2(typescript@6.0.3)
+      js-yaml: 4.3.2
+      klona: 2.0.6
+      magic-string: 1.4.2
+      mdast-util-directive: 3.1.0
+      mdast-util-to-markdown: 2.1.3
+      mdast-util-to-string: 4.0.0
+      pagefind: 1.5.2
+      remark-directive: 4.0.0
+      satteri: 0.10.5
+      ultrahtml: 1.7.0
+      unified: 11.0.5
+      unist-util-visit: 5.1.0
+      vfile: 6.0.3
+    optionalDependencies:
+      '@astrojs/markdown-remark': 7.3.5
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -4643,78 +4738,77 @@ snapshots:
       '@babel/helper-string-parser': 7.29.7
       '@babel/helper-validator-identifier': 7.29.7
 
-  '@better-auth/core@1.7.2(@better-auth/utils@0.4.2)(@better-fetch/fetch@1.3.1)(better-call@1.4.0(zod@4.6.5))(jose@6.2.12)(kysely@0.29.6)(nanostores@1.5.4)':
+  '@better-auth/core@1.7.15(@better-auth/utils@0.5.1)(@better-fetch/fetch@1.3.3)(better-call@1.4.4(zod@4.6.7))(jose@6.2.12)(kysely@0.29.6)(nanostores@1.5.4)':
     dependencies:
-      '@better-auth/utils': 0.4.2
-      '@better-fetch/fetch': 1.3.1
-      '@opentelemetry/semantic-conventions': 1.43.0
+      '@better-auth/utils': 0.5.1
+      '@better-fetch/fetch': 1.3.3
       '@standard-schema/spec': 1.1.0
-      better-call: 1.4.0(zod@4.6.5)
+      better-call: 1.4.4(zod@4.6.7)
       jose: 6.2.12
       kysely: 0.29.6
       nanostores: 1.5.4
       zod: 4.6.5
 
-  '@better-auth/drizzle-adapter@1.7.2(@better-auth/core@1.7.2(@better-auth/utils@0.4.2)(@better-fetch/fetch@1.3.1)(better-call@1.4.0(zod@4.6.5))(jose@6.2.12)(kysely@0.29.6)(nanostores@1.5.4))(@better-auth/utils@0.4.2)(drizzle-orm@0.45.3(@libsql/client@0.18.0)(kysely@0.29.6)(postgres@3.4.9))':
+  '@better-auth/drizzle-adapter@1.7.15(@better-auth/core@1.7.15(@better-auth/utils@0.5.1)(@better-fetch/fetch@1.3.3)(better-call@1.4.4(zod@4.6.7))(jose@6.2.12)(kysely@0.29.6)(nanostores@1.5.4))(@better-auth/utils@0.5.1)(drizzle-orm@0.45.3(@libsql/client@0.18.0)(kysely@0.29.6)(postgres@3.4.9))':
     dependencies:
-      '@better-auth/core': 1.7.2(@better-auth/utils@0.4.2)(@better-fetch/fetch@1.3.1)(better-call@1.4.0(zod@4.6.5))(jose@6.2.12)(kysely@0.29.6)(nanostores@1.5.4)
-      '@better-auth/utils': 0.4.2
+      '@better-auth/core': 1.7.15(@better-auth/utils@0.5.1)(@better-fetch/fetch@1.3.3)(better-call@1.4.4(zod@4.6.7))(jose@6.2.12)(kysely@0.29.6)(nanostores@1.5.4)
+      '@better-auth/utils': 0.5.1
     optionalDependencies:
       drizzle-orm: 0.45.3(@libsql/client@0.18.0)(kysely@0.29.6)(postgres@3.4.9)
 
-  '@better-auth/kysely-adapter@1.7.2(@better-auth/core@1.7.2(@better-auth/utils@0.4.2)(@better-fetch/fetch@1.3.1)(better-call@1.4.0(zod@4.6.5))(jose@6.2.12)(kysely@0.29.6)(nanostores@1.5.4))(@better-auth/utils@0.4.2)(kysely@0.29.6)':
+  '@better-auth/kysely-adapter@1.7.15(@better-auth/core@1.7.15(@better-auth/utils@0.5.1)(@better-fetch/fetch@1.3.3)(better-call@1.4.4(zod@4.6.7))(jose@6.2.12)(kysely@0.29.6)(nanostores@1.5.4))(@better-auth/utils@0.5.1)(kysely@0.29.6)':
     dependencies:
-      '@better-auth/core': 1.7.2(@better-auth/utils@0.4.2)(@better-fetch/fetch@1.3.1)(better-call@1.4.0(zod@4.6.5))(jose@6.2.12)(kysely@0.29.6)(nanostores@1.5.4)
-      '@better-auth/utils': 0.4.2
+      '@better-auth/core': 1.7.15(@better-auth/utils@0.5.1)(@better-fetch/fetch@1.3.3)(better-call@1.4.4(zod@4.6.7))(jose@6.2.12)(kysely@0.29.6)(nanostores@1.5.4)
+      '@better-auth/utils': 0.5.1
     optionalDependencies:
       kysely: 0.29.6
 
-  '@better-auth/memory-adapter@1.7.2(@better-auth/core@1.7.2(@better-auth/utils@0.4.2)(@better-fetch/fetch@1.3.1)(better-call@1.4.0(zod@4.6.5))(jose@6.2.12)(kysely@0.29.6)(nanostores@1.5.4))(@better-auth/utils@0.4.2)':
+  '@better-auth/memory-adapter@1.7.15(@better-auth/core@1.7.15(@better-auth/utils@0.5.1)(@better-fetch/fetch@1.3.3)(better-call@1.4.4(zod@4.6.7))(jose@6.2.12)(kysely@0.29.6)(nanostores@1.5.4))(@better-auth/utils@0.5.1)':
     dependencies:
-      '@better-auth/core': 1.7.2(@better-auth/utils@0.4.2)(@better-fetch/fetch@1.3.1)(better-call@1.4.0(zod@4.6.5))(jose@6.2.12)(kysely@0.29.6)(nanostores@1.5.4)
-      '@better-auth/utils': 0.4.2
+      '@better-auth/core': 1.7.15(@better-auth/utils@0.5.1)(@better-fetch/fetch@1.3.3)(better-call@1.4.4(zod@4.6.7))(jose@6.2.12)(kysely@0.29.6)(nanostores@1.5.4)
+      '@better-auth/utils': 0.5.1
 
-  '@better-auth/mongo-adapter@1.7.2(@better-auth/core@1.7.2(@better-auth/utils@0.4.2)(@better-fetch/fetch@1.3.1)(better-call@1.4.0(zod@4.6.5))(jose@6.2.12)(kysely@0.29.6)(nanostores@1.5.4))(@better-auth/utils@0.4.2)':
+  '@better-auth/mongo-adapter@1.7.15(@better-auth/core@1.7.15(@better-auth/utils@0.5.1)(@better-fetch/fetch@1.3.3)(better-call@1.4.4(zod@4.6.7))(jose@6.2.12)(kysely@0.29.6)(nanostores@1.5.4))(@better-auth/utils@0.5.1)':
     dependencies:
-      '@better-auth/core': 1.7.2(@better-auth/utils@0.4.2)(@better-fetch/fetch@1.3.1)(better-call@1.4.0(zod@4.6.5))(jose@6.2.12)(kysely@0.29.6)(nanostores@1.5.4)
-      '@better-auth/utils': 0.4.2
+      '@better-auth/core': 1.7.15(@better-auth/utils@0.5.1)(@better-fetch/fetch@1.3.3)(better-call@1.4.4(zod@4.6.7))(jose@6.2.12)(kysely@0.29.6)(nanostores@1.5.4)
+      '@better-auth/utils': 0.5.1
 
-  '@better-auth/prisma-adapter@1.7.2(@better-auth/core@1.7.2(@better-auth/utils@0.4.2)(@better-fetch/fetch@1.3.1)(better-call@1.4.0(zod@4.6.5))(jose@6.2.12)(kysely@0.29.6)(nanostores@1.5.4))(@better-auth/utils@0.4.2)':
+  '@better-auth/prisma-adapter@1.7.15(@better-auth/core@1.7.15(@better-auth/utils@0.5.1)(@better-fetch/fetch@1.3.3)(better-call@1.4.4(zod@4.6.7))(jose@6.2.12)(kysely@0.29.6)(nanostores@1.5.4))(@better-auth/utils@0.5.1)':
     dependencies:
-      '@better-auth/core': 1.7.2(@better-auth/utils@0.4.2)(@better-fetch/fetch@1.3.1)(better-call@1.4.0(zod@4.6.5))(jose@6.2.12)(kysely@0.29.6)(nanostores@1.5.4)
-      '@better-auth/utils': 0.4.2
+      '@better-auth/core': 1.7.15(@better-auth/utils@0.5.1)(@better-fetch/fetch@1.3.3)(better-call@1.4.4(zod@4.6.7))(jose@6.2.12)(kysely@0.29.6)(nanostores@1.5.4)
+      '@better-auth/utils': 0.5.1
 
-  '@better-auth/sso@1.7.2(@better-auth/core@1.7.2(@better-auth/utils@0.4.2)(@better-fetch/fetch@1.3.1)(better-call@1.4.0(zod@4.6.5))(jose@6.2.12)(kysely@0.29.6)(nanostores@1.5.4))(@better-auth/utils@0.4.2)(@better-fetch/fetch@1.3.1)(better-auth@1.7.2(drizzle-orm@0.45.3(@libsql/client@0.18.0)(kysely@0.29.6)(postgres@3.4.9))(vue@3.5.43(typescript@6.0.3)))(better-call@1.4.0(zod@4.6.5))':
+  '@better-auth/sso@1.7.15(@better-auth/core@1.7.15(@better-auth/utils@0.5.1)(@better-fetch/fetch@1.3.3)(better-call@1.4.4(zod@4.6.7))(jose@6.2.12)(kysely@0.29.6)(nanostores@1.5.4))(@better-auth/utils@0.5.1)(@better-fetch/fetch@1.3.3)(better-auth@1.7.15(drizzle-orm@0.45.3(@libsql/client@0.18.0)(kysely@0.29.6)(postgres@3.4.9))(vue@3.5.43(typescript@6.0.3)))(better-call@1.4.4(zod@4.6.7))':
     dependencies:
-      '@better-auth/core': 1.7.2(@better-auth/utils@0.4.2)(@better-fetch/fetch@1.3.1)(better-call@1.4.0(zod@4.6.5))(jose@6.2.12)(kysely@0.29.6)(nanostores@1.5.4)
-      '@better-auth/utils': 0.4.2
-      '@better-fetch/fetch': 1.3.1
+      '@better-auth/core': 1.7.15(@better-auth/utils@0.5.1)(@better-fetch/fetch@1.3.3)(better-call@1.4.4(zod@4.6.7))(jose@6.2.12)(kysely@0.29.6)(nanostores@1.5.4)
+      '@better-auth/utils': 0.5.1
+      '@better-fetch/fetch': 1.3.3
       '@xmldom/xmldom': 0.9.12
-      better-auth: 1.7.2(drizzle-orm@0.45.3(@libsql/client@0.18.0)(kysely@0.29.6)(postgres@3.4.9))(vue@3.5.43(typescript@6.0.3))
-      better-call: 1.4.0(zod@4.6.5)
+      better-auth: 1.7.15(drizzle-orm@0.45.3(@libsql/client@0.18.0)(kysely@0.29.6)(postgres@3.4.9))(vue@3.5.43(typescript@6.0.3))
+      better-call: 1.4.4(zod@4.6.7)
       fast-xml-parser: 5.11.1
       jose: 6.2.12
       samlify: 2.13.1
       tldts: 7.4.16
       zod: 4.6.5
 
-  '@better-auth/telemetry@1.7.2(@better-auth/core@1.7.2(@better-auth/utils@0.4.2)(@better-fetch/fetch@1.3.1)(better-call@1.4.0(zod@4.6.5))(jose@6.2.12)(kysely@0.29.6)(nanostores@1.5.4))(@better-auth/utils@0.4.2)(@better-fetch/fetch@1.3.1)':
+  '@better-auth/telemetry@1.7.15(@better-auth/core@1.7.15(@better-auth/utils@0.5.1)(@better-fetch/fetch@1.3.3)(better-call@1.4.4(zod@4.6.7))(jose@6.2.12)(kysely@0.29.6)(nanostores@1.5.4))(@better-auth/utils@0.5.1)(@better-fetch/fetch@1.3.3)':
     dependencies:
-      '@better-auth/core': 1.7.2(@better-auth/utils@0.4.2)(@better-fetch/fetch@1.3.1)(better-call@1.4.0(zod@4.6.5))(jose@6.2.12)(kysely@0.29.6)(nanostores@1.5.4)
-      '@better-auth/utils': 0.4.2
-      '@better-fetch/fetch': 1.3.1
-
-  '@better-auth/utils@0.4.2':
-    dependencies:
-      '@noble/hashes': 2.4.0
+      '@better-auth/core': 1.7.15(@better-auth/utils@0.5.1)(@better-fetch/fetch@1.3.3)(better-call@1.4.4(zod@4.6.7))(jose@6.2.12)(kysely@0.29.6)(nanostores@1.5.4)
+      '@better-auth/utils': 0.5.1
+      '@better-fetch/fetch': 1.3.3
 
   '@better-auth/utils@0.5.0':
     dependencies:
       '@noble/hashes': 2.4.0
 
-  '@better-fetch/fetch@1.3.1': {}
+  '@better-auth/utils@0.5.1':
+    dependencies:
+      '@noble/hashes': 2.4.0
 
   '@better-fetch/fetch@1.3.2': {}
+
+  '@better-fetch/fetch@1.3.3': {}
 
   '@biomejs/biome@2.5.14':
     optionalDependencies:
@@ -4989,41 +5083,33 @@ snapshots:
 
   '@fontsource-variable/manrope@5.3.0': {}
 
-  '@graphql-tools/executor@2.0.1(graphql@16.14.2)':
+  '@graphql-tools/executor@2.1.0(graphql@16.14.2)':
     dependencies:
-      '@graphql-tools/utils': 12.0.1(graphql@16.14.2)
+      '@graphql-tools/utils': 12.1.0(graphql@16.14.2)
       '@graphql-typed-document-node/core': 3.2.0(graphql@16.14.2)
       '@repeaterjs/repeater': 3.1.0
-      '@whatwg-node/disposablestack': 0.0.6
-      '@whatwg-node/promise-helpers': 1.3.2
+      '@whatwg-node/disposablestack': 0.1.0
+      '@whatwg-node/promise-helpers': 2.0.1
       graphql: 16.14.2
       tslib: 2.8.1
 
-  '@graphql-tools/merge@9.2.4(graphql@16.14.2)':
+  '@graphql-tools/merge@9.2.8(graphql@16.14.2)':
     dependencies:
-      '@graphql-tools/utils': 12.0.1(graphql@16.14.2)
+      '@graphql-tools/utils': 12.1.0(graphql@16.14.2)
       graphql: 16.14.2
       tslib: 2.8.1
 
-  '@graphql-tools/schema@10.1.1(graphql@16.14.2)':
+  '@graphql-tools/schema@10.1.5(graphql@16.14.2)':
     dependencies:
-      '@graphql-tools/merge': 9.2.4(graphql@16.14.2)
-      '@graphql-tools/utils': 12.0.1(graphql@16.14.2)
+      '@graphql-tools/merge': 9.2.8(graphql@16.14.2)
+      '@graphql-tools/utils': 12.1.0(graphql@16.14.2)
       graphql: 16.14.2
       tslib: 2.8.1
 
-  '@graphql-tools/utils@11.2.2(graphql@16.14.2)':
-    dependencies:
-      '@graphql-typed-document-node/core': 3.2.0(graphql@16.14.2)
-      '@whatwg-node/promise-helpers': 1.3.2
-      cross-inspect: 1.0.1
-      graphql: 16.14.2
-      tslib: 2.8.1
-
-  '@graphql-tools/utils@12.0.1(graphql@16.14.2)':
+  '@graphql-tools/utils@12.1.0(graphql@16.14.2)':
     dependencies:
       '@graphql-typed-document-node/core': 3.2.0(graphql@16.14.2)
-      '@whatwg-node/promise-helpers': 1.3.2
+      '@whatwg-node/promise-helpers': 2.0.1
       cross-inspect: 1.0.1
       graphql: 16.14.2
       tslib: 2.8.1
@@ -5048,9 +5134,9 @@ snapshots:
       '@repeaterjs/repeater': 3.1.0
       tslib: 2.8.1
 
-  '@hono/node-server@2.1.1(hono@4.13.10)':
+  '@hono/node-server@2.1.5(hono@4.13.16)':
     dependencies:
-      hono: 4.13.10
+      hono: 4.13.16
 
   '@img/colour@1.1.0': {}
 
@@ -5220,18 +5306,18 @@ snapshots:
   '@libsql/win32-x64-msvc@0.5.29':
     optional: true
 
-  '@manablox/api-graphql@0.50.0(@types/node@26.6.3)(kysely@0.29.6)':
+  '@manablox/api-graphql@0.50.1(@types/node@26.6.3)(kysely@0.29.6)':
     dependencies:
-      '@manablox/cache': 0.50.0
-      '@manablox/core': 0.50.0
-      '@manablox/db': 0.50.0(kysely@0.29.6)
-      '@manablox/fields': 0.50.0
-      '@manablox/media': 0.50.0(@types/node@26.6.3)(kysely@0.29.6)
-      '@manablox/services': 0.50.0(kysely@0.29.6)
+      '@manablox/cache': 0.50.1
+      '@manablox/core': 0.50.1
+      '@manablox/db': 0.50.1(kysely@0.29.6)
+      '@manablox/fields': 0.50.1
+      '@manablox/media': 0.50.1(@types/node@26.6.3)(kysely@0.29.6)
+      '@manablox/services': 0.50.1(kysely@0.29.6)
       '@pothos/core': 4.15.1(graphql@16.14.2)
       graphql: 16.14.2
-      graphql-scalars: 1.26.0(graphql@16.14.2)
-      graphql-yoga: 5.24.1(graphql@16.14.2)
+      graphql-scalars: 2.0.1(graphql@16.14.2)
+      graphql-yoga: 5.24.6(graphql@16.14.2)
     transitivePeerDependencies:
       - '@aws-sdk/client-rds-data'
       - '@cloudflare/workers-types'
@@ -5266,16 +5352,16 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@manablox/api-public@0.50.0(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(ws@8.22.0)':
+  '@manablox/api-public@0.50.1(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(ws@8.22.0)':
     dependencies:
-      '@manablox/cache': 0.50.0
-      '@manablox/core': 0.50.0
-      '@manablox/db': 0.50.0(kysely@0.29.6)
-      '@manablox/fields': 0.50.0
-      '@manablox/media': 0.50.0(@types/node@26.6.3)(kysely@0.29.6)
-      '@manablox/services': 0.50.0(kysely@0.29.6)
+      '@manablox/cache': 0.50.1
+      '@manablox/core': 0.50.1
+      '@manablox/db': 0.50.1(kysely@0.29.6)
+      '@manablox/fields': 0.50.1
+      '@manablox/media': 0.50.1(@types/node@26.6.3)(kysely@0.29.6)
+      '@manablox/services': 0.50.1(kysely@0.29.6)
       '@orpc/server': 1.15.4(crossws@0.3.5)(ws@8.22.0)
-      zod: 4.6.5
+      zod: 4.6.7
     transitivePeerDependencies:
       - '@aws-sdk/client-rds-data'
       - '@cloudflare/workers-types'
@@ -5313,16 +5399,16 @@ snapshots:
       - utf-8-validate
       - ws
 
-  '@manablox/api-rpc@0.50.0(@libsql/client@0.18.0)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)':
+  '@manablox/api-rpc@0.50.1(@libsql/client@0.18.0)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)':
     dependencies:
-      '@manablox/auth': 0.50.0(@libsql/client@0.18.0)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(zod@4.6.5)
-      '@manablox/core': 0.50.0
-      '@manablox/db': 0.50.0(kysely@0.29.6)
-      '@manablox/media': 0.50.0(@types/node@26.6.3)(kysely@0.29.6)
-      '@manablox/services': 0.50.0(kysely@0.29.6)
+      '@manablox/auth': 0.50.1(@libsql/client@0.18.0)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(zod@4.6.7)
+      '@manablox/core': 0.50.1
+      '@manablox/db': 0.50.1(kysely@0.29.6)
+      '@manablox/media': 0.50.1(@types/node@26.6.3)(kysely@0.29.6)
+      '@manablox/services': 0.50.1(kysely@0.29.6)
       '@orpc/contract': 1.15.4
       '@orpc/server': 1.15.4(crossws@0.3.5)(ws@8.22.0)
-      zod: 4.6.5
+      zod: 4.6.7
     transitivePeerDependencies:
       - '@aws-sdk/client-rds-data'
       - '@cloudflare/workers-types'
@@ -5375,17 +5461,17 @@ snapshots:
       - vue
       - ws
 
-  '@manablox/auth@0.50.0(@libsql/client@0.18.0)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(zod@4.6.5)':
+  '@manablox/auth@0.50.1(@libsql/client@0.18.0)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(zod@4.6.7)':
     dependencies:
-      '@better-auth/core': 1.7.2(@better-auth/utils@0.4.2)(@better-fetch/fetch@1.3.1)(better-call@1.4.0(zod@4.6.5))(jose@6.2.12)(kysely@0.29.6)(nanostores@1.5.4)
-      '@better-auth/sso': 1.7.2(@better-auth/core@1.7.2(@better-auth/utils@0.4.2)(@better-fetch/fetch@1.3.1)(better-call@1.4.0(zod@4.6.5))(jose@6.2.12)(kysely@0.29.6)(nanostores@1.5.4))(@better-auth/utils@0.4.2)(@better-fetch/fetch@1.3.1)(better-auth@1.7.2(drizzle-orm@0.45.3(@libsql/client@0.18.0)(kysely@0.29.6)(postgres@3.4.9))(vue@3.5.43(typescript@6.0.3)))(better-call@1.4.0(zod@4.6.5))
-      '@better-auth/utils': 0.4.2
-      '@better-fetch/fetch': 1.3.1
-      '@manablox/core': 0.50.0
-      '@manablox/db': 0.50.0(kysely@0.29.6)
+      '@better-auth/core': 1.7.15(@better-auth/utils@0.5.1)(@better-fetch/fetch@1.3.3)(better-call@1.4.4(zod@4.6.7))(jose@6.2.12)(kysely@0.29.6)(nanostores@1.5.4)
+      '@better-auth/sso': 1.7.15(@better-auth/core@1.7.15(@better-auth/utils@0.5.1)(@better-fetch/fetch@1.3.3)(better-call@1.4.4(zod@4.6.7))(jose@6.2.12)(kysely@0.29.6)(nanostores@1.5.4))(@better-auth/utils@0.5.1)(@better-fetch/fetch@1.3.3)(better-auth@1.7.15(drizzle-orm@0.45.3(@libsql/client@0.18.0)(kysely@0.29.6)(postgres@3.4.9))(vue@3.5.43(typescript@6.0.3)))(better-call@1.4.4(zod@4.6.7))
+      '@better-auth/utils': 0.5.1
+      '@better-fetch/fetch': 1.3.3
+      '@manablox/core': 0.50.1
+      '@manablox/db': 0.50.1(kysely@0.29.6)
       '@node-rs/argon2': 2.2.1
-      better-auth: 1.7.2(drizzle-orm@0.45.3(@libsql/client@0.18.0)(kysely@0.29.6)(postgres@3.4.9))(vue@3.5.43(typescript@6.0.3))
-      better-call: 1.4.0(zod@4.6.5)
+      better-auth: 1.7.15(drizzle-orm@0.45.3(@libsql/client@0.18.0)(kysely@0.29.6)(postgres@3.4.9))(vue@3.5.43(typescript@6.0.3))
+      better-call: 1.4.4(zod@4.6.7)
       drizzle-orm: 0.45.3(@libsql/client@0.18.0)(kysely@0.29.6)(postgres@3.4.9)
       jose: 6.2.12
       kysely: 0.29.6
@@ -5437,31 +5523,29 @@ snapshots:
       - vue
       - zod
 
-  '@manablox/cache@0.50.0':
+  '@manablox/cache@0.50.1':
     dependencies:
-      '@manablox/core': 0.50.0
+      '@manablox/core': 0.50.1
       ioredis: 6.0.0
     transitivePeerDependencies:
       - supports-color
 
-  '@manablox/cli@0.50.0(@libsql/client@0.18.0)(@manablox/plugin-license@0.50.0(@libsql/client@0.18.0)(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0))(@manablox/plugin-webhooks@0.50.0(@libsql/client@0.18.0)(@manablox/plugin-workflows@0.50.0(@libsql/client@0.18.0)(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0))(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0))(@manablox/plugin-workflows@0.50.0(@libsql/client@0.18.0)(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0))(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)(zod@4.6.5)':
+  '@manablox/cli@0.50.1(@libsql/client@0.18.0)(@manablox/plugin-webhooks@0.50.1(@libsql/client@0.18.0)(@manablox/plugin-workflows@0.50.1(@libsql/client@0.18.0)(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0))(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0))(@manablox/plugin-workflows@0.50.1(@libsql/client@0.18.0)(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0))(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)(zod@4.6.7)':
     dependencies:
       '@clack/prompts': 1.8.1
-      '@manablox/api-public': 0.50.0(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(ws@8.22.0)
-      '@manablox/api-rpc': 0.50.0(@libsql/client@0.18.0)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)
-      '@manablox/auth': 0.50.0(@libsql/client@0.18.0)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(zod@4.6.5)
-      '@manablox/core': 0.50.0
-      '@manablox/db': 0.50.0(kysely@0.29.6)
-      '@manablox/license': 0.50.0
-      '@manablox/public-sdk': 0.50.0
-      '@manablox/server': 0.50.0(@libsql/client@0.18.0)(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)
-      '@manablox/services': 0.50.0(kysely@0.29.6)
+      '@manablox/api-public': 0.50.1(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(ws@8.22.0)
+      '@manablox/api-rpc': 0.50.1(@libsql/client@0.18.0)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)
+      '@manablox/auth': 0.50.1(@libsql/client@0.18.0)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(zod@4.6.7)
+      '@manablox/core': 0.50.1
+      '@manablox/db': 0.50.1(kysely@0.29.6)
+      '@manablox/public-sdk': 0.50.1
+      '@manablox/server': 0.50.1(@libsql/client@0.18.0)(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)
+      '@manablox/services': 0.50.1(kysely@0.29.6)
       picocolors: 1.1.1
       tsx: 4.23.15
     optionalDependencies:
-      '@manablox/plugin-license': 0.50.0(@libsql/client@0.18.0)(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)
-      '@manablox/plugin-webhooks': 0.50.0(@libsql/client@0.18.0)(@manablox/plugin-workflows@0.50.0(@libsql/client@0.18.0)(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0))(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)
-      '@manablox/plugin-workflows': 0.50.0(@libsql/client@0.18.0)(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)
+      '@manablox/plugin-webhooks': 0.50.1(@libsql/client@0.18.0)(@manablox/plugin-workflows@0.50.1(@libsql/client@0.18.0)(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0))(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)
+      '@manablox/plugin-workflows': 0.50.1(@libsql/client@0.18.0)(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)
     transitivePeerDependencies:
       - '@aws-sdk/client-rds-data'
       - '@cloudflare/workers-types'
@@ -5519,17 +5603,17 @@ snapshots:
       - ws
       - zod
 
-  '@manablox/config-typescript@0.50.0': {}
+  '@manablox/config-typescript@0.50.1': {}
 
-  '@manablox/core@0.50.0':
+  '@manablox/core@0.50.1':
     dependencies:
       pino: 10.3.1
       pino-pretty: 13.1.3
 
-  '@manablox/db@0.50.0(kysely@0.29.6)':
+  '@manablox/db@0.50.1(kysely@0.29.6)':
     dependencies:
       '@libsql/client': 0.18.0
-      '@manablox/core': 0.50.0
+      '@manablox/core': 0.50.1
       drizzle-orm: 0.45.3(@libsql/client@0.18.0)(kysely@0.29.6)(postgres@3.4.9)
       postgres: 3.4.9
     transitivePeerDependencies:
@@ -5564,27 +5648,27 @@ snapshots:
       - sqlite3
       - utf-8-validate
 
-  '@manablox/docs-theme@0.50.0(astro@7.3.5(@astrojs/markdown-remark@7.3.1)(@types/node@26.6.3)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1))(typescript@6.0.3)':
+  '@manablox/docs-theme@0.50.1(astro@7.3.5(@astrojs/markdown-remark@7.3.5)(@types/node@26.6.3)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1))(typescript@6.0.3)':
     dependencies:
-      '@astrojs/markdown-remark': 7.3.1
-      '@astrojs/starlight': 0.42.4(@astrojs/markdown-remark@7.3.1)(astro@7.3.5(@astrojs/markdown-remark@7.3.1)(@types/node@26.6.3)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1))(typescript@6.0.3)
+      '@astrojs/markdown-remark': 7.3.5
+      '@astrojs/starlight': 0.42.8(@astrojs/markdown-remark@7.3.5)(astro@7.3.5(@astrojs/markdown-remark@7.3.5)(@types/node@26.6.3)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1))(typescript@6.0.3)
       '@fontsource-variable/bricolage-grotesque': 5.3.0
       '@fontsource-variable/manrope': 5.3.0
-      astro: 7.3.5(@astrojs/markdown-remark@7.3.1)(@types/node@26.6.3)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1)
+      astro: 7.3.5(@astrojs/markdown-remark@7.3.5)(@types/node@26.6.3)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1)
       unist-util-visit: 5.1.0
     transitivePeerDependencies:
       - supports-color
       - typescript
 
-  '@manablox/fields@0.50.0':
+  '@manablox/fields@0.50.1':
     dependencies:
-      '@manablox/core': 0.50.0
-      zod: 4.6.5
+      '@manablox/core': 0.50.1
+      zod: 4.6.7
 
-  '@manablox/jobs@0.50.0':
+  '@manablox/jobs@0.50.1':
     dependencies:
-      '@manablox/cache': 0.50.0
-      '@manablox/core': 0.50.0
+      '@manablox/cache': 0.50.1
+      '@manablox/core': 0.50.1
       bullmq: 6.3.9
     transitivePeerDependencies:
       - bullmq-otel
@@ -5593,23 +5677,19 @@ snapshots:
       - redis
       - supports-color
 
-  '@manablox/license@0.50.0':
+  '@manablox/live-preview@0.50.1':
     dependencies:
-      zod: 4.6.5
-
-  '@manablox/live-preview@0.50.0':
-    dependencies:
-      '@manablox/public-sdk': 0.50.0
+      '@manablox/public-sdk': 0.50.1
       '@tiptap/core': 3.31.3(@tiptap/pm@3.31.3)
       '@tiptap/extension-text-align': 3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))
       '@tiptap/pm': 3.31.3
       '@tiptap/starter-kit': 3.31.3
 
-  '@manablox/media@0.50.0(@types/node@26.6.3)(kysely@0.29.6)':
+  '@manablox/media@0.50.1(@types/node@26.6.3)(kysely@0.29.6)':
     dependencies:
-      '@manablox/core': 0.50.0
-      '@manablox/db': 0.50.0(kysely@0.29.6)
-      '@manablox/storage': 0.50.0
+      '@manablox/core': 0.50.1
+      '@manablox/db': 0.50.1(kysely@0.29.6)
+      '@manablox/storage': 0.50.1
       sharp: 0.35.5(@types/node@26.6.3)
     transitivePeerDependencies:
       - '@aws-sdk/client-rds-data'
@@ -5644,20 +5724,20 @@ snapshots:
       - sqlite3
       - utf-8-validate
 
-  '@manablox/plugin-ai@0.50.0(@libsql/client@0.18.0)(@manablox/plugin-workflows@0.50.0(@libsql/client@0.18.0)(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0))(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)':
+  '@manablox/plugin-ai@0.50.0(@libsql/client@0.18.0)(@manablox/plugin-workflows@0.50.1(@libsql/client@0.18.0)(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0))(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)':
     dependencies:
-      '@manablox/api-rpc': 0.50.0(@libsql/client@0.18.0)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)
-      '@manablox/auth': 0.50.0(@libsql/client@0.18.0)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(zod@4.6.5)
-      '@manablox/core': 0.50.0
-      '@manablox/db': 0.50.0(kysely@0.29.6)
-      '@manablox/fields': 0.50.0
-      '@manablox/media': 0.50.0(@types/node@26.6.3)(kysely@0.29.6)
-      '@manablox/server': 0.50.0(@libsql/client@0.18.0)(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)
-      '@manablox/services': 0.50.0(kysely@0.29.6)
+      '@manablox/api-rpc': 0.50.1(@libsql/client@0.18.0)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)
+      '@manablox/auth': 0.50.1(@libsql/client@0.18.0)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(zod@4.6.7)
+      '@manablox/core': 0.50.1
+      '@manablox/db': 0.50.1(kysely@0.29.6)
+      '@manablox/fields': 0.50.1
+      '@manablox/media': 0.50.1(@types/node@26.6.3)(kysely@0.29.6)
+      '@manablox/server': 0.50.1(@libsql/client@0.18.0)(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)
+      '@manablox/services': 0.50.1(kysely@0.29.6)
       drizzle-orm: 0.45.3(@libsql/client@0.18.0)(kysely@0.29.6)(postgres@3.4.9)
-      zod: 4.6.5
+      zod: 4.6.7
     optionalDependencies:
-      '@manablox/plugin-workflows': 0.50.0(@libsql/client@0.18.0)(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)
+      '@manablox/plugin-workflows': 0.50.1(@libsql/client@0.18.0)(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)
     transitivePeerDependencies:
       - '@aws-sdk/client-rds-data'
       - '@cloudflare/workers-types'
@@ -5714,84 +5794,19 @@ snapshots:
       - vue
       - ws
 
-  '@manablox/plugin-license@0.50.0(@libsql/client@0.18.0)(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)':
+  '@manablox/plugin-webhooks@0.50.1(@libsql/client@0.18.0)(@manablox/plugin-workflows@0.50.1(@libsql/client@0.18.0)(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0))(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)':
     dependencies:
-      '@manablox/api-rpc': 0.50.0(@libsql/client@0.18.0)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)
-      '@manablox/core': 0.50.0
-      '@manablox/db': 0.50.0(kysely@0.29.6)
-      '@manablox/license': 0.50.0
-      '@manablox/server': 0.50.0(@libsql/client@0.18.0)(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)
+      '@manablox/api-rpc': 0.50.1(@libsql/client@0.18.0)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)
+      '@manablox/cache': 0.50.1
+      '@manablox/core': 0.50.1
+      '@manablox/db': 0.50.1(kysely@0.29.6)
+      '@manablox/server': 0.50.1(@libsql/client@0.18.0)(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)
+      '@manablox/services': 0.50.1(kysely@0.29.6)
       drizzle-orm: 0.45.3(@libsql/client@0.18.0)(kysely@0.29.6)(postgres@3.4.9)
-      zod: 4.6.5
-    transitivePeerDependencies:
-      - '@aws-sdk/client-rds-data'
-      - '@cloudflare/workers-types'
-      - '@electric-sql/pglite'
-      - '@libsql/client'
-      - '@libsql/client-wasm'
-      - '@lynx-js/react'
-      - '@neondatabase/serverless'
-      - '@netlify/db'
-      - '@op-engineering/op-sqlite'
-      - '@opentelemetry/api'
-      - '@orpc/contract'
-      - '@planetscale/database'
-      - '@prisma/client'
-      - '@sveltejs/kit'
-      - '@tanstack/react-start'
-      - '@tanstack/solid-start'
-      - '@tidbcloud/serverless'
-      - '@types/better-sqlite3'
-      - '@types/node'
-      - '@types/pg'
-      - '@types/sql.js'
-      - '@upstash/redis'
-      - '@vercel/postgres'
-      - '@xata.io/client'
-      - better-sqlite3
-      - bufferutil
-      - bullmq-otel
-      - bun-types
-      - crossws
-      - drizzle-kit
-      - expo-sqlite
-      - fastify
-      - gel
-      - ioredis
-      - knex
-      - kysely
-      - mongodb
-      - mysql2
-      - next
-      - pg
-      - postgres
-      - prisma
-      - react
-      - react-dom
-      - redis
-      - solid-js
-      - sql.js
-      - sqlite3
-      - supports-color
-      - svelte
-      - utf-8-validate
-      - vitest
-      - vue
-      - ws
-
-  '@manablox/plugin-webhooks@0.50.0(@libsql/client@0.18.0)(@manablox/plugin-workflows@0.50.0(@libsql/client@0.18.0)(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0))(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)':
-    dependencies:
-      '@manablox/api-rpc': 0.50.0(@libsql/client@0.18.0)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)
-      '@manablox/cache': 0.50.0
-      '@manablox/core': 0.50.0
-      '@manablox/db': 0.50.0(kysely@0.29.6)
-      '@manablox/server': 0.50.0(@libsql/client@0.18.0)(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)
-      '@manablox/services': 0.50.0(kysely@0.29.6)
-      drizzle-orm: 0.45.3(@libsql/client@0.18.0)(kysely@0.29.6)(postgres@3.4.9)
-      hono: 4.13.10
-      zod: 4.6.5
+      hono: 4.13.16
+      zod: 4.6.7
     optionalDependencies:
-      '@manablox/plugin-workflows': 0.50.0(@libsql/client@0.18.0)(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)
+      '@manablox/plugin-workflows': 0.50.1(@libsql/client@0.18.0)(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)
     transitivePeerDependencies:
       - '@aws-sdk/client-rds-data'
       - '@cloudflare/workers-types'
@@ -5850,21 +5865,21 @@ snapshots:
 
   '@manablox/plugin-website@0.50.0(@libsql/client@0.18.0)(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(typescript@6.0.3)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)':
     dependencies:
-      '@manablox/api-graphql': 0.50.0(@types/node@26.6.3)(kysely@0.29.6)
-      '@manablox/api-public': 0.50.0(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(ws@8.22.0)
-      '@manablox/api-rpc': 0.50.0(@libsql/client@0.18.0)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)
-      '@manablox/auth': 0.50.0(@libsql/client@0.18.0)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(zod@4.6.5)
-      '@manablox/cache': 0.50.0
-      '@manablox/core': 0.50.0
-      '@manablox/db': 0.50.0(kysely@0.29.6)
-      '@manablox/media': 0.50.0(@types/node@26.6.3)(kysely@0.29.6)
-      '@manablox/server': 0.50.0(@libsql/client@0.18.0)(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)
-      '@manablox/services': 0.50.0(kysely@0.29.6)
+      '@manablox/api-graphql': 0.50.1(@types/node@26.6.3)(kysely@0.29.6)
+      '@manablox/api-public': 0.50.1(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(ws@8.22.0)
+      '@manablox/api-rpc': 0.50.1(@libsql/client@0.18.0)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)
+      '@manablox/auth': 0.50.1(@libsql/client@0.18.0)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(zod@4.6.7)
+      '@manablox/cache': 0.50.1
+      '@manablox/core': 0.50.1
+      '@manablox/db': 0.50.1(kysely@0.29.6)
+      '@manablox/media': 0.50.1(@types/node@26.6.3)(kysely@0.29.6)
+      '@manablox/server': 0.50.1(@libsql/client@0.18.0)(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)
+      '@manablox/services': 0.50.1(kysely@0.29.6)
       '@manablox/site': 0.50.0
       '@manablox/site-renderer': 0.50.0(typescript@6.0.3)
       drizzle-orm: 0.45.3(@libsql/client@0.18.0)(kysely@0.29.6)(postgres@3.4.9)
-      hono: 4.13.10
-      zod: 4.6.5
+      hono: 4.13.16
+      zod: 4.6.7
     transitivePeerDependencies:
       - '@aws-sdk/client-rds-data'
       - '@cloudflare/workers-types'
@@ -5922,17 +5937,17 @@ snapshots:
       - vue
       - ws
 
-  '@manablox/plugin-workflows@0.50.0(@libsql/client@0.18.0)(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)':
+  '@manablox/plugin-workflows@0.50.1(@libsql/client@0.18.0)(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)':
     dependencies:
-      '@manablox/api-rpc': 0.50.0(@libsql/client@0.18.0)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)
-      '@manablox/auth': 0.50.0(@libsql/client@0.18.0)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(zod@4.6.5)
-      '@manablox/core': 0.50.0
-      '@manablox/db': 0.50.0(kysely@0.29.6)
-      '@manablox/server': 0.50.0(@libsql/client@0.18.0)(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)
-      '@manablox/services': 0.50.0(kysely@0.29.6)
+      '@manablox/api-rpc': 0.50.1(@libsql/client@0.18.0)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)
+      '@manablox/auth': 0.50.1(@libsql/client@0.18.0)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(zod@4.6.7)
+      '@manablox/core': 0.50.1
+      '@manablox/db': 0.50.1(kysely@0.29.6)
+      '@manablox/server': 0.50.1(@libsql/client@0.18.0)(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)
+      '@manablox/services': 0.50.1(kysely@0.29.6)
       drizzle-orm: 0.45.3(@libsql/client@0.18.0)(kysely@0.29.6)(postgres@3.4.9)
-      nodemailer: 10.0.12
-      zod: 4.6.5
+      nodemailer: 10.3.1
+      zod: 4.6.7
     transitivePeerDependencies:
       - '@aws-sdk/client-rds-data'
       - '@cloudflare/workers-types'
@@ -5989,30 +6004,30 @@ snapshots:
       - vue
       - ws
 
-  '@manablox/public-sdk@0.50.0': {}
+  '@manablox/public-sdk@0.50.1': {}
 
-  '@manablox/server@0.50.0(@libsql/client@0.18.0)(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)':
+  '@manablox/server@0.50.1(@libsql/client@0.18.0)(@orpc/contract@1.15.4)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)':
     dependencies:
       '@fastify/busboy': 3.2.2
-      '@hono/node-server': 2.1.1(hono@4.13.10)
-      '@manablox/api-graphql': 0.50.0(@types/node@26.6.3)(kysely@0.29.6)
-      '@manablox/api-public': 0.50.0(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(ws@8.22.0)
-      '@manablox/api-rpc': 0.50.0(@libsql/client@0.18.0)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)
-      '@manablox/auth': 0.50.0(@libsql/client@0.18.0)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(zod@4.6.5)
-      '@manablox/cache': 0.50.0
-      '@manablox/core': 0.50.0
-      '@manablox/db': 0.50.0(kysely@0.29.6)
-      '@manablox/fields': 0.50.0
-      '@manablox/jobs': 0.50.0
-      '@manablox/media': 0.50.0(@types/node@26.6.3)(kysely@0.29.6)
-      '@manablox/services': 0.50.0(kysely@0.29.6)
-      '@manablox/storage': 0.50.0
+      '@hono/node-server': 2.1.5(hono@4.13.16)
+      '@manablox/api-graphql': 0.50.1(@types/node@26.6.3)(kysely@0.29.6)
+      '@manablox/api-public': 0.50.1(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(ws@8.22.0)
+      '@manablox/api-rpc': 0.50.1(@libsql/client@0.18.0)(@types/node@26.6.3)(crossws@0.3.5)(kysely@0.29.6)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(ws@8.22.0)
+      '@manablox/auth': 0.50.1(@libsql/client@0.18.0)(postgres@3.4.9)(vue@3.5.43(typescript@6.0.3))(zod@4.6.7)
+      '@manablox/cache': 0.50.1
+      '@manablox/core': 0.50.1
+      '@manablox/db': 0.50.1(kysely@0.29.6)
+      '@manablox/fields': 0.50.1
+      '@manablox/jobs': 0.50.1
+      '@manablox/media': 0.50.1(@types/node@26.6.3)(kysely@0.29.6)
+      '@manablox/services': 0.50.1(kysely@0.29.6)
+      '@manablox/storage': 0.50.1
       '@orpc/openapi': 1.15.4(crossws@0.3.5)(ws@8.22.0)
       '@orpc/server': 1.15.4(crossws@0.3.5)(ws@8.22.0)
-      '@orpc/zod': 1.15.4(@orpc/contract@1.15.4)(@orpc/server@1.15.4(crossws@0.3.5)(ws@8.22.0))(crossws@0.3.5)(ws@8.22.0)(zod@4.6.5)
+      '@orpc/zod': 1.15.4(@orpc/contract@1.15.4)(@orpc/server@1.15.4(crossws@0.3.5)(ws@8.22.0))(crossws@0.3.5)(ws@8.22.0)(zod@4.6.7)
       fflate: 0.8.3
-      hono: 4.13.10
-      zod: 4.6.5
+      hono: 4.13.16
+      zod: 4.6.7
     transitivePeerDependencies:
       - '@aws-sdk/client-rds-data'
       - '@cloudflare/workers-types'
@@ -6069,13 +6084,13 @@ snapshots:
       - vue
       - ws
 
-  '@manablox/services@0.50.0(kysely@0.29.6)':
+  '@manablox/services@0.50.1(kysely@0.29.6)':
     dependencies:
-      '@manablox/cache': 0.50.0
-      '@manablox/core': 0.50.0
-      '@manablox/db': 0.50.0(kysely@0.29.6)
+      '@manablox/cache': 0.50.1
+      '@manablox/core': 0.50.1
+      '@manablox/db': 0.50.1(kysely@0.29.6)
       dataloader: 2.2.3
-      nodemailer: 10.0.12
+      nodemailer: 10.3.1
       web-push: 3.6.7
     transitivePeerDependencies:
       - '@aws-sdk/client-rds-data'
@@ -6112,9 +6127,9 @@ snapshots:
 
   '@manablox/site-renderer@0.50.0(typescript@6.0.3)':
     dependencies:
-      '@manablox/core': 0.50.0
-      '@manablox/live-preview': 0.50.0
-      '@manablox/public-sdk': 0.50.0
+      '@manablox/core': 0.50.1
+      '@manablox/live-preview': 0.50.1
+      '@manablox/public-sdk': 0.50.1
       '@manablox/site': 0.50.0
       vue: 3.5.43(typescript@6.0.3)
     transitivePeerDependencies:
@@ -6122,15 +6137,15 @@ snapshots:
 
   '@manablox/site@0.50.0':
     dependencies:
-      '@manablox/core': 0.50.0
-      '@manablox/public-sdk': 0.50.0
+      '@manablox/core': 0.50.1
+      '@manablox/public-sdk': 0.50.1
 
-  '@manablox/storage@0.50.0':
+  '@manablox/storage@0.50.1':
     dependencies:
       '@aws-sdk/client-s3': 3.1141.0
       '@aws-sdk/lib-storage': 3.1141.0(@aws-sdk/client-s3@3.1141.0)
       '@aws-sdk/s3-request-presigner': 3.1141.0
-      '@manablox/core': 0.50.0
+      '@manablox/core': 0.50.1
 
   '@mdx-js/mdx@3.1.1':
     dependencies:
@@ -6263,8 +6278,6 @@ snapshots:
       '@node-rs/argon2-win32-ia32-msvc': 2.2.1
       '@node-rs/argon2-win32-x64-msvc': 2.2.1
 
-  '@opentelemetry/semantic-conventions@1.43.0': {}
-
   '@orpc/client@1.15.4':
     dependencies:
       '@orpc/shared': 1.15.4
@@ -6395,7 +6408,7 @@ snapshots:
     transitivePeerDependencies:
       - '@opentelemetry/api'
 
-  '@orpc/zod@1.15.4(@orpc/contract@1.15.4)(@orpc/server@1.15.4(crossws@0.3.5)(ws@8.22.0))(crossws@0.3.5)(ws@8.22.0)(zod@4.6.5)':
+  '@orpc/zod@1.15.4(@orpc/contract@1.15.4)(@orpc/server@1.15.4(crossws@0.3.5)(ws@8.22.0))(crossws@0.3.5)(ws@8.22.0)(zod@4.6.7)':
     dependencies:
       '@orpc/contract': 1.15.4
       '@orpc/json-schema': 1.15.4(crossws@0.3.5)(ws@8.22.0)
@@ -6404,7 +6417,7 @@ snapshots:
       '@orpc/shared': 1.15.4
       escape-string-regexp: 5.0.0
       wildcard-match: 5.1.4
-      zod: 4.6.5
+      zod: 4.6.7
     transitivePeerDependencies:
       - '@opentelemetry/api'
       - crossws
@@ -6621,9 +6634,23 @@ snapshots:
       '@types/hast': 3.0.5
       hast-util-to-html: 9.0.5
 
+  '@shikijs/core@4.5.0':
+    dependencies:
+      '@shikijs/primitive': 4.5.0
+      '@shikijs/types': 4.5.0
+      '@shikijs/vscode-textmate': 10.0.2
+      '@types/hast': 3.0.5
+      hast-util-to-html: 9.0.5
+
   '@shikijs/engine-javascript@4.4.3':
     dependencies:
       '@shikijs/types': 4.4.3
+      '@shikijs/vscode-textmate': 10.0.2
+      oniguruma-to-es: 4.3.6
+
+  '@shikijs/engine-javascript@4.5.0':
+    dependencies:
+      '@shikijs/types': 4.5.0
       '@shikijs/vscode-textmate': 10.0.2
       oniguruma-to-es: 4.3.6
 
@@ -6632,9 +6659,18 @@ snapshots:
       '@shikijs/types': 4.4.3
       '@shikijs/vscode-textmate': 10.0.2
 
+  '@shikijs/engine-oniguruma@4.5.0':
+    dependencies:
+      '@shikijs/types': 4.5.0
+      '@shikijs/vscode-textmate': 10.0.2
+
   '@shikijs/langs@4.4.3':
     dependencies:
       '@shikijs/types': 4.4.3
+
+  '@shikijs/langs@4.5.0':
+    dependencies:
+      '@shikijs/types': 4.5.0
 
   '@shikijs/primitive@4.4.3':
     dependencies:
@@ -6642,11 +6678,26 @@ snapshots:
       '@shikijs/vscode-textmate': 10.0.2
       '@types/hast': 3.0.5
 
+  '@shikijs/primitive@4.5.0':
+    dependencies:
+      '@shikijs/types': 4.5.0
+      '@shikijs/vscode-textmate': 10.0.2
+      '@types/hast': 3.0.5
+
   '@shikijs/themes@4.4.3':
     dependencies:
       '@shikijs/types': 4.4.3
 
+  '@shikijs/themes@4.5.0':
+    dependencies:
+      '@shikijs/types': 4.5.0
+
   '@shikijs/types@4.4.3':
+    dependencies:
+      '@shikijs/vscode-textmate': 10.0.2
+      '@types/hast': 3.0.5
+
+  '@shikijs/types@4.5.0':
     dependencies:
       '@shikijs/vscode-textmate': 10.0.2
       '@types/hast': 3.0.5
@@ -7003,6 +7054,11 @@ snapshots:
       '@whatwg-node/promise-helpers': 1.3.2
       tslib: 2.8.1
 
+  '@whatwg-node/disposablestack@0.1.0':
+    dependencies:
+      '@whatwg-node/promise-helpers': 2.0.1
+      tslib: 2.8.1
+
   '@whatwg-node/events@0.1.2':
     dependencies:
       tslib: 2.8.1
@@ -7020,6 +7076,10 @@ snapshots:
       tslib: 2.8.1
 
   '@whatwg-node/promise-helpers@1.3.2':
+    dependencies:
+      tslib: 2.8.1
+
+  '@whatwg-node/promise-helpers@2.0.1':
     dependencies:
       tslib: 2.8.1
 
@@ -7042,6 +7102,8 @@ snapshots:
       acorn: 8.18.0
 
   acorn@8.18.0: {}
+
+  acorn@8.19.0: {}
 
   agent-base@7.1.4: {}
 
@@ -7096,13 +7158,13 @@ snapshots:
 
   astring@1.9.0: {}
 
-  astro-expressive-code@0.44.2(astro@7.3.5(@astrojs/markdown-remark@7.3.1)(@types/node@26.6.3)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1)):
+  astro-expressive-code@0.44.2(astro@7.3.5(@astrojs/markdown-remark@7.3.5)(@types/node@26.6.3)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1)):
     dependencies:
-      astro: 7.3.5(@astrojs/markdown-remark@7.3.1)(@types/node@26.6.3)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1)
+      astro: 7.3.5(@astrojs/markdown-remark@7.3.5)(@types/node@26.6.3)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1)
       rehype-expressive-code: 0.44.2
       url-extras: 0.1.0
 
-  astro@7.3.5(@astrojs/markdown-remark@7.3.1)(@types/node@26.6.3)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1):
+  astro@7.3.5(@astrojs/markdown-remark@7.3.5)(@types/node@26.6.3)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1):
     dependencies:
       '@astrojs/compiler-rs': 0.5.1
       '@astrojs/internal-helpers': 0.11.0
@@ -7158,7 +7220,7 @@ snapshots:
       yargs-parser: 22.0.0
       zod: 4.6.5
     optionalDependencies:
-      '@astrojs/markdown-remark': 7.3.1
+      '@astrojs/markdown-remark': 7.3.5
       sharp: 0.35.5(@types/node@26.6.3)
     transitivePeerDependencies:
       - '@azure/app-configuration'
@@ -7208,20 +7270,20 @@ snapshots:
       is-alphanumerical: 2.0.1
       is-decimal: 2.0.1
 
-  better-auth@1.7.2(drizzle-orm@0.45.3(@libsql/client@0.18.0)(kysely@0.29.6)(postgres@3.4.9))(vue@3.5.43(typescript@6.0.3)):
+  better-auth@1.7.15(drizzle-orm@0.45.3(@libsql/client@0.18.0)(kysely@0.29.6)(postgres@3.4.9))(vue@3.5.43(typescript@6.0.3)):
     dependencies:
-      '@better-auth/core': 1.7.2(@better-auth/utils@0.4.2)(@better-fetch/fetch@1.3.1)(better-call@1.4.0(zod@4.6.5))(jose@6.2.12)(kysely@0.29.6)(nanostores@1.5.4)
-      '@better-auth/drizzle-adapter': 1.7.2(@better-auth/core@1.7.2(@better-auth/utils@0.4.2)(@better-fetch/fetch@1.3.1)(better-call@1.4.0(zod@4.6.5))(jose@6.2.12)(kysely@0.29.6)(nanostores@1.5.4))(@better-auth/utils@0.4.2)(drizzle-orm@0.45.3(@libsql/client@0.18.0)(kysely@0.29.6)(postgres@3.4.9))
-      '@better-auth/kysely-adapter': 1.7.2(@better-auth/core@1.7.2(@better-auth/utils@0.4.2)(@better-fetch/fetch@1.3.1)(better-call@1.4.0(zod@4.6.5))(jose@6.2.12)(kysely@0.29.6)(nanostores@1.5.4))(@better-auth/utils@0.4.2)(kysely@0.29.6)
-      '@better-auth/memory-adapter': 1.7.2(@better-auth/core@1.7.2(@better-auth/utils@0.4.2)(@better-fetch/fetch@1.3.1)(better-call@1.4.0(zod@4.6.5))(jose@6.2.12)(kysely@0.29.6)(nanostores@1.5.4))(@better-auth/utils@0.4.2)
-      '@better-auth/mongo-adapter': 1.7.2(@better-auth/core@1.7.2(@better-auth/utils@0.4.2)(@better-fetch/fetch@1.3.1)(better-call@1.4.0(zod@4.6.5))(jose@6.2.12)(kysely@0.29.6)(nanostores@1.5.4))(@better-auth/utils@0.4.2)
-      '@better-auth/prisma-adapter': 1.7.2(@better-auth/core@1.7.2(@better-auth/utils@0.4.2)(@better-fetch/fetch@1.3.1)(better-call@1.4.0(zod@4.6.5))(jose@6.2.12)(kysely@0.29.6)(nanostores@1.5.4))(@better-auth/utils@0.4.2)
-      '@better-auth/telemetry': 1.7.2(@better-auth/core@1.7.2(@better-auth/utils@0.4.2)(@better-fetch/fetch@1.3.1)(better-call@1.4.0(zod@4.6.5))(jose@6.2.12)(kysely@0.29.6)(nanostores@1.5.4))(@better-auth/utils@0.4.2)(@better-fetch/fetch@1.3.1)
-      '@better-auth/utils': 0.4.2
-      '@better-fetch/fetch': 1.3.1
+      '@better-auth/core': 1.7.15(@better-auth/utils@0.5.1)(@better-fetch/fetch@1.3.3)(better-call@1.4.4(zod@4.6.7))(jose@6.2.12)(kysely@0.29.6)(nanostores@1.5.4)
+      '@better-auth/drizzle-adapter': 1.7.15(@better-auth/core@1.7.15(@better-auth/utils@0.5.1)(@better-fetch/fetch@1.3.3)(better-call@1.4.4(zod@4.6.7))(jose@6.2.12)(kysely@0.29.6)(nanostores@1.5.4))(@better-auth/utils@0.5.1)(drizzle-orm@0.45.3(@libsql/client@0.18.0)(kysely@0.29.6)(postgres@3.4.9))
+      '@better-auth/kysely-adapter': 1.7.15(@better-auth/core@1.7.15(@better-auth/utils@0.5.1)(@better-fetch/fetch@1.3.3)(better-call@1.4.4(zod@4.6.7))(jose@6.2.12)(kysely@0.29.6)(nanostores@1.5.4))(@better-auth/utils@0.5.1)(kysely@0.29.6)
+      '@better-auth/memory-adapter': 1.7.15(@better-auth/core@1.7.15(@better-auth/utils@0.5.1)(@better-fetch/fetch@1.3.3)(better-call@1.4.4(zod@4.6.7))(jose@6.2.12)(kysely@0.29.6)(nanostores@1.5.4))(@better-auth/utils@0.5.1)
+      '@better-auth/mongo-adapter': 1.7.15(@better-auth/core@1.7.15(@better-auth/utils@0.5.1)(@better-fetch/fetch@1.3.3)(better-call@1.4.4(zod@4.6.7))(jose@6.2.12)(kysely@0.29.6)(nanostores@1.5.4))(@better-auth/utils@0.5.1)
+      '@better-auth/prisma-adapter': 1.7.15(@better-auth/core@1.7.15(@better-auth/utils@0.5.1)(@better-fetch/fetch@1.3.3)(better-call@1.4.4(zod@4.6.7))(jose@6.2.12)(kysely@0.29.6)(nanostores@1.5.4))(@better-auth/utils@0.5.1)
+      '@better-auth/telemetry': 1.7.15(@better-auth/core@1.7.15(@better-auth/utils@0.5.1)(@better-fetch/fetch@1.3.3)(better-call@1.4.4(zod@4.6.7))(jose@6.2.12)(kysely@0.29.6)(nanostores@1.5.4))(@better-auth/utils@0.5.1)(@better-fetch/fetch@1.3.3)
+      '@better-auth/utils': 0.5.1
+      '@better-fetch/fetch': 1.3.3
       '@noble/ciphers': 2.4.0
       '@noble/hashes': 2.4.0
-      better-call: 1.4.0(zod@4.6.5)
+      better-call: 1.4.4(zod@4.6.5)
       defu: 6.1.7
       jose: 6.2.12
       kysely: 0.29.6
@@ -7231,10 +7293,9 @@ snapshots:
       drizzle-orm: 0.45.3(@libsql/client@0.18.0)(kysely@0.29.6)(postgres@3.4.9)
       vue: 3.5.43(typescript@6.0.3)
     transitivePeerDependencies:
-      - '@cloudflare/workers-types'
       - '@opentelemetry/api'
 
-  better-call@1.4.0(zod@4.6.5):
+  better-call@1.4.4(zod@4.6.5):
     dependencies:
       '@better-auth/utils': 0.5.0
       '@better-fetch/fetch': 1.3.2
@@ -7242,6 +7303,15 @@ snapshots:
       set-cookie-parser: 3.1.2
     optionalDependencies:
       zod: 4.6.5
+
+  better-call@1.4.4(zod@4.6.7):
+    dependencies:
+      '@better-auth/utils': 0.5.0
+      '@better-fetch/fetch': 1.3.2
+      rou3: 0.9.2
+      set-cookie-parser: 3.1.2
+    optionalDependencies:
+      zod: 4.6.7
 
   bn.js@4.12.5: {}
 
@@ -7608,18 +7678,18 @@ snapshots:
 
   github-slugger@2.0.0: {}
 
-  graphql-scalars@1.26.0(graphql@16.14.2):
+  graphql-scalars@2.0.1(graphql@16.14.2):
     dependencies:
       graphql: 16.14.2
       tslib: 2.8.1
 
-  graphql-yoga@5.24.1(graphql@16.14.2):
+  graphql-yoga@5.24.6(graphql@16.14.2):
     dependencies:
       '@envelop/core': 5.6.1
       '@envelop/instrumentation': 1.0.1
-      '@graphql-tools/executor': 2.0.1(graphql@16.14.2)
-      '@graphql-tools/schema': 10.1.1(graphql@16.14.2)
-      '@graphql-tools/utils': 11.2.2(graphql@16.14.2)
+      '@graphql-tools/executor': 2.1.0(graphql@16.14.2)
+      '@graphql-tools/schema': 10.1.5(graphql@16.14.2)
+      '@graphql-tools/utils': 12.1.0(graphql@16.14.2)
       '@graphql-yoga/logger': 2.0.2
       '@graphql-yoga/subscription': 5.1.1
       '@whatwg-node/fetch': 0.10.13
@@ -7834,7 +7904,7 @@ snapshots:
 
   help-me@5.0.0: {}
 
-  hono@4.13.10: {}
+  hono@4.13.16: {}
 
   html-escaper@3.0.3: {}
 
@@ -8558,7 +8628,7 @@ snapshots:
     dependencies:
       asn1: 0.2.6
 
-  nodemailer@10.0.12: {}
+  nodemailer@10.3.1: {}
 
   normalize-path@3.0.0: {}
 
@@ -9130,6 +9200,17 @@ snapshots:
       '@shikijs/vscode-textmate': 10.0.2
       '@types/hast': 3.0.5
 
+  shiki@4.5.0:
+    dependencies:
+      '@shikijs/core': 4.5.0
+      '@shikijs/engine-javascript': 4.5.0
+      '@shikijs/engine-oniguruma': 4.5.0
+      '@shikijs/langs': 4.5.0
+      '@shikijs/themes': 4.5.0
+      '@shikijs/types': 4.5.0
+      '@shikijs/vscode-textmate': 10.0.2
+      '@types/hast': 3.0.5
+
   sisteransi@1.0.5: {}
 
   sitemap@9.0.1:
@@ -9141,6 +9222,8 @@ snapshots:
 
   smol-toml@1.9.0: {}
 
+  smol-toml@1.9.1: {}
+
   sonic-boom@4.2.1:
     dependencies:
       atomic-sleep: 1.0.0
@@ -9148,6 +9231,8 @@ snapshots:
   source-map-js@1.2.1: {}
 
   source-map@0.7.6: {}
+
+  source-map@0.8.0: {}
 
   space-separated-tokens@2.0.2: {}
 
@@ -9585,5 +9670,7 @@ snapshots:
   yocto-queue@1.2.2: {}
 
   zod@4.6.5: {}
+
+  zod@4.6.7: {}
 
   zwitch@2.0.4: {}

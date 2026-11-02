@@ -16,7 +16,7 @@ space is a copy of another instance's.
 | --- | --- |
 | Name | Free text. The label everywhere in the admin |
 | Technical name | `machineName` in the API. **Immutable**: it keys the GraphQL schema and the public API's space pinning |
-| Frontend URL | Where the website that renders this space runs. The visual editor loads `<frontend URL>/preview` in a frame, and the top bar's site link opens it. Prefilled with `http://localhost:3005`, where the Astro website `manablox frontend` makes by default runs. See [Preview and the visual editor](../delivery/preview.md) |
+| Frontend URL | Optional: where the website that renders this space runs. The visual editor loads `<frontend URL>/preview` in a frame, and the top bar's site link opens it. Empty means [no frontend](#spaces-without-a-frontend). A *Preconfigured* space needs it, prefilled with `http://localhost:3005`, where the Astro website `manablox frontend` makes by default runs. See [Preview and the visual editor](../delivery/preview.md) |
 | Locales | Picked from a list of written languages, most-spoken first |
 | Default locale | One of the space's own locales: the language content falls back to |
 
@@ -43,6 +43,29 @@ role grants like anything else:
 | Home page blocks | Two teasers on a two-column grid (desktop and tablet; one column on mobile), each placed in its own column, so the grid board and the layout options are on show in the editor. *About* holds one teaser as a plain list |
 | Home page | *Home* is nominated as the space's root |
 | Menu | *Main navigation* (`main`) linking the three pages |
+
+### Spaces without a frontend
+
+Not every space feeds a website. One that only holds data, for [workflows](./workflows.md) and
+[webhooks](./webhooks.md) to work with, leaves the **Frontend URL** empty. An *Empty space*
+starts that way; a *Preconfigured* space is a website, so it keeps its address. Clearing the
+field in the settings of an existing space does the same.
+
+Without a URL the admin leaves out what has nothing to open: the site links in the top bar and
+on the dashboard, and the **Visual** button with its preview. Where a plugin frames a page of
+its own the button stays, so a designed site still shows its canvas. Menus, redirects and
+everything else keep working.
+
+The same choice from outside the admin:
+
+| Where | How |
+| --- | --- |
+| `manablox space create` | Leave out `--url` |
+| `manablox create` | `--no-space-url`, or `none` at the address question |
+| [Control API](../reference/control-api.md) | Leave out `url` in `POST /spaces`, or send `null`. The answer has `"url": null` |
+
+What code sees of such a space: `{{ space.url }}` in a workflow renders empty, and `url` and
+`previousUrl` in the [`space:after*` hooks](../extending/hooks.md) are `null`.
 
 The names are the ones the [getting-started walkthrough](../getting-started/first-space.md)
 builds, so the guides render a starter space unchanged. A

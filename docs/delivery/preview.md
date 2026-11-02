@@ -45,7 +45,9 @@ renders through the preview client instead of the public one.
 ## The visual editor
 
 **Visual** in the document editor opens the space's **Frontend URL** plus `/preview` in
-an iframe beside the fields. Over a versioned, origin-checked `postMessage` channel
+an iframe beside the fields. A [space without a frontend](../admin/spaces.md#spaces-without-a-frontend)
+has nothing to frame, so it has no button and no preview, unless a plugin frames a page of its
+own: a designed site still shows its canvas. Over a versioned, origin-checked `postMessage` channel
 (`@manablox/live-preview`):
 
 - the admin sends the whole document, title, slug, fields in storage shape, on every change, before it is saved, along with what the page cannot know: each block's label, which fields may be edited in place, and each block field's grid per breakpoint;

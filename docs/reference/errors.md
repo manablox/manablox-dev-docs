@@ -512,28 +512,6 @@ through their value schemas; those pass through untyped and are not listed here.
 Plugins declare keys of their own under `plugins.<id>`, with an English sentence each. The
 plugins of the default instance:
 
-### `plugins.license`
-
-- `plugins.license.key.malformed`: That is not a license key. Keys look like MBX-XXXXX-XXXXX-XXXXX-XXXXX-XXXXX.
-- `plugins.license.key.duplicate`: This key is added already.
-- `plugins.license.key.notFound`: That key is no longer on this instance.
-- `plugins.license.key.fromEnvironment`: This key comes from MANABLOX_LICENSE_KEYS; remove it from the environment instead.
-- `plugins.license.key.notActivated`: This key is not activated on this instance.
-- `plugins.license.key.invalid`: The license server does not know this key.
-- `plugins.license.key.revoked`: This license key was revoked.
-- `plugins.license.key.noSeats`: Every production seat of key {keyId} is taken. Deactivate one of its instances or add a seat.
-- `plugins.license.key.trialUsed`: The trial of this product was used already.
-- `plugins.license.key.bound`: This key is bound to another instance and cannot be moved.
-- `plugins.license.cliSession.notFound`: That license session no longer exists; start again.
-- `plugins.license.subscription.inactive`: The subscription of this key is not active.
-- `plugins.license.activation.conflict`: This license is active on another instance. Activate it again here to move it.
-- `plugins.license.activation.kindMismatch`: A development license serves private hosts only, and this instance has public ones ({hostnames}). Activate it as production.
-- `plugins.license.activation.notFound`: The license server no longer knows this activation.
-- `plugins.license.rateLimited`: The license server asks to wait {retryAfter} seconds.
-- `plugins.license.request.invalid`: The license server refused the request.
-- `plugins.license.network`: The license server cannot be reached: {reason}
-- `plugins.license.server.failed`: The license server answered unexpectedly (HTTP {status}).
-
 ### `plugins.workflows`
 
 - `plugins.workflows.code.immutable`: This workflow is declared in code. Edit it there, or clone it here.
@@ -727,7 +705,6 @@ plugins of the default instance:
 - `plugins.ai.workflow.pictureTimeout`: The picture was not ready after {seconds} seconds.
 - `plugins.ai.workflow.typeGone`: The type of document to write no longer exists.
 - `plugins.ai.workflow.notJson`: The model did not answer with JSON: {excerpt}
-- `plugins.ai.license.host`: AI runs on a development instance or license here, which serves only local and private hosts. A public host needs a production license.
 
 ### `plugins.website`
 

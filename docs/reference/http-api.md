@@ -146,7 +146,7 @@ manage and take no other one.
 | `POST` | `/api/v1/spaces/candidates` | `spaceId`, `environment?`, `search?` |  |
 | `POST` | `/api/v1/spaces/configInventory` | `spaceId`, `environment?` |  |
 | `POST` | `/api/v1/spaces/configSource` | `spaceId`, `environment?`, `selection?` |  |
-| `POST` | `/api/v1/spaces/create` | `name`, `machineName`, `description?`, `url`, `defaultLocale?`, `locales?`, `settings?`, `starter?`, `blocks?`, `plugins?`, `plan?` |  |
+| `POST` | `/api/v1/spaces/create` | `name`, `machineName`, `description?`, `url?`, `defaultLocale?`, `locales?`, `settings?`, `starter?`, `blocks?`, `plugins?`, `plan?` |  |
 | `POST` | `/api/v1/spaces/delete` | `spaceId`, `environment?` |  |
 | `POST` | `/api/v1/spaces/export` | `spaceId`, `environment?`, `selection?` |  |
 | `POST` | `/api/v1/spaces/get` | `spaceId`, `environment?` |  |
@@ -217,20 +217,8 @@ See [The public API](../delivery/public-api.md) and [REST](../delivery/rest.md).
 
 A plugin's router answers under `plugins.<id>` of the management API, with the same
 authentication, environments and error body. While the plugin is off for the instance or the
-space it answers 404 `route.notFound` when hidden and 403 `control.feature` when locked (a
-premium plugin on a production instance without an active subscription, say; a development
-instance runs them without a key). The plugins of the default instance:
-
-### `license`
-
-| Method | Path | Input | Summary |
-| --- | --- | --- | --- |
-| `POST` | `/api/v1/plugins/license/activate` | `id` |  |
-| `POST` | `/api/v1/plugins/license/addKey` | `key` |  |
-| `POST` | `/api/v1/plugins/license/deactivate` | `id` |  |
-| `POST` | `/api/v1/plugins/license/overview` |  |  |
-| `POST` | `/api/v1/plugins/license/refresh` | `id` |  |
-| `POST` | `/api/v1/plugins/license/removeKey` | `id` |  |
+space it answers 404 `route.notFound` when hidden and 403 `control.feature` when locked.
+The plugins of the default instance:
 
 ### `workflows`
 
